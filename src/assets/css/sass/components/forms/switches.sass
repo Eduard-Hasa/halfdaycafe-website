@@ -1,0 +1,31 @@
+.custom-switch
+
+	.custom-control-label
+		
+		&:after
+			background-color: #fff !important
+	
+	&-dark
+		color: $light
+		
+		.custom-control-label
+			&:before
+				background-color: $custom-switch-dark-bg
+				
+		.custom-control-input:checked
+			& + .custom-control-label
+				&:before
+					background-color: $custom-switch-dark-active-bg
+					border-color: $custom-switch-dark-active-bg
+					
+				&:after
+					background-color: $primary !important
+					
+
+		.custom-control-input:disabled
+			& + .custom-control-label
+				&:before
+					background-color: $custom-switch-dark-disabled-bg
+					
+				&:after
+					background-color: $custom-switch-dark-disabled-indicator-bg !important

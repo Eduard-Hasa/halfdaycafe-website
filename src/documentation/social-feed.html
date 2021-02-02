@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social Feed - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Social feed</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center mb-6">
+                            <h1 class="mb-1">Social feed</h1>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+
+
+                        <h2>Instagram</h2>
+                        <p class="mb-1 font-size-lg">TTo connect your Instagram account to the website, you need to replace sample Instagram Access Token with yours. You can do that in the app.js file (check the screenshot below).</p>
+                        <img src="assets/images/access_token.jpg" alt="" class="mb-4">
+
+                        <p class="mb-1 font-size-lg">To get your Access Token, you need to go through a few simple steps:</p>
+                        <ol class="font-size-lg mb-6">
+                            <li class="mb-4">
+                                <strong>Register as an app developer with Instagram</strong>.<br>
+                                Follow this link: <a href="https://instagram.com/developer/clients/manage" target="_blank">https://instagram.com/developer/clients/manage</a> and click “Register a New Client”. Fill up the form. <strong>Important!</strong> Click on the security tab and untick the option to Disable OAuth.
+                                <div class="row mt-4">
+                                    <div class="col-sm-6">
+                                        <img src="assets/images/inst_register_client.jpg" alt="" class="mb-1">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img src="assets/images/enable_oath.jpg" alt="" class="mb-1">
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <p class="font-size-lg">If you are registering your first app, after the previous step you will be asked to fill up the "Developer Signup" form. Enter your website's domain, phone, project description and click "Sign up" button.</p>
+                                    </div>
+                                    <div class="col-7 mt-4">
+                                        <p class="font-size-lg">After the registration, you will see the following box. You need to copy the Client ID from it.</p>
+                                        <img src="assets/images/inst_registered.jpg" alt="" class="mb-1">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <strong>Generate an access code</strong><br>
+
+                                <p class="font-size-lg">To generate your access token you need to go through the process of authenticating to your own application (that you have registered in the previous step) and therefore grant access to your media. To do this, you need the Client ID from the previous step.</P>
+
+                                <p class="font-size-lg">Once you have your client ID, in a text editor, copy in the following text:<br>
+
+                                <code>https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token</code></p>
+
+                                <p class="font-size-lg">Now, replace CLIENT-ID with your Client ID and the REDIRECT_URI with your redirect uri.<br>
+                                <p class="font-size-lg">Copy and paste the url into a browser and hit enter. This will take you to an authentication window. This should look something like the following image.</p>
+                                
+                                <img src="assets/images/authenticate_sandbox.jpg" alt="" class="mb-2">
+
+                                <p class="font-size-lg">Once you authorize your app/client, you will be redirected to your redirect url as in the image below. At the end of your url you will see your generated access token. Copy and paste the whole url into a text editor.</p>
+
+                                <img src="assets/images/access_token_url.jpg" alt="" class="mb-2">
+
+                                <p class="font-size-lg">Your Access Token is what allows your website to authenticate to Instagram and access your own media. This will not allow you to access anyone else’s media, and you are limited to your last 20 images. This is because you are in Sandbox mode using the basic set of permissions.</p>
+                            </li>
+                            <li>
+                                <strong>Paste the access code in app.js file</strong><br>
+                            </li>
+                        </ol>
+
+                        <h4>Configure your instagram feed</h4>
+                        <p class="font-size-lg mb-1">To start using instagram feed add <code>.instagram-widget</code> class to the element that should hold your images.</p>
+                        <p class="font-size-lg mb-1">There are few settings that you can control be attaching HTML attributes to the feed container:</p>
+                        <ul class="list-plain font-size-lg">
+                            <li class="mb-2"><code>data-inst-link</code> - defines what should happen if a user clicks on a image. Available options:
+                                <ul>
+                                    <li><code>'instagram'</code> - open image on Instagram</li>
+                                    <li><code>'fancybox'</code> - open popup galery</li>
+                                    <li><code>'no-link'</code> - nothing should happen after a click</li>
+                                </ul>
+                                Default value - 'instagram'.</li>
+                            <li class="mb-2"><code>data-inst-num</code> - defines the number of images to display (max - 20). Default value - 6.</li>
+                            <li class="mb-2"><code>data-inst-size</code> - defines the size of the images. Available options:
+                                <ul>
+                                    <li><code>'thumbnail'</code> - width - 150px</li>
+                                    <li><code>'small'</code> - width - 320px</li>
+                                    <li><code>'standard'</code> - width - 640px</li>
+                                </ul>
+                                Default value - 'thumbnail'.</li>
+                            <li class="mb-2"><code>data-inst-wrapper</code> - defines the HTML tag that will be used as a wrapper to each image. Default value - <code>&lt;div&gt;&lt;/div&gt;</code>.</li>
+                        </ul>
+                        
+
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <div class="row instagram-widget" 
+                                    data-inst-num='8' 
+                                    data-inst-size='standard'
+                                    data-inst-wrapper='<div class="col-6 col-sm-4 my-2"></div>'
+                                    data-inst-link='fancybox'>
+
+                                </div>
+                            </div>
+                            <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">&lt;div 
+    class=&quot;row instagram-widget&quot; 
+    data-inst-num='8' 
+    data-inst-size='standard'
+    data-inst-wrapper='&lt;div class=&quot;col-6 col-sm-4 my-2&quot;&gt;&lt;/div&gt;'
+    data-inst-link='fancybox'&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                        </div>
+
+
+        
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tooltip.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/popover.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+    <script src="../assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+
+</body>
+
+</html>

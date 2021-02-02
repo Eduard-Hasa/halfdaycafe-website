@@ -1,0 +1,112 @@
+.features
+	position: relative
+	
+	&__image
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 2
+		max-width: 310px  
+		
+		@include media-breakpoint-down(lg)
+			max-width: 250px 
+			position: static
+			transform: none
+			margin: 0 auto 2rem
+			display: block
+		
+	&__list	
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		padding-left: 0
+		margin: 0
+		
+		@include media-breakpoint-down(lg)
+			align-items: flex-start
+		
+
+	&__item
+		width: 50%
+		display: flex
+		align-items: center
+		margin: 1.5rem 0
+		position: relative
+		
+		@include media-breakpoint-down(lg)
+			display: block
+			text-align: center
+			padding: 0 15px
+			width: 33.33%
+			
+		@include media-breakpoint-down(sm)
+			width: 100%
+			
+		
+		&:after
+			content: ''
+			width: 190px
+			height: 2px
+			background-color: #f2f2f2
+			position: absolute
+			top: 50%
+			margin-top: -1px 
+			
+			@include media-breakpoint-down(lg)
+				display: none
+		
+		.icon-rounded
+			width: 110px
+			height: 110px
+			padding: 18px
+			
+			@include media-breakpoint-down(lg)
+				margin: 0 auto 1rem
+				
+			@include media-breakpoint-down(xs)
+				width: 80px
+				height: 80px
+				padding: 10px
+			
+			&__circle
+				background-color: $secondary
+				
+				svg
+					fill: #fff
+			
+		&__content
+			@include media-breakpoint-up(xl)
+				flex: 1 0 auto
+				width: 1px
+			
+			
+
+		@include media-breakpoint-up(xl)
+			&:nth-child(odd)
+				padding-right: 190px 
+				text-align: right
+				
+				&:after
+					right: 0
+				
+				.icon-rounded
+					order: 1
+					margin-left: 25px 
+					
+				
+			&:nth-child(even)
+				padding-left: 190px 
+				
+				&:after
+					left: 0
+				
+				.icon-rounded
+					margin-right: 25px 
+					
+
+			&:nth-child(3)
+				transform: translateX(-40px)
+				
+			&:nth-child(4)
+				transform: translateX(40px)

@@ -1,0 +1,65 @@
+.divided-columns
+	& > div[class*="col"]
+		border-right: 1px solid $gray-300
+		hr 
+			border-top: 1px solid $gray-300
+			margin-left: -15px
+			margin-right: -15px
+
+		&:first-child
+			hr 
+				margin-left: 0
+				margin-right: -15px
+		&:last-child
+			hr 
+				margin-right: 0
+
+		&:last-child
+			border-right: none
+
+
+	// responsive
+	@each $size, $value in $grid-breakpoints 
+		&--#{$size}
+			& > div[class*="col"]
+				border-right: none
+				hr
+					margin-left: auto 
+				&:first-child,
+				&:last-child
+					hr
+						margin-left: auto 
+						margin-right: auto
+			@include media-breakpoint-up($size)
+				& > div[class*="col"]
+					border-right: 1px solid $gray-300
+					hr 
+						border-top: 1px solid $gray-300
+						margin-left: -15px
+						margin-right: -15px
+
+					&:first-child
+						hr 
+							margin-left: 0
+							margin-right: -15px
+					&:last-child
+						hr 
+							margin-right: 0
+
+					&:last-child
+						border-right: none
+
+	// colors
+	@each $color, $value in $theme-colors 
+		&--#{$color}
+			& > div[class*="col"]
+				border-color: $value
+				hr 
+					border-color: $value
+
+	// width
+	&--thick
+		& > div[class*="col"]
+			border-width: 2px
+			hr 
+				border-width: 2px

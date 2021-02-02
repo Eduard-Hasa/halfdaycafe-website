@@ -1,0 +1,80 @@
+.loading-screen {
+  position: fixed;
+  background-color: #fff;
+  z-index: 100000;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+
+.loading-screen-logo, .loading-screen-progress {
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.loading-screen .progress .progress-bar {
+  -webkit-animation-name: animateBar;
+          animation-name: animateBar;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.loading-screen.loaded {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.loading-screen.loaded .loading-screen-logo {
+  opacity: 0;
+}
+
+.loading-screen.loaded .loading-screen-progress {
+  width: 0 !important;
+}
+
+@-webkit-keyframes animateBar {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes animateBar {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=loading.css.map */

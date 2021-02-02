@@ -1,0 +1,515 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blog Masonry - Fika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--=================================================================================================-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-sticky navbar-expand-lg navbar-light align-items-center no-gutters p-0">
+
+        <!-- Left Column -->
+        <div class="col-lg-3 col-6 d-flex justify-content-start">
+
+            <!-- Brand -->
+            <a class="navbar-brand ml-0 ml-lg-3" href="index.html"><img src="assets/images/logo-dark.svg" alt=""></a>
+
+        </div>
+
+        <!-- Center Column -->
+        <div class="col-lg-6 col-12 order-1 order-lg-0">
+
+            <!-- Nav -->
+            <div class="collapse navbar-collapse" id="navbar-nav-container">
+                <ul class="navbar-nav navbar-nav--expanded">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                    
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="landingsMenu">
+                            <a class="dropdown-item" href="homepage-1.html">Home Page 1</a>
+                            <a class="dropdown-item" href="homepage-2.html">Home Page 2</a>
+                            <a class="dropdown-item" href="homepage-3.html">Home Page 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="aboutMenu">
+                            <a class="dropdown-item" href="about-us-1.html">About Us 1</a>
+                            <a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="menuMenu">
+                            <a class="dropdown-item" href="menu-classic.html">Classic Menu</a>
+                            <a class="dropdown-item" href="menu-card.html">Card Menu</a>
+                            <a class="dropdown-item" href="menu-tab.html">Tab Menu</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="galleryMenu">
+                            <a class="dropdown-item" href="gallery-masonry.html">Masonry Gallery</a>
+                            <a class="dropdown-item" href="gallery-grid.html">Grid Gallery</a>
+                            <a class="dropdown-item" href="gallery-slider.html">Slider Gallery</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="blogMenu">
+                            <a class="dropdown-item" href="blog-grid.html">Grid Blog</a>
+                            <a class="dropdown-item" href="blog-magazine.html">Magazine Blog</a>
+                            <a class="dropdown-item" href="blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                            <a class="dropdown-item active" href="blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                            <a class="dropdown-item" href="article.html">Article</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="contactMenu">
+                            <a class="dropdown-item" href="reservation.html">Reservation</a>
+                            <a class="dropdown-item" href="contacts.html">Contact Us</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation/">Documentation</a>
+                    </li>
+                </ul>
+            </div><!-- .navbar-container-->
+        </div><!-- .col -->
+
+        <!-- Right Column-->
+        <div class="col-lg-3 col-6 d-flex justify-content-end">
+
+            <!-- Button -->
+            <button data-toggle="modal" data-target="#bookModal" class="btn btn-hero btn-primary d-none d-lg-block">Reservation</button>
+
+            <!-- Toggler -->
+            <div class="btn btn-light btn-hero text-right d-block d-lg-none">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container" aria-controls="navbar-nav-container" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="d-none d-md-inline-block">Menu</span>
+                </button>
+            </div>
+
+        </div><!-- .col -->
+    </nav><!-- .navbar -->
+
+    <!--=================================================================================================-->
+    <!-- SECTION GALLERY GRID -->
+    <section class="pb-4 pt-7 pb-sm-5 pt-sm-8 pb-lg-6">
+
+        <div class="overlay" data-jarallax-element="-140">
+            <div class="bg-img bg-img--horizontal-100 bg-img--center w-100 h-100" style="background-image: url('assets/images/sections-bg/mint-leaves-2.png');"></div>
+        </div>
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+
+                    <!-- Title-->
+                    <div class="col-11 col-lg-8">
+                        <h2 class="h1">Masonry Blog (3 columns)</h2>
+                    </div>
+
+                    <!-- Subtitle-->
+                    <div class="col-11 col-md-7 mt-1">
+                        <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                    </div>
+
+                </div>
+            </div>
+                
+        </div><!-- .container-->
+
+        <div class="container-wide">
+
+            <div class="masonry-grid row mb-n5" data-masonry='{ "columnWidth": ".grid-sizer", "itemSelector": ".grid-item", "percentPosition": true }'>
+
+                <div class="grid-sizer col-md-6 col-lg-4"></div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-1.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-2.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-3.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-4.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-5.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-1.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-2.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-3.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-4.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item col-md-6 col-lg-4">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="article.html" class="d-block lightbox-hover-scale"><img src="assets/images/blog/post-thumbnail-5.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            <ul class="list-inline text-uppercase text-primary">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end grid -->
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-wide">View All</a>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!--=================================================================================================-->
+    <!-- Section Widgets -->
+    <section class="widget-area" role="complementary">
+        <div class="container-wide">
+
+            <div class="row">
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Contacts Widget -->
+                    <div class="widget">
+                        <h4 class="widget__title">Contact Info</h4>
+                        <ul class="widget__icon-list">
+                            <li>
+                                <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                    <img src="assets/images/icons/essential-set-fill/svg/placeholder-3.svg" alt="" class="inject-me">
+                                </i>
+                                <span>Wollmar Yxkullsgatan 10 <br>118 50 Stockholm, Sweden</span>
+                            </li>
+                            <li>
+                                <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                    <img src="assets/images/icons/essential-set-fill/svg/smartphone-6.svg" alt="" class="inject-me">
+                                </i>
+                                <span>+1 453 658 </span>
+                            </li>
+                            <li>
+                                <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                    <img src="assets/images/icons/essential-set-fill/svg/navigation.svg" alt="" class="inject-me">
+                                </i>
+                                <span>info@coffee.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Opening Hours -->
+                    <div class="widget">
+                        <h4 class="widget__title">Opening Hours</h4>
+                        <ul class="widget__hours">
+                            <li class="mb-1">
+                                <span class="day">Mon-Thu</span>
+                                <span class="hours">9:00 - 22:00</span>
+                            </li>
+                            <li class="mb-1">
+                                <span class="day">Fri</span>
+                                <span class="hours">9:00 - 01:00</span>
+                            </li>
+                            <li class="mb-1">
+                                <span class="day">Sat</span>
+                                <span class="hours">10:00 - 01:00</span>
+                            </li>
+                            <li class="mb-1">
+                                <span class="day">Sun</span>
+                                <span class="hours">10:00 - 22:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Instagram Widget -->
+                    <div class="widget">
+                        <h4 class="widget__title">Instagram</h4>
+                        <ul class="widget__instagram row gutter-5 list-unstyled instagram-widget"
+                            data-inst-link='instagram'
+                            data-inst-size='standard' 
+                            data-inst-num='6' 
+                            data-inst-wrapper='<li class="col-4"></li>'>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Subscribe Widget -->
+                    <div class="widget">
+                        <h4 class="widget__title">Subscribe to our Newsletter</h4>
+                        <div class="textwidget">
+                            <p>Sign up to our newletter to get latest food item news and our new events.</p>
+                            <!-- Form -->
+                            <form class="signup-from">
+                                <div class="input-group shadow-sm">
+                                    <input type="email" class="form-control border-0 rounded-0 bg-white" placeholder="E-mail Address" aria-label="E-mail Address">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary">
+                                            <i class="icon icon--xs icon--white">
+                                                <img src="assets/images/icons/essential-set/svg/paper-plane-1.svg" alt="" class="inject-me">
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- section -->
+
+
+    <footer class="site-footer py-4 py-lg-0">
+        <div class="row align-items-center no-gutters">
+            <div class="col-12 col-lg-3 offset-lg-1 text-center text-lg-left mb-3 mb-lg-0">
+                <a href="index.html"><img src="assets/images/logo-dark.svg" alt="Tatte"></a>
+            </div>
+            
+            <div class="col-12 col-lg-4 text-center text-lg-right order-lg-last mb-3 mb-lg-0">
+                <a href="#" class="btn btn-primary btn-hero d-lg-inline-block d-none">Reservation</a>
+                <a href="" class="btn btn-primary btn-arrow d-lg-none">Reservation</a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center order-lg-2">
+                <p class="site-footer__copyright">Copyrights © Fika - Cafe & Coffeehouse</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Book Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content pt-2 pb-2 px-lg-2">
+
+                <!-- Header -->
+                <div class="modal-header justify-content-center border-0">
+                    <!-- Heading -->
+                    <div class="mb-0 font-size-lg text-center">
+                        <!-- Title -->
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="label-heading-text text-primary mb-1">Reservation</p>
+                                <h2 class="h2">Online Booking</h2>
+                            </div>
+                        </div>
+                        <!-- Subtitle -->
+                        <div class="row justify-content-center mt-1">
+                            <div class="col-11 col-xl-7 col-mb-10">
+                                <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Close -->
+                    <button type="button" class="close position-absolute right-0 top-0 p-4" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form class="book-form" data-aos="zoom-in">
+                        <div class="row no-gutters">
+
+                            <div class="col-lg-3 position-relative z-index-2">
+                                <div class="form-group">
+                                    <label for="modalBookFormInputDate">Date and Time</label>
+                                    <input type='text' class="form-control datetimepicker" id="modalBookFormInputDate" placeholder="2019/05/15 19:00"/>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputName">Your Name</label>
+                                    <input type="text" class="form-control" id="modalInputName" placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputPhone">Phone</label>
+                                    <input type="tel" class="form-control" id="modalInputPhone" placeholder="(389)748-8736">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3">
+                                <div class="btn btn-hero btn-primary">Book</div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body-->
+
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog-->
+    </div><!-- .modal -->
+
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/popper/popper.min.js"></script>
+
+    <script src="assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/modal.js"></script>
+    <script src="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax-elements.min.js"></script>
+    <script src="assets/vendors/svginjector/svginjector.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

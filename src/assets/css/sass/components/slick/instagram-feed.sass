@@ -1,0 +1,23 @@
+.instagram-feed
+	padding-left: 0
+	margin-bottom: 0
+	list-style: none 
+	height: 170px
+	opacity: 0
+	transition: opacity 1s ease
+	
+	&.slick-initialized
+		opacity: 1
+		height: auto
+		
+	
+	.slick-slide		
+		@include media-breakpoint-down( sm )
+			padding: 0 10px
+			
+		@include media-breakpoint-down( xs )
+			padding: 0 5px
+			
+		img
+			display: block
+			width: 100% 

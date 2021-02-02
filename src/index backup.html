@@ -1,0 +1,646 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fika - Cafe & Coffeehouse</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div class="container">
+            <div class="mb-6 text-center loading-screen-logo">
+                <img src="assets/images/fika-label-big.svg" alt="">
+            </div>
+            <div class="loading-screen-progress progress w-75 mx-auto bg-gray-200" style="height: 3px;">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 35%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading screen styles -->
+    <style>
+        .loading-screen {
+            position: fixed;
+            background-color: #fff;
+            z-index: 100000;
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-transition: all 0.8s ease-out;
+            -o-transition: all 0.8s ease-out;
+            transition: all 0.8s ease-out;
+        }
+        .loading-screen-logo, .loading-screen-progress {
+            -webkit-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+        }
+        .loading-screen .progress .progress-bar {
+            -webkit-animation: animateBar 0.6s ease-in 0 1;
+            animation: animateBar 0.6s ease-in 0 1;
+            -webkit-transition: width 1s ease;
+            -o-transition: width 1s ease;
+            transition: width 1s ease;
+        }
+        .loading-screen.loaded {
+            -webkit-transition-delay: 0.6s;
+                 -o-transition-delay: 0.6s;
+                    transition-delay: 0.6s;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .loading-screen.loaded .loading-screen-logo {
+            opacity: 0;
+        }
+        .loading-screen.loaded .loading-screen-progress {
+            width: 0 !important;
+        }
+
+        @-webkit-keyframes animateBar {
+            0% {
+                -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+        }
+
+        @keyframes animateBar {
+            0% {
+                -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+        }
+    </style>
+
+    <!--=================================================================================================-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-sticky navbar-border align-items-center no-gutters p-0">
+
+        <!-- Left Column -->
+        <div class="col-4 col-lg-5 d-flex justify-content-start z-index-5">
+
+            <!-- Toggler -->
+            <div class="btn btn-light btn-hero text-left">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container" aria-controls="navbar-nav-container" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="d-none d-md-inline-block">Menu</span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Center Column -->
+        <div class="col-4 col-lg-2 d-flex justify-content-center">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo-light.svg" alt=""></a>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-4 col-lg-5 d-flex justify-content-end align-items-center">
+
+            <!-- Socials -->
+            <div class="socials mr-2 mr-xl-4 d-none d-lg-flex">
+                <a href="#">
+                    <img src="assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                </a>
+                <a href="#">
+                    <img src="assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                </a>
+            </div>
+
+            <!-- Button -->
+            <button class="btn btn-hero btn-primary" data-toggle="modal" data-target="#bookModal">
+                <span class="d-none d-md-inline-block">Reservation</span>
+                <img class="d-inline-block d-md-none inject-me" src="assets/images/icons/essential-set/svg/alarm-1.svg" alt="">
+            </button>
+
+        </div>
+
+        <!-- Collapse / Side Nav -->
+        <div class="collapse navbar-fika-side-nav" id="navbar-nav-container">
+            
+            <!-- Top Content-->
+            <div></div>
+
+            <!-- Nav -->
+            <ul class="navbar-nav navbar-nav--border-bottom my-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="landingsMenu">
+                        <a class="dropdown-item" href="homepage-1.html">Home Page 1</a>
+                        <a class="dropdown-item" href="homepage-2.html">Home Page 2</a>
+                        <a class="dropdown-item" href="homepage-3.html">Home Page 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="aboutMenu">
+                        <a class="dropdown-item" href="about-us-1.html">About Us 1</a>
+                        <a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+            
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="menuMenu">
+                        <a class="dropdown-item" href="menu-classic.html">Classic Menu</a>
+                        <a class="dropdown-item" href="menu-card.html">Card Menu</a>
+                        <a class="dropdown-item" href="menu-tab.html">Tab Menu</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+            
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="galleryMenu">
+                        <a class="dropdown-item" href="gallery-masonry.html">Masonry Gallery</a>
+                        <a class="dropdown-item" href="gallery-grid.html">Grid Gallery</a>
+                        <a class="dropdown-item" href="gallery-slider.html">Slider Gallery</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="blogMenu">
+                        <a class="dropdown-item" href="blog-grid.html">Grid Blog</a>
+                        <a class="dropdown-item" href="blog-magazine.html">Magazine Blog</a>
+                        <a class="dropdown-item" href="blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                        <a class="dropdown-item" href="blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                        <a class="dropdown-item" href="blog-featured.html">Featured Blog</a>
+                        <a class="dropdown-item" href="article.html">Article</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Reservation</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts.html">Contact Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="documentation/">Documentation</a>
+                </li>
+            </ul>
+
+            <!-- Socials -->
+            <div class="socials socials--lg socials--primary">
+                <a href="#">
+                    <img src="assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                </a>
+                <a href="#">
+                    <img src="assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                </a>
+            </div>
+
+        </div><!-- .collapse -->
+    </nav><!-- .navbar -->
+
+
+    <!--=================================================================================================-->
+    <!-- Intro Section -->
+    <section class="intro-section intro-section--sm position-relative mb-4 mb-sm-5 mb-xl-6 pt-6 pt-lg-7 text-light bg-img bg-img--cover position-relative" style="background-image: url('assets/images/sections-bg/page-preview-bg.jpg');">
+        <div class="container py-7 py-sm-6 py-lg-8" data-aos="fade-down" data-aos-duration="1000">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-12 text-center">
+
+                    <!-- Title -->
+                    <p class="font-size-xl mb-1">Unlimited Elements Variations</p>
+                    <h1 class="display-3">Fika - Coffee & Cafe</h1>
+
+                    <div class="btn-group mt-sm-3 mt-2">
+                        <a href="#demos" class="btn btn-sm btn-primary anchor">View all demos</a>
+                        <a href="https://themeforest.net/item/fika-cafe-coffeehouse-html-template/23820353" class="btn btn-sm btn-light">Buy now for only $25</a>
+                    </div>
+
+                </div>
+
+            </div><!-- .col -->
+        </div><!-- .container -->
+
+        <a class="icon-rounded icon-rounded--active icon-rounded--xs mx-auto left-0 right-0 mt-n4 position-absolute top-100 z-index-2 anchor" href="#demos">
+            <div class="icon-rounded__circle">
+                <img class="inject-me" src="assets/images/icons/custom/arrow-down.svg" alt="">
+            </div>
+        </a><!-- end eounded icon-->
+
+    </section><!-- .section -->
+
+
+
+    <section class="py-4 py-sm-5 py-xl-6" id="demos">
+        
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <p class="label-heading-text text-primary mb-1">View Demos</p>
+                        <h2 class="h1">Homepage Variations</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-wide">
+            
+            <div class="row justify-content-center justify-content-md-start">
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="homepage-1.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/homepage-1.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="homepage-1.html">Home Page 1</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="homepage-2.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/homepage-2.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="homepage-2.html">Home Page 2</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none" data-aos="zoom-in">
+                        <a href="homepage-3.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/homepage-3.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="homepage-3.html">Home Page 3</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-4 py-sm-5 py-xl-6 pt-xl-8 bg-gray-100">
+        
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <p class="label-heading-text text-primary mb-1">View Demos</p>
+                        <h2 class="h1">All Inner Pages</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-wide">
+            
+            <div class="row justify-content-center justify-content-md-start">
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="about-us-1.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/about-1.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="about-us-1.html">About Us 1</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="about-us-2.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/about-2.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="about-us-2.html">About Us 2</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="reservation.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/reservation.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="reservation.html">Reservation</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="gallery-slider.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/gallery-1.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="gallery-slider.html">Gallery 1</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="gallery-grid.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/gallery-2.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="gallery-grid.html">Gallery 2</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="gallery-masonry.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/gallery-3.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="gallery-masonry.html">Gallery 3</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="blog-grid.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/blog-1.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="blog-grid.html">Blog 1</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="blog-magazine.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/blog-2.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="blog-magazine.html">Blog 2</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="blog-masonry.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/blog-3.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="blog-masonry.html">Blog 3</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="blog-featured.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/blog-4.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="blog-featured.html">Blog 4</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="menu-classic.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/menu-1.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="menu-classic.html">Menu 1</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="menu-card.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/menu-2.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="menu-card.html">Menu 2</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="menu-tab.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/menu-3.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="menu-tab.html">Menu 3</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="article.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/article.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="article.html">Blog article</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-4">
+                    <div class="card mb-5 shadow-none bg-transparent" data-aos="zoom-in">
+                        <a href="contacts.html" class="d-block shadow-lg lightbox-hover-scale">
+                            <img src="assets/images/page-previews/contacts.jpg" class="card-img-top rounded-0" alt="Post Title">
+                        </a>
+                        <div class="card-body p-3 text-center">
+                            <h4 class="card-title"><a href="contacts.html">Contacts</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="py-5 py-sm-6 py-lg-7 bg-img--center bg-img--cover text-white position-relative" style="background-image: url(assets/images/sections-bg/pages-preview-cta.jpg);">
+
+        <div class="position-absolute left-0 bottom-25 z-index-0" style="max-width: 20%">
+            <img src="assets/images/sections-bg/coffee-branch-2.png" alt="">
+        </div>
+        
+        <div class="container-wide text-center position-relative z-index-2">
+            <h2 class="display-4 mb-4">Enhance your brand with this beautiful template.</h2>
+
+            <a href="https://themeforest.net/item/fika-cafe-coffeehouse-html-template/23820353" class="btn btn-lg btn-primary">BUY NOW FOR ONLY $25</a>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer py-4 py-lg-0">
+        <div class="row align-items-center no-gutters">
+
+            <div class="col-12 col-lg-3 offset-lg-1 text-center text-lg-left mb-3 mb-lg-0">
+                <!-- Logo -->
+                <a href="index.html"><img src="assets/images/logo-dark.svg" alt="Tatte"></a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center text-lg-right order-lg-last mb-3 mb-lg-0">
+                <!-- Buttons -->
+                <a href="#" class="btn btn-primary btn-hero d-lg-inline-block d-none">Reservation</a>
+                <a href="" class="btn btn-primary btn-arrow d-lg-none">Reservation</a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center order-lg-2">
+                <!-- Copyright -->
+                <p class="site-footer__copyright">Copyrights © Fika - Cafe & Coffeehouse</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Book Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content pt-2 pb-2 px-lg-2">
+
+                <!-- Header -->
+                <div class="modal-header justify-content-center border-0">
+                    <!-- Heading -->
+                    <div class="mb-0 font-size-lg text-center">
+                        <!-- Title -->
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="label-heading-text text-primary mb-1">Reservation</p>
+                                <h2 class="h2">Online Booking</h2>
+                            </div>
+                        </div>
+                        <!-- Subtitle -->
+                        <div class="row justify-content-center mt-1">
+                            <div class="col-11 col-xl-7 col-mb-10">
+                                <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Close -->
+                    <button type="button" class="close position-absolute right-0 top-0 p-4" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form class="book-form" data-aos="zoom-in">
+                        <div class="row no-gutters">
+
+                            <div class="col-lg-3 position-relative z-index-2">
+                                <div class="form-group">
+                                    <label for="modalBookFormInputDate">Date and Time</label>
+                                    <input type='text' class="form-control datetimepicker" id="modalBookFormInputDate" placeholder="2019/05/15 19:00"/>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputName">Your Name</label>
+                                    <input type="text" class="form-control" id="modalInputName" placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputPhone">Phone</label>
+                                    <input type="tel" class="form-control" id="modalInputPhone" placeholder="(389)748-8736">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3">
+                                <div class="btn btn-hero btn-primary">Book</div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body-->
+
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog-->
+    </div><!-- .modal -->
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/popper/popper.min.js"></script>
+
+    <script src="assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/modal.js"></script>
+    <script src="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax-elements.min.js"></script>
+    <script src="assets/vendors/svginjector/svginjector.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

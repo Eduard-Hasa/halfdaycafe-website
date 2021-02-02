@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changelog - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Changelog</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center h5">
+                            <h1 class="mb-1">Changelog</h1>
+                        </div>
+
+                        <!-- Text -->
+                        <p><span class="badge badge-soft-primary badge-pill">v 1.2.1</span> - July 26th, 2019</p>
+
+                        <ul class="list-unstyled mb-3">
+                            <li class="mb-2"><span class="badge badge-soft-info mr-2">new</span> Added ability to replace standard tab navigation with compact select to improve user experience for mobile users. Check <a href="../documentation/menu.html#mobile-select">documentation</a> for more information.</li>
+                        </ul>
+                        <h5>List of important updated files</h5>
+                        <ul>
+                            <li><code>src/assets/js/app.js</code></li>
+                        </ul>
+
+                        <div class="py-4"></div>
+
+                        <!-- Text -->
+                        <p><span class="badge badge-soft-primary badge-pill">v 1.2.0</span> - July 12th, 2019</p>
+
+                        <ul class="list-unstyled mb-3">
+                            <li class="mb-2"><span class="badge badge-soft-info mr-2">New</span> <a href="../blog-featured.html">Featured Blog</a> page.</li>
+                            <li class="mb-2"><span class="badge badge-soft-info mr-2">New</span> <a href="buttons.html">Button types</a> - (soft buttons and icon buttons).</li>
+                            <li class="mb-2"><span class="badge badge-soft-info mr-2">New</span> <a href="badges.html">Badge type</a> - (outline badge).</li>
+                            <li class="mb-2"><span class="badge badge-soft-info mr-2">New</span> <a href="slider.html">Slick slider</a> modificator for equal height slides.</li>
+
+                            <li class="mb-2"><span class="badge badge-soft-warning mr-2">Changed</span> Class <code>.badge-{color}--smooth</code> in favor of <code>.badge-soft-{color}</code>.</li>
+
+                            <li class="mb-2"><span class="badge badge-soft-danger mr-2">Fixed</span> <code>.card-img-overlay</code> z-index.</li>
+
+                            <li class="mb-2"><span class="badge badge-soft-success mr-2">Enhanced</span> Documentation</li>
+                        </ul>
+
+                        <h5>List of important updated files</h5>
+                        <ul>
+                            <li><code>src/assets/css/scss/main.sass</code></li>
+                            <li><code>src/assets/css/scss/abstracts/mixins.sass</code></li>
+                            <li><code>src/assets/css/scss/abstracts/variables.scss</code></li>
+                            <li><code>src/assets/css/scss/base/typography.sass</code></li>
+                            <li><code>src/assets/css/scss/components/badge/badge.sass</code></li>
+                            <li><code>src/assets/css/scss/components/buttons/button.sass</code></li>
+                            <li><code>src/assets/css/scss/components/card/card.sass</code></li>
+                            <li>New <code>src/assets/css/scss/components/navs/navs.sass</code></li>
+                            <li><code>src/assets/css/scss/components/slick/slider.sass</code></li>
+                            <li><code>src/assets/css/scss/components/components.sass</code></li>
+                            <li><code>src/assets/css/scss/utilites/overlay.sass</code></li>
+                            <li>New <code>src/blog-featured.html</code></li>
+                            <li><code>gulpfile.js</code></li>
+                            <li><code>package.json</code></li>
+                            <li><code>package-lock.json</code></li>
+                        </ul>
+
+                        <h5>Important changes in build process.</h5>
+                        <p>We have changed our build process, in order to make it more effective. Now all source files will be placed inside <code>src</code> folder, but after compilation, all files will be moved into <code>dist</code> folder.</p>
+                        <p>Just follow these simple steps:</p>
+                        <ol>
+                            <li>Create <code>src</code> folder;</li>
+                            <li>Move your <code>assets</code> folder into <code>src</code> folder;</li>
+                            <li>Move your <code>documentation</code> folder into <code>src</code> folder;</li>
+                            <li>Move all <code>*.html</code> files from root into <code>src</code> folder;</li>
+                            <li>Run <code>npm install</code> command in your console to update packages;</li>
+                            <li>Run <code>gulp</code> command in your console when you need to edit files;</li>
+                            <li>Run <code>gulp build</code> command in your console when you need to build your site for producation.</li>
+                        </ol>
+
+                        <div class="py-4"></div>
+
+
+
+
+                        <!-- Text -->
+                        <p><span class="badge badge-soft-primary badge-pill">v 1.1.0</span> - May 27th, 2019</p>
+
+                        <ul class="list-unstyled mb-3">
+                            <li class="mb-2"><span class="badge badge-soft-info mr-2">New</span> <a href="video.html">Embed Videos</a> and backgrounds.</li>
+                            <li class="mb-2"><span class="badge badge-soft-info mr-2">New</span> <a href="social-feed.html">Instagram</a> widget.</li>
+                        </ul>
+                        <h5>List of important updated files</h5>
+                        <ul>
+                            <li><code>about-us-1.html</code>- added backgound video in Intro section;</li>
+                            <li><code>about-us-2.html</code> - added video section;</li>
+                            <li><code>app.js</code> - Added plyr.js video plugin initialization. Get Instagram feed function.</li>
+                            <li><code>main.css</code> - Added video.sass file to style videos on the website.</li>
+                        </ul>
+
+                        <div class="py-4"></div>
+
+
+
+                        
+                        <!-- Text -->
+                        <p><span class="badge badge-soft-primary badge-primary badge-pill">v 1.0.0</span> - May 10th, 2019</p>
+
+                        <ul class="list-unstyled">
+                            <li><span class="badge badge-soft-info mr-2">New</span> Initial release of Fika! Lots more coming soon though 😁</li>
+                        </ul>
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

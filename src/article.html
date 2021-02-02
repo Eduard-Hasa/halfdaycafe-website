@@ -1,0 +1,545 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Article - Fika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--=================================================================================================-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-sticky navbar-expand-lg navbar-light align-items-center no-gutters p-0">
+
+        <!-- Left Column -->
+        <div class="col-lg-3 col-6 d-flex justify-content-start">
+
+            <!-- Brand -->
+            <a class="navbar-brand ml-0 ml-lg-3" href="index.html"><img src="assets/images/logo-dark.svg" alt=""></a>
+
+        </div>
+
+        <!-- Center Column -->
+        <div class="col-lg-6 col-12 order-1 order-lg-0">
+
+            <!-- Nav -->
+            <div class="collapse navbar-collapse" id="navbar-nav-container">
+                <ul class="navbar-nav navbar-nav--expanded">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                    
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="landingsMenu">
+                            <a class="dropdown-item" href="homepage-1.html">Home Page 1</a>
+                            <a class="dropdown-item" href="homepage-2.html">Home Page 2</a>
+                            <a class="dropdown-item" href="homepage-3.html">Home Page 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="aboutMenu">
+                            <a class="dropdown-item" href="about-us-1.html">About Us 1</a>
+                            <a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="menuMenu">
+                            <a class="dropdown-item" href="menu-classic.html">Classic Menu</a>
+                            <a class="dropdown-item" href="menu-card.html">Card Menu</a>
+                            <a class="dropdown-item" href="menu-tab.html">Tab Menu</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="galleryMenu">
+                            <a class="dropdown-item" href="gallery-masonry.html">Masonry Gallery</a>
+                            <a class="dropdown-item" href="gallery-grid.html">Grid Gallery</a>
+                            <a class="dropdown-item" href="gallery-slider.html">Slider Gallery</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="blogMenu">
+                            <a class="dropdown-item" href="blog-grid.html">Grid Blog</a>
+                            <a class="dropdown-item" href="blog-magazine.html">Magazine Blog</a>
+                            <a class="dropdown-item" href="blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                            <a class="dropdown-item" href="blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                            <a class="dropdown-item" href="blog-featured.html">Featured Blog</a>
+                            <a class="dropdown-item active" href="article.html">Article</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="contactMenu">
+                            <a class="dropdown-item" href="reservation.html">Reservation</a>
+                            <a class="dropdown-item" href="contacts.html">Contact Us</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation/">Documentation</a>
+                    </li>
+
+                </ul>
+            </div><!-- .navbar-container-->
+        </div><!-- .col -->
+
+        <!-- Right Column-->
+        <div class="col-lg-3 col-6 d-flex justify-content-end">
+
+            <!-- Button -->
+            <button data-toggle="modal" data-target="#bookModal" class="btn btn-hero btn-primary d-none d-lg-block">Reservation</button>
+
+            <!-- Toggler -->
+            <div class="btn btn-light btn-hero text-right d-block d-lg-none">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container" aria-controls="navbar-nav-container" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="d-none d-md-inline-block">Menu</span>
+                </button>
+            </div>
+
+        </div><!-- .col -->
+    </nav><!-- .navbar -->
+
+
+    <!--=================================================================================================-->
+    <!-- SECTION GALLERY GRID -->
+    <section class="position-relative pb-4 pt-7 pb-sm-5 pt-sm-8 pb-lg-6">
+
+        <div class="container">
+
+            <article>
+
+                <div class="mb-4 font-size-lg text-center">
+                    <div class="row justify-content-center text-center">
+
+                        <div class="col-11 col-md-8">
+                            <h2 class="h1">H1 Dealing With Technical Support 10 Useful Tips</h2>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="font-size-lg text-center mt-3">
+                                <span>by Lewis Williamson</span>
+                                <span class="mx-1 mx-sm-2">/</span>
+                                <span><i class="icon icon--xxs mr-1"><img class="inject-me" src="assets/images/icons/essential-set/svg/calendar-5.svg" alt=""></i><time>15 Dec 2019</time></span>
+                                <span class="mx-1 mx-sm-2">/</span>
+                                <span><i class="icon icon--xxs mr-1"><img class="inject-me" src="assets/images/icons/essential-set/svg/stopwatch-2.svg" alt=""></i>7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <main class="px-lg-6 position-relative single-post font-size-lg">
+
+                    <div class="socials socials--gray d-flex flex-lg-column justify-content-center" data-sticky='{"topSpacing": 120, "containerSelector": ".single-post", "minWidth": 992}'>
+                        <a href="#" class="mx-lg-0 mb-lg-2">
+                            <img src="assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                        </a>
+                        <a href="#" class="mx-lg-0 mb-lg-2">
+                            <img src="assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                        </a>
+                        <a href="#" class="mx-lg-0 mb-lg-2">
+                            <img src="assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                        </a>
+                    </div>    
+
+                    
+
+                    <img src="assets/images/blog/article-image-1.jpg" alt="" class="img-fluid">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae expedita magni et dolorum ut aut at similique adipisci ex a tenetur minus, quibusdam voluptatum, nisi magnam omnis sunt quaerat.</p>
+
+                    <p>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut deleniti molestias, harum officia assumenda, reprehenderit quia nisi ipsam laudantium saepe nesciunt minus quidem possimus, necessitatibus. Sunt odit, possimus quidem?</span>
+                        <span>Architecto ut soluta necessitatibus obcaecati nulla, ipsum molestiae, fugit ab cum mollitia voluptatem distinctio, quisquam quis reiciendis esse qui vero nesciunt. Repellendus voluptatum optio odit, ipsum dolore blanditiis pariatur! Dolorum?</span>
+                        <span>Error cum aut mollitia est tenetur temporibus enim corrupti deserunt nostrum debitis quasi qui, libero praesentium quaerat, ipsam hic cumque dolorem, reprehenderit cupiditate, doloribus. Officia fugit, deserunt neque blanditiis officiis.</span>
+                        <span>Inventore voluptates pariatur, quo eaque ratione autem ex laudantium atque, laborum soluta temporibus ab nostrum commodi qui. Nemo enim tempore, suscipit possimus rem aperiam dicta quaerat, a illo rerum voluptatem!</span>
+                        <span>Sit dignissimos quaerat suscipit quia adipisci, consequatur dolores natus dolorum quidem sequi aliquam libero qui eligendi ut expedita explicabo, vero, velit at fugiat saepe inventore! Alias quaerat minus obcaecati, eius?</span>
+                    </p>
+
+                    <h2>H2 Thrill Friends And Family With A Make It Yourself Pizza Party</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae expedita magni et dolorum ut aut at similique adipisci ex a tenetur minus, quibusdam voluptatum, nisi magnam omnis sunt quaerat.</p>
+
+                    <p>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut deleniti molestias, harum officia assumenda, reprehenderit quia nisi ipsam laudantium saepe nesciunt minus quidem possimus, necessitatibus. Sunt odit, possimus quidem?</span>
+                        <span>Architecto ut soluta necessitatibus obcaecati nulla, ipsum molestiae, fugit ab cum mollitia voluptatem distinctio, quisquam quis reiciendis esse qui vero nesciunt. Repellendus voluptatum optio odit, ipsum dolore blanditiis pariatur! Dolorum?</span>
+                        <span>Error cum aut mollitia est tenetur temporibus enim corrupti deserunt nostrum debitis quasi qui, libero praesentium quaerat, ipsam hic cumque dolorem, reprehenderit cupiditate, doloribus. Officia fugit, deserunt neque blanditiis officiis.</span>
+                        <span>Inventore voluptates pariatur, quo eaque ratione autem ex laudantium atque, laborum soluta temporibus ab nostrum commodi qui. Nemo enim tempore, suscipit possimus rem aperiam dicta quaerat, a illo rerum voluptatem!</span>
+                        <span>Sit dignissimos quaerat suscipit quia adipisci, consequatur dolores natus dolorum quidem sequi aliquam libero qui eligendi ut expedita explicabo, vero, velit at fugiat saepe inventore! Alias quaerat minus obcaecati, eius?</span>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae expedita magni et dolorum ut aut at similique adipisci ex a tenetur minus, quibusdam voluptatum, nisi magnam omnis sunt quaerat.</p>
+
+                    <blockquote class="blockquote blockquote--quotes bg-gray-100 text-center p-3 py-md-5 px-md-6 px-lg-7">
+                        <p class="h3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, maiores!</p>
+                    </blockquote>
+
+                    <p>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut deleniti molestias, harum officia assumenda, reprehenderit quia nisi ipsam laudantium saepe nesciunt minus quidem possimus, necessitatibus. Sunt odit, possimus quidem?</span>
+                        <span>Architecto ut soluta necessitatibus obcaecati nulla, ipsum molestiae, fugit ab cum mollitia voluptatem distinctio, quisquam quis reiciendis esse qui vero nesciunt. Repellendus voluptatum optio odit, ipsum dolore blanditiis pariatur! Dolorum?</span>
+                        <span>Error cum aut mollitia est tenetur temporibus enim corrupti deserunt nostrum debitis quasi qui, libero praesentium quaerat, ipsam hic cumque dolorem, reprehenderit cupiditate, doloribus. Officia fugit, deserunt neque blanditiis officiis.</span>
+                        <span>Inventore voluptates pariatur, quo eaque ratione autem ex laudantium atque, laborum soluta temporibus ab nostrum commodi qui. Nemo enim tempore, suscipit possimus rem aperiam dicta quaerat, a illo rerum voluptatem!</span>
+                        <span>Sit dignissimos quaerat suscipit quia adipisci, consequatur dolores natus dolorum quidem sequi aliquam libero qui eligendi ut expedita explicabo, vero, velit at fugiat saepe inventore! Alias quaerat minus obcaecati, eius?</span>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repudiandae expedita magni et dolorum ut aut at similique adipisci ex a tenetur minus, quibusdam voluptatum, nisi magnam omnis sunt quaerat.</p>
+
+                    <img src="assets/images/blog/article-image-2.jpg" alt="" class="img-fluid">
+
+                    <p>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut deleniti molestias, harum officia assumenda, reprehenderit quia nisi ipsam laudantium saepe nesciunt minus quidem possimus, necessitatibus. Sunt odit, possimus quidem?</span>
+                        <span>Architecto ut soluta necessitatibus obcaecati nulla, ipsum molestiae, fugit ab cum mollitia voluptatem distinctio, quisquam quis reiciendis esse qui vero nesciunt. Repellendus voluptatum optio odit, ipsum dolore blanditiis pariatur! Dolorum?</span>
+                        <span>Error cum aut mollitia est tenetur temporibus enim corrupti deserunt nostrum debitis quasi qui, libero praesentium quaerat, ipsam hic cumque dolorem, reprehenderit cupiditate, doloribus. Officia fugit, deserunt neque blanditiis officiis.</span>
+                        <span>Inventore voluptates pariatur, quo eaque ratione autem ex laudantium atque, laborum soluta temporibus ab nostrum commodi qui. Nemo enim tempore, suscipit possimus rem aperiam dicta quaerat, a illo rerum voluptatem!</span>
+                        <span>Sit dignissimos quaerat suscipit quia adipisci, consequatur dolores natus dolorum quidem sequi aliquam libero qui eligendi ut expedita explicabo, vero, velit at fugiat saepe inventore! Alias quaerat minus obcaecati, eius?</span>
+                    </p>
+                </main>
+
+                <form action="" class="px-lg-6 mt-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="text" class="form-control" placeholder="email@fika.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Your Comment:</label>
+                        <textarea rows="6" class="form-control" placeholder="Tell us what do you think about this?"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-lg btn-primary">Send</button>
+                    </div>
+                </form>
+                    
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="py-4 py-sm-5 py-lg-6">
+        <div class="container-wide">
+
+            <!-- Heading -->
+            <div class="mb-3 mb-sm-3 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <h2 class="h2">Stories you might also like </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-slider slick-slider--has-gutters centered-slider mb-4" data-slick='{"arrows": false, "dots": false, "centerMode": true, "slidesToShow": 3, "autoplay": false, "infinite": true, "responsive": [{"breakpoint": 1199, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}}]}'>
+                
+                <!-- News Slide -->
+                <div class="slick__slide">
+                    <div class="card card-post card-overlay my-2" data-aos="zoom-in">
+                        <img src="assets/images/blog/blog-1.jpg" class="card-img w-100 rounded-0" alt="...">
+                        <a href="article.html" class="card-img-overlay text-white d-flex flex-column p-2 p-md-3">
+                            <h4 class="card-title h2 mt-auto mt-auto">Some Tips for the <br>Home Barista</h4>
+                            <time class="posted-on font-weight-300">15 Dec 2019</time>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Slide -->
+                <div class="slick__slide">
+                    <div class="card card-post card-overlay my-2" data-aos="zoom-in">
+                        <img src="assets/images/blog/blog-2.jpg" class="card-img w-100 rounded-0" alt="...">
+                        <a href="article.html" class="card-img-overlay text-white d-flex flex-column p-2 p-md-3">
+                            <h4 class="card-title h2 mt-auto mt-auto">How to choose high<br> quality beans</h4>
+                            <time class="posted-on font-weight-300">15 Dec 2019</time>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Slide -->
+                <div class="slick__slide">
+                    <div class="card card-post card-overlay my-2" data-aos="zoom-in">
+                        <img src="assets/images/blog/blog-3.jpg" class="card-img w-100 rounded-0" alt="...">
+                        <a href="article.html" class="card-img-overlay text-white d-flex flex-column p-2 p-md-3">
+                            <h4 class="card-title h2 mt-auto mt-auto">How to Drink<br> Cascara</h4>
+                            <time class="posted-on font-weight-300">15 Dec 2019</time>
+                        </a>
+                    </div>
+                </div>
+            </div><!-- .slick-slider -->
+
+        </div>
+    </section>
+
+
+    
+    <!--=================================================================================================-->
+    <!-- Section Widgets -->
+    <section class="widget-area" role="complementary">
+        <div class="container-wide">
+
+            <div class="row">
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Contacts Widget -->
+                    <div class="widget">
+                        <h4 class="widget__title">Contact Info</h2>
+                        <ul class="widget__icon-list">
+                            <li>
+                                <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                    <img src="assets/images/icons/essential-set-fill/svg/placeholder-3.svg" alt="" class="inject-me">
+                                </i>
+                                <span>Wollmar Yxkullsgatan 10 <br>118 50 Stockholm, Sweden</span>
+                            </li>
+                            <li>
+                                <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                    <img src="assets/images/icons/essential-set-fill/svg/smartphone-6.svg" alt="" class="inject-me">
+                                </i>
+                                <span>+1 453 658 </span>
+                            </li>
+                            <li>
+                                <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                    <img src="assets/images/icons/essential-set-fill/svg/navigation.svg" alt="" class="inject-me">
+                                </i>
+                                <span>info@coffee.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Opening Hours -->
+                    <div class="widget">
+                        <h4 class="widget__title">Opening Hours</h2>
+                        <ul class="widget__hours">
+                            <li class="mb-1">
+                                <span class="day">Mon-Thu</span>
+                                <span class="hours">9:00 - 22:00</span>
+                            </li>
+                            <li class="mb-1">
+                                <span class="day">Fri</span>
+                                <span class="hours">9:00 - 01:00</span>
+                            </li>
+                            <li class="mb-1">
+                                <span class="day">Sat</span>
+                                <span class="hours">10:00 - 01:00</span>
+                            </li>
+                            <li class="mb-1">
+                                <span class="day">Sun</span>
+                                <span class="hours">10:00 - 22:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Instagram Widget -->
+                    <div class="widget">
+                        <h4 class="widget__title">Instagram</h2>
+                        <ul class="widget__instagram row gutter-5 list-unstyled">
+                            <li class="col-4">
+                                <a href="assets/images/gallery/instagram-1.jpg" data-fancybox="instagram-gallery" class="d-block">
+                                    <img src="assets/images/gallery/instagram-1.jpg" alt="Instagram Photo" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="col-4">
+                                <a href="assets/images/gallery/instagram-2.jpg" data-fancybox="instagram-gallery" class="d-block">
+                                    <img src="assets/images/gallery/instagram-2.jpg" alt="Instagram Photo" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="col-4">
+                                <a href="assets/images/gallery/instagram-3.jpg" data-fancybox="instagram-gallery" class="d-block">
+                                    <img src="assets/images/gallery/instagram-3.jpg" alt="Instagram Photo" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="col-4">
+                                <a href="assets/images/gallery/instagram-4.jpg" data-fancybox="instagram-gallery" class="d-block">
+                                    <img src="assets/images/gallery/instagram-4.jpg" alt="Instagram Photo" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="col-4">
+                                <a href="assets/images/gallery/instagram-5.jpg" data-fancybox="instagram-gallery" class="d-block">
+                                    <img src="assets/images/gallery/instagram-5.jpg" alt="Instagram Photo" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="col-4">
+                                <a href="assets/images/gallery/instagram-6.jpg" data-fancybox="instagram-gallery" class="d-block">
+                                    <img src="assets/images/gallery/instagram-6.jpg" alt="Instagram Photo" class="img-fluid">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6">
+                    <!-- Subscribe Widget -->
+                    <div class="widget">
+                        <h4 class="widget__title">Subscribe to our Newsletter</h2>
+                        <div class="textwidget">
+                            <p>Sign up to our newletter to get latest food item news and our new events.</p>
+                            <!-- Form -->
+                            <form action="" class="signup-from">
+                                <div class="input-group shadow-sm">
+                                    <input type="email" class="form-control border-0 rounded-0 bg-white" placeholder="E-mail Address" aria-label="E-mail Address">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary">
+                                            <i class="icon icon--xs icon--white">
+                                                <img src="assets/images/icons/essential-set/svg/paper-plane-1.svg" alt="" class="inject-me">
+                                            </i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- section -->
+
+
+    <footer class="site-footer py-4 py-lg-0">
+        <div class="row align-items-center no-gutters">
+            <div class="col-12 col-lg-3 offset-lg-1 text-center text-lg-left mb-3 mb-lg-0">
+                <a href="index.html"><img src="assets/images/logo-dark.svg" alt="Tatte"></a>
+            </div>
+            
+            <div class="col-12 col-lg-4 text-center text-lg-right order-lg-last mb-3 mb-lg-0">
+                <a href="#" class="btn btn-primary btn-hero d-lg-inline-block d-none">Reservation</a>
+                <a href="" class="btn btn-primary btn-arrow d-lg-none">Reservation</a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center order-lg-2">
+                <p class="site-footer__copyright">Copyrights © Fika - Cafe & Coffeehouse</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Book Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content pt-2 pb-2 px-lg-2">
+
+                <!-- Header -->
+                <div class="modal-header justify-content-center border-0">
+                    <!-- Heading -->
+                    <div class="mb-0 font-size-lg text-center">
+                        <!-- Title -->
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="label-heading-text text-primary mb-1">Reservation</p>
+                                <h2 class="h2">Online Booking</h2>
+                            </div>
+                        </div>
+                        <!-- Subtitle -->
+                        <div class="row justify-content-center mt-1">
+                            <div class="col-11 col-xl-7 col-mb-10">
+                                <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Close -->
+                    <button type="button" class="close position-absolute right-0 top-0 p-4" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form class="book-form" data-aos="zoom-in">
+                        <div class="row no-gutters">
+
+                            <div class="col-lg-3 position-relative z-index-2">
+                                <div class="form-group">
+                                    <label for="modalBookFormInputDate">Date and Time</label>
+                                    <input type='text' class="form-control datetimepicker" id="modalBookFormInputDate" placeholder="2019/05/15 19:00"/>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputName">Your Name</label>
+                                    <input type="text" class="form-control" id="modalInputName" placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputPhone">Phone</label>
+                                    <input type="tel" class="form-control" id="modalInputPhone" placeholder="(389)748-8736">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3">
+                                <div class="btn btn-hero btn-primary">Book</div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body-->
+
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog-->
+    </div><!-- .modal -->
+
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+
+    <script src="assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/modal.js"></script>
+    <script src="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax-elements.min.js"></script>
+    <script src="assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="assets/vendors/sticky-sidebar/jquery.sticky-sidebar.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

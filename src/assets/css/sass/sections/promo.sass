@@ -1,0 +1,33 @@
+.promo
+	&__image
+		margin: 0 auto
+		display: block
+
+		@include media-breakpoint-up(md)
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			
+		@include media-breakpoint-down(sm)
+			max-width: 210px 
+		
+
+	&__condition
+		position: relative
+		
+		&:after
+			content: ''
+			width: 32px
+			height: 23px
+			position: absolute
+			left: 100%
+			top: 50%
+			transform: translateY(-50%) scaleX(-1)
+			background-image: url(../images/promo-arrow.svg)
+			background-repeat: no-repeat 
+			background-position: 50% 50%
+			background-size: 100%   
+			
+			@include media-breakpoint-down(sm)
+				display: none

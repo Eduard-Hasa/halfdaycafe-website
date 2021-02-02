@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Half Day Cafe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div class="container">
+            <div class="mb-6 text-center loading-screen-logo">
+                <img src="assets\logo.png" alt="" width="50%">
+            </div>
+            <div class="loading-screen-progress progress w-75 mx-auto bg-gray-200" style="height: 3px;">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 35%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading screen styles -->
+    <style>
+        .loading-screen {
+            position: fixed;
+            background-color: #F6D13A;
+            z-index: 100000;
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-transition: all 0.8s ease-out;
+            -o-transition: all 0.8s ease-out;
+            transition: all 0.8s ease-out;
+        }
+        .loading-screen-logo, .loading-screen-progress {
+            -webkit-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+        }
+        .loading-screen .progress .progress-bar {
+            -webkit-animation: animateBar 0.6s ease-in 0 1;
+            animation: animateBar 0.6s ease-in 0 1;
+            -webkit-transition: width 1s ease;
+            -o-transition: width 1s ease;
+            transition: width 1s ease;
+        }
+        .loading-screen.loaded {
+            -webkit-transition-delay: 0.6s;
+                    -o-transition-delay: 0.6s;
+                    transition-delay: 0.6s;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .loading-screen.loaded .loading-screen-logo {
+            opacity: 0;
+        }
+        .loading-screen.loaded .loading-screen-progress {
+            width: 0 !important;
+        }
+
+        @-webkit-keyframes animateBar {
+            0% {
+                -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+        }
+
+        @keyframes animateBar {
+            0% {
+                -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+        }
+    </style>
+
+    <!--=================================================================================================-->
+    
+    <!--=================================================================================================-->
+    <!-- Intro Section -->
+    <section class="intro-section position-relative mb-4 mb-sm-5 mb-xl-6 pt-6 pt-lg-7 pb-xxl-0 pb-7 text-light jarallax" style="background-image: url('assets/hdc.png');">
+        <div class="container py-4 py-sm-5 py-xl-6" data-aos="fade-down" data-aos-duration="1000">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-12 text-center">
+
+                    <!-- Title -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 mb-0">
+                          
+                                                <!-- logo img svg-->
+                    
+                        <img style="max-height: 300px;" src="assets\logo.png">
+                        
+                   
+                        
+                        </div>
+
+
+                        <div class="col-12 mb-0">
+                            <h1 class="display-3"><br class="d-none d-sm-block"> <span data-typed data-strings='["Amazing Coffee", "Fresh Food","Catering"]'></span></h1>
+                        </div>
+                    </div>
+
+                    <!-- Subtitle -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="mt-1">
+                                <p class="font-size-xl "></p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
+                            <span class="glf-button" data-glf-cuid="eede7752-d23a-421e-8a93-c644487294c6" data-glf-ruid="f52c3f5e-6da5-499e-a17d-382ffd888d84" > ONLINE ORDERING</span>
+                            <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script></div>
+                    <!-- Button -->
+                    <div class="d-inline-block  mt-2">
+                        <div class="btn-group" role="group">
+                            <a href="./catering-menu.pdf" class="btn btn-primary btn-lg">Catering Menu</a>
+                            <a href="tel:+1-248-375-1330" class="btn btn-primary btn-lg">Call Us</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+
+        <!-- Resrvation form -->
+       
+    </section><!-- .section -->
+
+   <!--=================================================================================================-->
+
+
+
+
+
+
+
+    <!--=================================================================================================-->
+ 
+    <!--=================================================================================================-->
+    
+    <!--=================================================================================================-->
+    <!-- Section Menu -->
+    <section class="position-relative pb-4 pb-sm-5 pb-xl-6">
+
+        <!-- Overlay / BG img -->
+        <div class="overlay" data-jarallax-element="40">
+            <div class="bg-img bg-img--bottom bg-img--horizontal-100 w-100 h-100" style="background-image: url('assets/hdc.png');"></div>
+        </div>
+
+
+
+
+<!-- INSERT ALL CATEGORIES ABOVE HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE -->
+
+
+
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/popper/popper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjM9C5HqZRxtYPOMDtpJjj392tWWo3EkU"></script>
+
+    <script src="assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/modal.js"></script>
+    <script src="assets/vendors/typed/typed.min.js"></script>
+    <script src="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax-elements.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

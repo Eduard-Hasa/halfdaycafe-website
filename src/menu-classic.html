@@ -1,0 +1,622 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Menu Classic - Fika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--=================================================================================================-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-sticky navbar-expand-lg navbar-light align-items-center no-gutters p-0">
+
+        <!-- Left Column -->
+        <div class="col-lg-3 col-6 d-flex justify-content-start">
+
+            <!-- Brand -->
+            <a class="navbar-brand ml-0 ml-lg-3" href="index.html"><img src="assets/images/logo-dark.svg" alt=""></a>
+
+        </div>
+
+        <!-- Center Column -->
+        <div class="col-lg-6 col-12 order-1 order-lg-0">
+
+            <!-- Nav -->
+            <div class="collapse navbar-collapse" id="navbar-nav-container">
+                <ul class="navbar-nav navbar-nav--expanded">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                    
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="landingsMenu">
+                            <a class="dropdown-item" href="homepage-1.html">Home Page 1</a>
+                            <a class="dropdown-item" href="homepage-2.html">Home Page 2</a>
+                            <a class="dropdown-item" href="homepage-3.html">Home Page 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="aboutMenu">
+                            <a class="dropdown-item" href="about-us-1.html">About Us 1</a>
+                            <a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="menuMenu">
+                            <a class="dropdown-item active" href="menu-classic.html">Classic Menu</a>
+                            <a class="dropdown-item" href="menu-card.html">Card Menu</a>
+                            <a class="dropdown-item" href="menu-tab.html">Tab Menu</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="galleryMenu">
+                            <a class="dropdown-item" href="gallery-masonry.html">Masonry Gallery</a>
+                            <a class="dropdown-item" href="gallery-grid.html">Grid Gallery</a>
+                            <a class="dropdown-item" href="gallery-slider.html">Slider Gallery</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="blogMenu">
+                            <a class="dropdown-item" href="blog-grid.html">Grid Blog</a>
+                            <a class="dropdown-item" href="blog-magazine.html">Magazine Blog</a>
+                            <a class="dropdown-item" href="blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                            <a class="dropdown-item" href="blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                            <a class="dropdown-item" href="blog-featured.html">Featured Blog</a>
+                            <a class="dropdown-item" href="article.html">Article</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="contactMenu">
+                            <a class="dropdown-item" href="reservation.html">Reservation</a>
+                            <a class="dropdown-item" href="contacts.html">Contact Us</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation/">Documentation</a>
+                    </li>
+                </ul>
+            </div><!-- .navbar-container-->
+        </div><!-- .col -->
+
+        <!-- Right Column-->
+        <div class="col-lg-3 col-6 d-flex justify-content-end">
+
+            <!-- Button -->
+            <button data-toggle="modal" data-target="#bookModal" class="btn btn-hero btn-primary d-none d-lg-block">Reservation</button>
+
+            <!-- Toggler -->
+            <div class="btn btn-light btn-hero text-right d-block d-lg-none">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container" aria-controls="navbar-nav-container" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="d-none d-md-inline-block">Menu</span>
+                </button>
+            </div>
+
+        </div><!-- .col -->
+    </nav><!-- .navbar -->
+
+
+    <!--=================================================================================================-->
+    <!-- Intro Section -->
+    <section class="intro-section intro-section--sm position-relative mb-3 mb-md-5 pt-6 pt-lg-7 text-light bg-img bg-img--cover" style="background-image: url('assets/images/sections-bg/intro-menu-2.jpg');">
+        <div class="container pt-4 pb-8 pt-sm-5 pt-lg-6" data-aos="fade-down" data-aos-duration="1000">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-12 text-center">
+
+                    <!-- Title -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 mb-0">
+                            <h1 class="display-3">Our Menu</h1>
+                        </div>
+                    </div>
+
+                    <!-- Subtitle -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="mt-1">
+                                <p class="font-size-xl">Enjoy one of our delicious plates</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- .col -->
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+
+    <!--=================================================================================================-->
+    <!-- SECTION -->
+    <section class="section mt-n7 pb-5 pb-sm-6 pb-lg-7 position-relative z-index-2">
+
+        <a class="icon-rounded icon-rounded--active icon-rounded--xs mx-auto mt-n4 position-absolute left-0 right-0 z-index-2 anchor" href="#menu">
+            <div class="icon-rounded__circle">
+                <img class="inject-me" src="assets/images/icons/custom/arrow-down.svg" alt="">
+            </div>
+        </a><!-- end rounded icon-->
+
+        <div class="overlay" data-jarallax-element="-140">
+            <div class="bg-img w-100 h-100" style="background-image: url('assets/images/sections-bg/coffee-branches.jpg'); background-position: 50% 200px; background-size: 100% auto;"></div>
+        </div>
+
+        <div class="section-content pt-0">
+            <div class="container">
+
+                <!-- Menu Card -->
+                <div class="card mb-4">
+                    <div class="card-body pt-4 pb-0 pt-sm-6 px-md-5 border bg-light position-relative">
+    
+                        <!-- Heading -->
+                        <div class="mb-4 font-size-lg text-center">
+                            <!-- Title -->
+                            <div class="row justify-content-center">
+                                <div class="col-11 col-md-8">
+                                    <h2 class="h1">Menu</h2>
+                                </div>
+                            </div>
+                            <!-- Subtitle -->
+                            <div class="row justify-content-center mt-1">
+                                <div class="col-12 col-md-8">
+                                    <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row divided-columns divided-columns--lg divided-columns--dark divided-columns--thick">
+                            <div class="col-lg-6">
+    
+                                <div class="px-sm-5 px-0">
+                                    <!-- Menu Group Title -->
+                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Breakfast</p>
+                                    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Creme Brulee</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                </div>
+    
+                                <div class="px-sm-5 px-0">
+                                    <!-- Menu Group Title -->
+                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Soups & Salads</p>
+                                    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Creme Brulee</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                </div>
+    
+                                <!-- Divider -->
+                                <hr class="mt-5 mb-4">
+    
+                                <div class="px-sm-5 px-0">
+                                    <!-- Menu Group Title -->
+                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Soups & Salads</p>
+                                    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                            <span class="menu-row__name">Creme Brulee</span> 
+                                            <span class="menu-row__dots"></span>
+                                            <span class="menu-row__price">$1.5</span>
+                                        </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                            <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                            <span class="menu-row__dots"></span>
+                                            <span class="menu-row__price">$1.5</span>
+                                        </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                </div>
+                            </div><!-- .col -->
+    
+                            <div class="col-lg-6">
+                                <div class="px-sm-5 px-0">
+                                    <!-- Menu Group Title -->
+                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Breakfast</p>
+                                    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Creme Brulee</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                </div>
+    
+                                <!-- Divider -->
+                                <hr class="mt-5 mb-4">
+    
+                                <div class="px-sm-5 px-0">
+                                    <!-- Menu Group Title -->
+                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Soups & Salads</p>
+                                    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Creme Brulee</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Chocolate Muffin</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                </div>
+    
+                                <div class="px-sm-5 px-0">
+                                    <!-- Menu Group Title -->
+                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Soups & Salads</p>
+                                    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Creme Brulee</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+    
+                                    <!-- Menu Item -->
+                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                        <span class="menu-row__dots"></span>
+                                        <span class="menu-row__price">$1.5</span>
+                                    </p>
+                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                </div>
+    
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+    
+                        <!-- Button -->
+                        <div class="text-center mt-6 mb-n3">
+                            <a href="menu-classic.html" class="btn btn-primary btn-arrow btn-lg">Full Menu</a>
+                        </div>
+    
+                    </div><!-- .card-body -->
+                </div><!-- .card -->
+                    
+            </div><!-- end container -->
+        </div><!-- end section content -->
+    </section><!-- end section -->
+
+
+
+    <section class="section">
+        <div class="section-content pb-0">
+
+            <div class="container">
+                <!-- Heading -->
+                <div class="mb-4 font-size-lg text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-md-8">
+                            <p class="label-heading-text text-primary mb-1">Instagram</p>
+                            <h2 class="h2">Social Media Posts</h2>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+
+            <div class="container-fluid">
+                
+                <!-- Slider -->
+                <ul class="slick-slider slick-slider--has-gutters instagram-feed" data-slick='{"arrows": false, "dots": false, "centerMode": true, "slidesToShow": 9, "autoplay": true, "responsive": [{"breakpoint": 1200, "settings": {"slidesToShow": 7}}, {"breakpoint": 992, "settings": {"slidesToShow": 5}}, {"breakpoint": 768, "settings": {"slidesToShow": 4}}, {"breakpoint": 576, "settings": {"slidesToShow": 3}}, {"breakpoint": 420, "settings": {"slidesToShow": 2}}]}'>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-6.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="0" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-6.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-1.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="1" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-1.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-2.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="2" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-2.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-3.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="3" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-3.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-4.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="4" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-4.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-5.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="5" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-5.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-6.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="6" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-6.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-1.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="7" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-1.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-2.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="8" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-2.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-3.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="9" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-3.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-4.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="10" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-4.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    <li class="instagram-feed__item">
+                        <a href="assets/images/gallery/instagram-5.jpg" data-slick-fancybox="instagram-gallery" data-fancybox-index="11" class="d-block lightbox-hover-scale">
+                            <img src="assets/images/gallery/instagram-5.jpg" alt="Instagram Photo" class="img-fluid">
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+        </div> <!-- end section-content -->
+    </section> <!-- end section -->
+
+
+    <div class="google-map google-map-lg" data-lat="59.3169" data-lng="18.0605" data-icon="assets/images/icons/custom/location-1.svg" data-zoom="15"></div>
+
+
+    <footer class="site-footer py-4 py-lg-0">
+        <div class="row align-items-center no-gutters">
+            <div class="col-12 col-lg-3 offset-lg-1 text-center text-lg-left mb-3 mb-lg-0">
+                <a href="index.html"><img src="assets/images/logo-dark.svg" alt="Tatte"></a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center text-lg-right order-lg-last mb-3 mb-lg-0">
+                <a href="#" class="btn btn-primary btn-hero d-lg-inline-block d-none">Reservation</a>
+                <a href="" class="btn btn-primary btn-arrow d-lg-none">Reservation</a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center order-lg-2">
+                <p class="site-footer__copyright">Copyrights © Fika - Cafe & Coffeehouse</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Book Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content pt-2 pb-2 px-lg-2">
+
+                <!-- Header -->
+                <div class="modal-header justify-content-center border-0">
+                    <!-- Heading -->
+                    <div class="mb-0 font-size-lg text-center">
+                        <!-- Title -->
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="label-heading-text text-primary mb-1">Reservation</p>
+                                <h2 class="h2">Online Booking</h2>
+                            </div>
+                        </div>
+                        <!-- Subtitle -->
+                        <div class="row justify-content-center mt-1">
+                            <div class="col-11 col-xl-7 col-mb-10">
+                                <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Close -->
+                    <button type="button" class="close position-absolute right-0 top-0 p-4" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form class="book-form" data-aos="zoom-in">
+                        <div class="row no-gutters">
+
+                            <div class="col-lg-3 position-relative z-index-2">
+                                <div class="form-group">
+                                    <label for="modalBookFormInputDate">Date and Time</label>
+                                    <input type='text' class="form-control datetimepicker" id="modalBookFormInputDate" placeholder="2019/05/15 19:00"/>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputName">Your Name</label>
+                                    <input type="text" class="form-control" id="modalInputName" placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputPhone">Phone</label>
+                                    <input type="tel" class="form-control" id="modalInputPhone" placeholder="(389)748-8736">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3">
+                                <div class="btn btn-hero btn-primary">Book</div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body-->
+
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog-->
+    </div><!-- .modal -->
+
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/popper/popper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjM9C5HqZRxtYPOMDtpJjj392tWWo3EkU"></script>
+
+    <script src="assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/modal.js"></script>
+    <script src="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax-elements.min.js"></script>
+    <script src="assets/vendors/svginjector/svginjector.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

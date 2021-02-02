@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AOS - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">SVGInjector</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h1 class="mb-1">SVGInjector</h1>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+                        
+                        <!-- Text -->
+                        <p class="font-size-lg mb-1">Fast, caching, dynamic inline SVG DOM injection library. <br><strong>Development tip</strong>: The dynamic injection process uses AJAX calls to load SVG. If you are developing <span class="text-underline">locally without running a local webserver</span>, be aware that default browser security settings may block these calls.</p>
+
+                        <p class="mb-4">
+                            <a class="text-decoration-none hover-point-icon d-flex align-items-center" href="https://github.com/iconic/SVGInjector" target="_blank">
+                                Plugin's documentation
+                                <i class="icon icon--xxs icon--primary d-inline-block ml-2"><img src="../assets/images/icons/essential-set/svg/exit.svg" class="inject-me d-block"alt=""></i>
+                            </a>
+                        </p>
+
+                        <p class="font-size-lg">Add script before closing <code>&lt;body&gt;</code> tag:</p>
+
+<pre><code class="p-3 html mb-5">&lt;script src=&quot;assets/vendors/svginjector/svginjector.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+                        
+                        <h3 class="mb-4">Example</h3>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icon-rounded">
+                                    <div class="icon-rounded__circle">
+                                        <img class="inject-me" src="../assets/images/icons/coffee-shop-2/svg/039-coffee-beans.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<pre><code class="p-3 html mb-5">&lt;div class=&quot;icon-rounded&quot;&gt;
+    &lt;div class=&quot;icon-rounded__circle&quot;&gt;
+        &lt;img class=&quot;inject-me&quot; src=&quot;../assets/images/icons/coffee-shop-2/svg/039-coffee-beans.svg&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+    <script src="../assets/vendors/aos/aos.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

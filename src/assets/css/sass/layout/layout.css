@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  background-color: #eee;
+  -webkit-transform: scale3d();
+          transform: scale3d();
+}
+
+.site-footer {
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 39px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 39px rgba(0, 0, 0, 0.05);
+}
+
+.site-footer__copyright {
+  font-size: 1.06rem;
+}
+/*# sourceMappingURL=layout.css.map */

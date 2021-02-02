@@ -1,0 +1,1193 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Homepage - Fika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--=================================================================================================-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-sticky navbar-expand-lg navbar-light align-items-center no-gutters p-0">
+
+        <!-- Left Column -->
+        <div class="col-lg-3 col-6 d-flex justify-content-start">
+
+            <!-- Brand -->
+            <a class="navbar-brand ml-0 ml-lg-3" href="index.html"><img src="assets/images/logo-dark.svg" alt=""></a>
+
+        </div>
+
+        <!-- Center Column -->
+        <div class="col-lg-6 col-12 order-1 order-lg-0">
+
+            <!-- Nav -->
+            <div class="collapse navbar-collapse" id="navbar-nav-container">
+                <ul class="navbar-nav navbar-nav--expanded">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                    
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="landingsMenu">
+                            <a class="dropdown-item" href="homepage-1.html">Home Page 1</a>
+                            <a class="dropdown-item" href="homepage-2.html">Home Page 2</a>
+                            <a class="dropdown-item active" href="homepage-3.html">Home Page 3</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="aboutMenu">
+                            <a class="dropdown-item" href="about-us-1.html">About Us 1</a>
+                            <a class="dropdown-item" href="about-us-2.html">About Us 2</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="menuMenu">
+                            <a class="dropdown-item" href="menu-classic.html">Classic Menu</a>
+                            <a class="dropdown-item" href="menu-card.html">Card Menu</a>
+                            <a class="dropdown-item" href="menu-tab.html">Tab Menu</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="galleryMenu">
+                            <a class="dropdown-item" href="gallery-masonry.html">Masonry Gallery</a>
+                            <a class="dropdown-item" href="gallery-grid.html">Grid Gallery</a>
+                            <a class="dropdown-item" href="gallery-slider.html">Slider Gallery</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="blogMenu">
+                            <a class="dropdown-item" href="blog-grid.html">Grid Blog</a>
+                            <a class="dropdown-item" href="blog-magazine.html">Magazine Blog</a>
+                            <a class="dropdown-item" href="blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                            <a class="dropdown-item" href="blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                            <a class="dropdown-item" href="blog-featured.html">Featured Blog</a>
+                            <a class="dropdown-item" href="article.html">Article</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contactMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="contactMenu">
+                            <a class="dropdown-item" href="reservation.html">Reservation</a>
+                            <a class="dropdown-item" href="contacts.html">Contact Us</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation/">Documentation</a>
+                    </li>
+
+                </ul>
+            </div><!-- .navbar-container-->
+        </div><!-- .col -->
+
+        <!-- Right Column-->
+        <div class="col-lg-3 col-6 d-flex justify-content-end">
+
+            <!-- Button -->
+            <button data-toggle="modal" data-target="#bookModal" class="btn btn-hero btn-primary d-none d-lg-block">Reservation</button>
+
+            <!-- Toggler -->
+            <div class="btn btn-light btn-hero text-right d-block d-lg-none">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container" aria-controls="navbar-nav-container" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="d-none d-md-inline-block">Menu</span>
+                </button>
+            </div>
+
+        </div><!-- .col -->
+    </nav><!-- .navbar -->
+
+
+    <!--=================================================================================================-->
+    <!-- Intro Section -->
+    <section class="intro-section text-light mb-4 mb-sm-5 mb-xl-6 pt-6 pt-lg-7 jarallax" style="background-image: url('assets/images/sections-bg/home-intro-bg-2.jpg');">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-xl-9">
+                    <div class="container text-center py-4 py-sm-5 py-lg-6">
+
+                        <!-- Title -->
+                        <div class="row justify-content-center">
+                            <div class="col-xxl-9 col-lg-10">
+                                <h1 class="display-3">Fika is a place where we<br class="d-none d-sm-block"> can <span data-typed data-strings='["taste a coffee", "meet friends"]'></span></h1>
+                            </div>
+                        </div>
+
+                        <!-- SubTitle -->
+                        <div class="row justify-content-center">
+                            <div class="col-md-7">
+                                <div class="mt-2">
+                                    <p class="lead">Coffee with own story</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Short Cafe Info -->
+                        <div class="row justify-content-center no-gutters">
+                            <div class="col-lg-10">
+
+                                <div class="address-box mt-6 mb-4 text-left">
+                                    <!-- Logo -->
+                                    <div class="address-box__logo">
+                                        <img src="assets/images/logo-letter.png" alt="">
+                                    </div>
+                                    <div class="row align-items-center justify-content-center no-gutters">
+
+                                        <!-- Address -->
+                                        <div class="col-md-5 col-6 pl-xxl-5 pl-lg-4 pl-md-3 pr-2">
+                                            <p>Wollmar Yxkullsgatan 10<br> 118 50 Stockholm, Sweden<br> +1 453 658<br>info@coffee.com</p>
+                                        </div>
+
+                                        <!-- Divider -->
+                                        <div class="address-box__divider"></div>
+
+                                        <!-- Working Hours -->
+                                        <div class="col-md-5 col-6 px-xxl-6 pl-lg-6 pr-lg-4 pl-md-5 pr-md-3 pl-sm-5 pl-3">
+                                            <ul class="working-hours-list m-0">
+                                                <li><span>Mon-Thu</span> <span>9:00 - 22:00</span></li>
+                                                <li><span>Fri</span> <span>9:00 - 23:00</span></li>
+                                                <li><span>Sat</span> <span>9:00 - 23:00</span></li>
+                                                <li><span>Sun</span> <span>10:00 - 23:00</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="btn-group" role="group">
+                            <a href="#" class="btn btn-primary btn-arrow btn-lg">Read More</a>
+                        </div>
+
+                    </div><!-- .container-->
+                </div><!-- .col-->
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+    <!--=================================================================================================-->
+    <!-- Section Menu Slider -->
+    <section class="py-4 py-sm-5 py-xl-6">
+        <div class="container">
+            
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <!-- Title-->
+                    <div class="col-11 col-lg-8">
+                        <p class="label-heading-text text-primary mb-1">Our Story</p>
+                        <h2 class="h1">We are proud of our cafe</h2>
+                    </div>
+                    <!-- Subtitle-->
+                    <div class="col-11 col-xl-6 col-md-8 mt-1">
+                        <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container-->
+
+        <div class="container-wide">
+
+            <!-- Menu Slider-->
+            <div class="slick-slider slick-slider--has-gutters slick-slider--has-shadows slick-slider--has-gradients slick-slider--arrows-outside menu-slider mb-4 mb-md-0" data-slick='{"slidesToShow": 4, "arrows": true, "dots": false, "responsive": [{"breakpoint": 1200, "settings": {"slidesToShow": 3}}, {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1, "centerMode": true, "dots": true, "centerPadding": "30px"}}]}'>
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/dish-preview-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Desserts</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Chocolate Muffin</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/dish-preview-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Desserts</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Hazelnut Cheeesecake</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/dish-preview-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Desserts</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Pudding Chia</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/dish-preview-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Cookie</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Coffee</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/dish-preview-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Desserts</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Creme Brulee</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .slick-slider -->
+
+            <!-- Button-->
+            <div class="text-center pt-4">
+                <a href="#" class="btn btn-primary btn-wide">Full Menu</a>
+            </div>
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+    <!--=================================================================================================-->
+    <!-- Section Tabs -->
+    <section class="py-4 py-sm-5 py-xl-6">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <p class="label-heading-text text-primary mb-1">Our Coffee</p>
+                        <h2 class="h1">The Fundamentals of Coffee Brewing </h2>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container -->
+
+        <div class="container-fluid">
+            
+            <!-- Tabs Nav -->
+            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="Espresso-tab" data-toggle="tab" href="#Espresso" role="tab" aria-controls="Espresso" aria-selected="true">
+                        <div class="nav-link-icon">
+                            <img src="assets/images/icons/coffee-shop/svg/coffee-machine.svg" class="inject-me" alt="">
+                        </div>
+                        Espresso
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="French-press-tab" data-toggle="tab" href="#French-press" role="tab" aria-controls="French-press" aria-selected="false">
+                        <div class="nav-link-icon">
+                            <img src="assets/images/icons/coffee-shop-2/svg/031-french-press.svg" class="inject-me" alt="">
+                        </div>
+                        French-press
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="Aeropress-tab" data-toggle="tab" href="#Aeropress" role="tab" aria-controls="Aeropress" aria-selected="false">
+                        <div class="nav-link-icon">
+                            <img src="assets/images/icons/coffee-shop/svg/aeropress.svg" class="inject-me" alt="">
+                        </div>
+                        Aeropress
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="Drip-tab" data-toggle="tab" href="#Drip" role="tab" aria-controls="Drip" aria-selected="false">
+                        <div class="nav-link-icon">
+                            <img src="assets/images/icons/coffee-shop/svg/cemex.svg" class="inject-me" alt="">
+                        </div>
+                        Drip
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="Stovepot-tab" data-toggle="tab" href="#Stovepot" role="tab" aria-controls="Stovepot" aria-selected="false">
+                        <div class="nav-link-icon">
+                            <img src="assets/images/icons/coffee-shop/svg/kettle.svg" class="inject-me" alt="">
+                        </div>
+                        Stovepot
+                    </a>
+                </li>
+            </ul>
+        </div><!-- .container -->
+
+        <div class="container-wide">
+            <div class="tab-content" id="myTabContent">
+
+                <!-- Tab -->
+                <div class="tab-pane fade show active" id="Espresso" role="tabpanel" aria-labelledby="Espresso-tab">
+                    <div class="row align-items-center">
+
+                        <!-- Image -->
+                        <div class="col-xxl-7 col-xl-8">
+                            <div class="fluid-image-box">
+                                <img src="assets/images/dish-preview/cemex-dark.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="col-xxl-5 col-xl-4">
+                            <div class="row align-items-center">
+                                <div class="col-xxl-10 px-2 px-xxl-5 pt-3 pb-0 py-xl-6 py-xxl-7 decoration-box">
+
+                                    <!-- Title -->
+                                    <p class="label-text mb-1">About coffee</p>
+                                    <p class="h3">Espresso</p>
+
+                                    <!-- Text -->
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <p class="font-size-lg line-height-lg">Restaurant will tell your fastinating story in a unique & enjoyable way. It gives visitors feeling of freshness, purity & freedom if you are owning a restaurant, bakery, bar or coffee shop. All additional factors are definitely simple to praise your passion of foods & mavelous performance.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-primary btn-arrow mt-3">Read More</a>
+
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div>
+
+                <!-- Tab -->
+                <div class="tab-pane fade" id="French-press" role="tabpanel" aria-labelledby="French-press-tab">
+                    <div class="row flex-row-reverse align-items-center">
+
+                        <!-- Image -->
+                        <div class="col-xxl-7 col-xl-8">
+                            <div class="fluid-image-box">
+                                <img src="assets/images/dish-preview/dish-preview-coffee.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="col-xxl-5 col-xl-4">
+                            <div class="row flex-row-reverse align-items-center">
+                                <div class="col-xxl-10 px-2 px-xxl-5 pt-3 pb-0 py-xl-6 py-xxl-7 decoration-box decoration-box--right">
+
+                                    <!-- Title -->
+                                    <p class="label-text mb-1">About Us</p>
+                                    <p class="h3">French-press</p>
+
+                                    <!-- Text -->
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <p class="font-size-lg line-height-lg">Restaurant will tell your fastinating story in a unique & enjoyable way. It gives visitors feeling of freshness, purity & freedom if you are owning a restaurant, bakery, bar or coffee shop. All additional factors are definitely simple to praise your passion of foods & mavelous performance.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-primary mt-3">Read More</a>
+
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div>
+
+                <!-- Tab -->
+                <div class="tab-pane fade" id="Aeropress" role="tabpanel" aria-labelledby="Aeropress-tab">
+                    <div class="row align-items-center">
+
+                        <!-- Image -->
+                        <div class="col-xxl-7 col-xl-8">
+                            <div class="fluid-image-box">
+                                <img src="assets/images/dish-preview/cemex.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="col-xxl-5 col-xl-4">
+                            <div class="row align-items-center">
+                                <div class="col-xxl-10 px-2 px-xxl-5 pt-3 pb-0 py-xl-6 py-xxl-7 decoration-box">
+
+                                    <!-- Title -->
+                                    <p class="label-text mb-1">About coffee</p>
+                                    <p class="h3">Aeropress</p>
+
+                                    <!-- Text -->
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <p class="font-size-lg line-height-lg">Restaurant will tell your fastinating story in a unique & enjoyable way. It gives visitors feeling of freshness, purity & freedom if you are owning a restaurant, bakery, bar or coffee shop. All additional factors are definitely simple to praise your passion of foods & mavelous performance.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-primary btn-arrow mt-3">Read More</a>
+
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div>
+
+                <!-- Tab -->
+                <div class="tab-pane fade" id="Drip" role="tabpanel" aria-labelledby="Drip-tab">
+                    <div class="row align-items-center">
+
+                        <!-- Image -->
+                        <div class="col-xxl-7 col-xl-8">
+                            <div class="fluid-image-box">
+                                <img src="assets/images/dish-preview/cemex.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="col-xxl-5 col-xl-4">
+                            <div class="row align-items-center">
+                                <div class="col-xxl-10 px-2 px-xxl-5 pt-3 pb-0 py-xl-6 py-xxl-7 decoration-box">
+
+                                    <!-- Title -->
+                                    <p class="label-text mb-1">About coffee</p>
+                                    <p class="h3">Drip</p>
+
+                                    <!-- Text -->
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <p class="font-size-lg line-height-lg">Restaurant will tell your fastinating story in a unique & enjoyable way. It gives visitors feeling of freshness, purity & freedom if you are owning a restaurant, bakery, bar or coffee shop. All additional factors are definitely simple to praise your passion of foods & mavelous performance.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-primary btn-arrow mt-3">Read More</a>
+
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div>
+
+                <!-- Tab -->
+                <div class="tab-pane fade" id="Stovepot" role="tabpanel" aria-labelledby="Stovepot-tab">
+                    <div class="row align-items-center">
+
+                        <!-- Image -->
+                        <div class="col-xxl-7 col-xl-8">
+                            <div class="fluid-image-box">
+                                <img src="assets/images/dish-preview/cemex.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="col-xxl-5 col-xl-4">
+                            <div class="row align-items-center">
+                                <div class="col-xxl-10 px-2 px-xxl-5 pt-3 pb-0 py-xl-6 py-xxl-7 decoration-box">
+
+                                    <!-- Title -->
+                                    <p class="label-text mb-1">About coffee</p>
+                                    <p class="h3">Stovepot</p>
+
+                                    <!-- Text -->
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <p class="font-size-lg line-height-lg">Restaurant will tell your fastinating story in a unique & enjoyable way. It gives visitors feeling of freshness, purity & freedom if you are owning a restaurant, bakery, bar or coffee shop. All additional factors are definitely simple to praise your passion of foods & mavelous performance.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <a href="#" class="btn btn-primary btn-arrow mt-3">Read More</a>
+
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div>
+
+            </div><!-- .tab-content-->
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+    <!--=================================================================================================-->
+    <!-- Section Reservation -->
+    <section class="pt-4 pt-sm-5 pt-xl-6 mb-n5 position-relative z-index-2">
+        <div class="container">
+            
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-10">
+                        <p class="label-heading-text text-primary mb-1">Reservation</p>
+                        <h2 class="h2">Do you need a cozy table for a significant date or a holiday?</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container -->
+
+        <div class="container">
+
+            <!-- Reservation Form -->
+            <form class="book-form">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 position-relative z-index-2">
+                        <div class="form-group">
+                            <label for="bookFormInputDate">Date and Time</label>
+                            <input type='text' class="form-control datetimepicker" id="bookFormInputDate" placeholder="2019/05/15 19:00" autocomplete="off"/>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="inputName">Your Name</label>
+                            <input type="text" class="form-control" id="inputName"  placeholder="John Doe">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <label for="inputPhone">Phone</label>
+                            <input type="tel" class="form-control" id="inputPhone" placeholder="(389)748-8736">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="btn btn-hero btn-primary">Book</div>
+                    </div>
+                </div>
+            </form>
+
+        </div> <!-- .container -->
+    </section> <!-- .section -->
+
+
+
+    <!--=================================================================================================-->
+    <!-- Section Gallery Grid -->
+    <section class="position-relative pb-4 pb-sm-5 pb-xl-7 pt-8 bg-gray-100">
+
+        <!-- Overlay / BG img -->
+        <div class="position-absolute left-0 top-0 h-100 w-100" data-jarallax-element="-140">
+            <div class="bg-img bg-img--horizontal-100 bg-img--center w-100 h-100" style="background-image: url('assets/images/sections-bg/mint-leaves-2.png');"></div>
+        </div>
+
+        <div class="container">
+            
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <p class="label-heading-text text-primary mb-1">Photos</p>
+                        <h2 class="h1">Our Gallery</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container -->
+
+        <div class="container-wide">
+
+            <!-- Gallery -->
+            <div class="grid-gallery row">
+                <div class="grid-item col-6 col-md-4">
+                    <a href="assets/images/gallery/gallery-11-square.jpg" data-fancybox="gallery" data-caption="Image Caption #1" data-aos="zoom-in" class="d-block lightbox-hover-scale">
+                        <img src="assets/images/gallery/gallery-11-square.jpg" alt="Image Caption#1" class="img-fluid w-100">
+                    </a>
+                </div>
+                <div class="grid-item col-6 col-md-4">
+                    <a href="assets/images/gallery/gallery-12-square.jpg" data-fancybox="gallery" data-caption="Image Caption #1" data-aos="zoom-in" class="d-block lightbox-hover-scale">
+                        <img src="assets/images/gallery/gallery-12-square.jpg" alt="Image Caption#1" class="img-fluid w-100">
+                    </a>
+                </div>
+                <div class="grid-item col-6 col-md-4">
+                    <a href="assets/images/gallery/gallery-13-square.jpg" data-fancybox="gallery" data-caption="Image Caption #1" data-aos="zoom-in" class="d-block lightbox-hover-scale">
+                        <img src="assets/images/gallery/gallery-13-square.jpg" alt="Image Caption#1" class="img-fluid w-100">
+                    </a>
+                </div>
+                <div class="grid-item col-6 col-md-4">
+                    <a href="assets/images/gallery/gallery-14-square.jpg" data-fancybox="gallery" data-caption="Image Caption #1" data-aos="zoom-in" class="d-block lightbox-hover-scale">
+                        <img src="assets/images/gallery/gallery-14-square.jpg" alt="Image Caption#1" class="img-fluid w-100">
+                    </a>
+                </div>
+                <div class="grid-item col-6 col-md-4">
+                    <a href="assets/images/gallery/gallery-15-square.jpg" data-fancybox="gallery" data-caption="Image Caption #1" data-aos="zoom-in" class="d-block lightbox-hover-scale">
+                        <img src="assets/images/gallery/gallery-15-square.jpg" alt="Image Caption#1" class="img-fluid w-100">
+                    </a>
+                </div>
+                <div class="grid-item col-6 col-md-4">
+                    <a href="assets/images/gallery/gallery-16-square.jpg" data-fancybox="gallery" data-caption="Image Caption #1" data-aos="zoom-in" class="d-block lightbox-hover-scale">
+                        <img src="assets/images/gallery/gallery-16-square.jpg" alt="Image Caption#1" class="img-fluid w-100">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-wide">View All</a>
+            </div>
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+    <!--=================================================================================================-->
+    <!-- Section Testimonials -->
+    <section class="pb-4 pb-sm-5 pb-xl-6 pt-7">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <p class="label-heading-text text-primary mb-1">Guestbook</p>
+                        <h2 class="h1">What clients say about us</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container-->
+
+        <div class="container-wide">
+
+            <!-- Slider -->
+            <div class="slick-slider slick-slider--arrows-outside slick-slider--has-gutters slick-slider--has-shadows testemonials-slider" data-slick='{"slidesToShow": 3, "arrows": true, "dots": true, "centerMode": true,  "responsive": [{"breakpoint": 1200, "settings": {"slidesToShow": 1, "centerMode": false}}] }'>
+                
+                <!-- Slide -->
+                <div class="slick__slide">
+                    <div class="card card-testemonial">
+                        <div class="card-body py-xl-5 px-xl-5">
+
+                            <!-- Quote Icon -->
+                            <div class="icon icon--xs icon--secondary mx-auto d-block mb-3">
+                                <img src="assets/images/icons/custom/quotes.svg" alt="">
+                            </div>
+
+                            <!-- Name -->
+                            <h5 class="card-title text-center">Sarah Brown</h4>
+
+                            <!-- Text -->
+                            <div class="card-text text-center">
+                                <p>Dropped in to this restaurant on our last night looking for something a bit different from the usual tourist fare. We were lucky to get a table as many were already booked. The food and front of house service was superb.</p>
+                            </div>
+
+                            <!-- Date -->
+                            <div class="text-center mt-2">
+                                <small class="text-muted">5 June 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide -->
+                <div class="slick__slide">
+                    <div class="card card-testemonial">
+                        <div class="card-body py-xl-5 px-xl-5">
+                            
+                            <!-- Quote Icon -->
+                            <div class="icon icon--xs icon--secondary mx-auto d-block mb-3">
+                                <img src="assets/images/icons/custom/quotes.svg" alt="">
+                            </div>
+                            
+                            <!-- Name -->
+                            <h5 class="card-title text-center">Adam Smith</h4>
+                            
+                            <!-- Text -->
+                            <div class="card-text text-center">
+                                <p>Dropped in to this restaurant on our last night looking for something a bit different from the usual tourist fare. We were lucky to get a table as many were already booked. The food and front of house service was superb.</p>
+                            </div>
+
+                            <!-- Date -->
+                            <div class="text-center mt-2">
+                                <small class="text-muted">5 June 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide -->
+                <div class="slick__slide">
+                    <div class="card card-testemonial">
+                        <div class="card-body py-xl-5 px-xl-5">
+                            
+                            <!-- Quote Icon -->
+                            <div class="icon icon--xs icon--secondary mx-auto d-block mb-3">
+                                <img src="assets/images/icons/custom/quotes.svg" alt="">
+                            </div>
+                            
+                            <!-- Name -->
+                            <h5 class="card-title text-center">Ellie Goulding</h4>
+                            
+                            <!-- Text -->
+                            <div class="card-text text-center">
+                                <p>Dropped in to this restaurant on our last night looking for something a bit different from the usual tourist fare. We were lucky to get a table as many were already booked. The food and front of house service was superb.</p>
+                            </div>
+
+                            <!-- Date -->
+                            <div class="text-center mt-2">
+                                <small class="text-muted">5 June 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide -->
+                <div class="slick__slide">
+                    <div class="card card-testemonial">
+                        <div class="card-body py-xl-5 px-xl-5">
+                            
+                            <!-- Quote Icon -->
+                            <div class="icon icon--xs icon--secondary mx-auto d-block mb-3">
+                                <img src="assets/images/icons/custom/quotes.svg" alt="">
+                            </div>
+                            
+                            <!-- Name -->
+                            <h5 class="card-title text-center">Adam Smith</h4>
+                            
+                            <!-- Text -->
+                            <div class="card-text text-center">
+                                <p>Dropped in to this restaurant on our last night looking for something a bit different from the usual tourist fare. We were lucky to get a table as many were already booked. The food and front of house service was superb.</p>
+                            </div>
+
+                            <!-- Date -->
+                            <div class="text-center mt-2">
+                                <small class="text-muted">5 June 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide -->
+                <div class="slick__slide">
+                    <div class="card card-testemonial">
+                        <div class="card-body py-xl-5 px-xl-5">
+                            
+                            <!-- Quote Icon -->
+                            <div class="icon icon--xs icon--secondary mx-auto d-block mb-3">
+                                <img src="assets/images/icons/custom/quotes.svg" alt="">
+                            </div>
+                            
+                            <!-- Name -->
+                            <h5 class="card-title text-center">Ellie Goulding</h5>
+                            
+                            <!-- Text -->
+                            <div class="card-text text-center">
+                                <p>Dropped in to this restaurant on our last night looking for something a bit different from the usual tourist fare. We were lucky to get a table as many were already booked. The food and front of house service was superb.</p>
+                            </div>
+
+                            <!-- Date -->
+                            <div class="text-center mt-2">
+                                <small class="text-muted">5 June 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .slick-slider -->
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+    <!--=================================================================================================-->
+    <!-- Section News -->
+    <section class="py-4 py-sm-5 py-xl-6">
+        <div class="container">
+            
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <p class="label-heading-text text-primary mb-1">Our Blog</p>
+                        <h2 class="h1">News & Events</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container -->
+
+        <div class="container">
+
+            <!-- News Grid -->
+            <div class="masonry-grid row mb-n5" data-masonry='{ "columnWidth": ".grid-sizer", "itemSelector": ".grid-item", "percentPosition": true }'>
+
+                <div class="grid-sizer col-md-6"></div>
+
+                <!-- News Item -->
+                <div class="grid-item col-md-6">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+
+                        <!-- Image -->
+                        <a href="#"><img src="assets/images/blog/post-thumbnail-1.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                       
+                        <div class="card-body p-0 pt-2">
+
+                            <!-- Tag -->
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <!-- Title -->
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item -->
+                <div class="grid-item col-md-6">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        
+                        <!-- Image -->
+                        <a href="#"><img src="assets/images/blog/post-thumbnail-2.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            
+                            <!-- Tag -->
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <!-- Title -->
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item -->
+                <div class="grid-item col-md-6">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        
+                        <!-- Image -->
+                        <a href="#"><img src="assets/images/blog/post-thumbnail-3.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            
+                            <!-- Tag -->
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <!-- Title -->
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item -->
+                <div class="grid-item col-md-6">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        
+                        <!-- Image -->
+                        <a href="#"><img src="assets/images/blog/post-thumbnail-4.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            
+                            <!-- Tag -->
+                            <ul class="list-inline text-uppercase text-primary mb-1">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <!-- Title -->
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Item -->
+                <div class="grid-item col-md-6">
+                    <div class="card card-post border-0 mb-5 shadow-none" data-aos="zoom-in">
+                        
+                        <!-- Image -->
+                        <a href="#"><img src="assets/images/blog/post-thumbnail-5.jpg" class="card-img-top rounded-0" alt="Post Title"></a>
+                        <div class="card-body p-0 pt-2">
+                            
+                            <!-- Tag -->
+                            <ul class="list-inline text-uppercase text-primary">
+                                <li class="list-inline-item"><a href="#">Cooking</a></li>
+                            </ul>
+
+                            <!-- Title -->
+                            <h4 class="card-title"><a href="#">The Almighty Beer Can Chicken</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- .masonry-grid -->
+
+            <!-- Button -->
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-wide">View All</a>
+            </div>
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+
+    <!--=================================================================================================-->
+    <!-- Section Get In Touch -->
+    <section class="py-4 py-sm-5 py-xl-6 pb-xl-0 mb-xl-n6">
+        <div class="container-wide">
+
+            <div class="get-in-touch d-flex">
+
+                <!-- Contacts Widget -->
+                <div class="widget widget-address"> 
+                    <h4 class="widget__title">You can find us here</h4>
+                    <ul class="widget__icon-list">
+                        <li>
+                            <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                <img src="assets/images/icons/essential-set-fill/svg/placeholder-3.svg" alt="" class="inject-me">
+                            </i>
+                            <span>Wollmar Yxkullsgatan 10 <br>118 50 Stockholm, Sweden</span>
+                        </li>
+                        <li>
+                            <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                <img src="assets/images/icons/essential-set-fill/svg/smartphone-6.svg" alt="" class="inject-me">
+                            </i>
+                            <span>+1 453 658 </span>
+                        </li>
+                        <li>
+                            <i class="icon icon--xxs icon--primary d-flex align-items-center">
+                                <img src="assets/images/icons/essential-set-fill/svg/navigation.svg" alt="" class="inject-me">
+                            </i>
+                            <span>info@coffee.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="widget widget-hours">
+                    <h4 class="widget__title">Opening Hours</h4>
+                    <ul class="widget__hours">
+                        <li>
+                            <span class="day">Mon-Thu</span>
+                            <span class="hours">9:00 - 22:00</span>
+                        </li>
+                        <li>
+                            <span class="day">Fri</span>
+                            <span class="hours">9:00 - 01:00</span>
+                        </li>
+                        <li>
+                            <span class="day">Sat</span>
+                            <span class="hours">10:00 - 01:00</span>
+                        </li>
+                        <li>
+                            <span class="day">Sun</span>
+                            <span class="hours">10:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="get-in-touch__form" data-jarallax-element="-100">
+                    <form>
+                        <div class="text-center mb-3 mb-lg-5">
+                            <h3 class="h2">Get in Touch</h3>
+
+                            <hr style="width: 25px; height: 1px;" class="bg-primary mx-auto mb-2">
+
+                            <p class="px-xl-4">Restaurant will tell your fastinating story in a unique & enjoyable way.</p>
+                        </div>
+
+                        <div class="row gutter-5">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control rounded-0" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control rounded-0" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" class="form-control rounded-0" placeholder="Your Phone Number">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="Message" cols="30" rows="4" class="form-control rounded-0" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <button class="btn btn-sm btn-wide btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+    <!-- Map -->
+    <div class="google-map google-map-lg" data-lat="59.3169" data-lng="18.0605" data-icon="assets/images/icons/custom/location-1.svg" data-zoom="15"></div>
+
+
+    <!-- Footer -->
+    <footer class="site-footer py-4 py-lg-0">
+        <div class="row align-items-center no-gutters">
+
+            <div class="col-12 col-lg-3 offset-lg-1 text-center text-lg-left mb-3 mb-lg-0">
+                <a href="index.html"><img src="assets/images/logo-dark.svg" alt="Tatte"></a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center text-lg-right order-lg-last mb-3 mb-lg-0">
+                <a href="#" class="btn btn-primary btn-hero d-lg-inline-block d-none">Reservation</a>
+                <a href="" class="btn btn-primary btn-arrow d-lg-none">Reservation</a>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center order-lg-2">
+                <p class="site-footer__copyright">Copyrights © Fika - Cafe & Coffeehouse</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Book Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content pt-2 pb-2 px-lg-2">
+
+                <!-- Header -->
+                <div class="modal-header justify-content-center border-0">
+                    <!-- Heading -->
+                    <div class="mb-0 font-size-lg text-center">
+                        <!-- Title -->
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="label-heading-text text-primary mb-1">Reservation</p>
+                                <h2 class="h2">Online Booking</h2>
+                            </div>
+                        </div>
+                        <!-- Subtitle -->
+                        <div class="row justify-content-center mt-1">
+                            <div class="col-11 col-xl-7 col-mb-10">
+                                <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Close -->
+                    <button type="button" class="close position-absolute right-0 top-0 p-4" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form class="book-form">
+                        <div class="row no-gutters">
+
+                            <div class="col-lg-3 position-relative z-index-2">
+                                <div class="form-group">
+                                    <label for="modalBookFormInputDate">Date and Time</label>
+                                    <input type='text' class="form-control datetimepicker" id="modalBookFormInputDate" placeholder="2019/05/15 19:00"/>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputName">Your Name</label>
+                                    <input type="text" class="form-control" id="modalInputName" placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputPhone">Phone</label>
+                                    <input type="tel" class="form-control" id="modalInputPhone" placeholder="(389)748-8736">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3">
+                                <div class="btn btn-hero btn-primary">Book</div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body-->
+
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog-->
+    </div><!-- .modal -->
+
+
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/popper/popper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjM9C5HqZRxtYPOMDtpJjj392tWWo3EkU"></script>
+
+    <script src="assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/modal.js"></script>
+    <script src="assets/vendors/typed/typed.min.js"></script>
+    <script src="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax-elements.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

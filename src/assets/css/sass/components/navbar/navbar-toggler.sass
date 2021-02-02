@@ -1,0 +1,58 @@
+.navbar-toggler
+    padding: 0
+    border: none
+
+    .navbar-toggler-icon
+        display: inline-block
+        height: 10px
+        width: 24px
+        margin: 0
+        position: relative
+        background: none
+
+        &:before,
+        &:after
+            content: ''
+            display: block
+            width: 100%
+            height: 3px
+
+            border-radius: 4px
+            background-color: #fff
+
+            transform-origin: center center
+            transition: all .4s ease
+
+            position: absolute
+
+        &:before
+            left: 0
+            top: 0%
+
+        &:after
+            left: 0
+            bottom: 0
+            
+    // toggler on nav expand
+    &[aria-expanded="true"]
+        .navbar-toggler-icon
+            &:before
+                transform: rotateZ(135deg) translate(1px,-4px)
+            &:after
+                transform: rotateZ(-135deg) translate(1px, 4px)
+
+    span 
+        display: inline-block
+        vertical-align: middle
+
+        margin-left: 10px
+
+        font-size: 1rem
+        font-weight: 600
+        text-transform: uppercase
+
+
+// toggler inside btn
+.btn
+    .navbar-toggler
+        color: inherit !important

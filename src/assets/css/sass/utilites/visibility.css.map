@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACV,OAAO,EAAE,CAAC,CAAA,UAAU;CAAG;;AAExB,AAAA,UAAU,CAAC;EACV,OAAO,EAAE,CAAC,CAAA,UAAU;CAAG",
+    "sources": [
+        "visibility.sass"
+    ],
+    "names": [],
+    "file": "visibility.css"
+}

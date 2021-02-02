@@ -1,0 +1,69 @@
+$gallery-gutter: $grid-gutter-width / 2
+
+$width: 480px
+
+$ratio-xl: 0.7
+$ratio-md: 0.5
+
+
+$ratios: ( xl: 0.7, md: 0.5, xs: 0.35 )
+
+.gallery-slider
+	height: 700px
+	opacity: 0
+	transition: opacity 1s ease
+	padding-left: 0
+	padding-right: 0
+	margin-left: -$gallery-gutter
+	margin-right: -$gallery-gutter
+	
+	&.slick-initialized
+		height: auto
+		opacity: 1
+
+	.slick__slide
+		padding: 0 $gallery-gutter 
+		
+		@each $size, $ratio in $ratios
+			@include media-breakpoint-down( $size )
+				padding: 0 $gallery-gutter * $ratio
+			
+		.row		
+			@each $size, $ratio in $ratios
+				@include media-breakpoint-down( $size )
+					margin: 0 $gallery-gutter * $ratio * -1
+
+			
+		[class*='col-']		
+			@each $size, $ratio in $ratios
+				@include media-breakpoint-down( $size )
+					padding: 0 $gallery-gutter * $ratio
+			
+
+		a
+			margin: $gallery-gutter 0
+			display: block
+			width: $width
+			
+			& + a
+				margin-top: $gallery-gutter * 2
+			
+			@each $size, $ratio in $ratios
+				@include media-breakpoint-down( $size )
+					width: $width * $ratio
+					margin: $gallery-gutter * $ratio 0
+					
+					& + a
+						margin-top: 2 * $gallery-gutter * $ratio
+					
+			&.width-2x
+				width: $width * 2 + 2 * $gallery-gutter
+				
+				@each $size, $ratio in $ratios
+					@include media-breakpoint-down( $size )
+						width: $width * $ratio * 2 + $gallery-gutter * $ratio * 2
+				
+			
+			img
+				display: block
+				max-width: 100% 

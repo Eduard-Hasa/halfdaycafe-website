@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fancybox - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="../assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Fancybox</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h1 class="mb-1">Fancybox</h1>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+                        
+                        <!-- Text -->
+                        <p class="font-size-lg mb-1">JavaScript lightbox library for presenting various types of media. Responsive, touch-enabled and customizable. Fika uses Extended 
+                            Commercial license, so you do not need to purchase your own license — as long as you are not developing own commercial products with fancybox.</p>
+
+                        <p class="font-size-lg mb-4">
+                            <a class="text-decoration-none hover-point-icon d-flex align-items-center" href="https://fancyapps.com/fancybox/3/docs/" target="_blank">
+                                Plugin documentation
+                                <i class="icon icon--xxs icon--primary d-inline-block ml-2"><img src="../assets/images/icons/essential-set/svg/exit.svg" class="inject-me d-block"alt=""></i>
+                            </a>
+                        </p>
+
+                        <p class="font-size-lg">Add styles in <code> &lt;head&gt; </code> tag:</p>
+
+<pre><code class="p-3 html mb-3">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/vendors/fancybox/jquery.fancybox.min.css&quot;&gt;
+</code></pre>
+
+                        <p class="font-size-lg">Add script before closing <code>&lt;body&gt;</code> tag:</p>
+
+<pre><code class="p-3 html mb-5">&lt;script src=&quot;assets/vendors/fancybox/jquery.fancybox.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+                        <h2 class="mb-1">Common use</h2>
+
+                        <p class="font-size-lg mb-4">The most basic way to use fancybox is by adding the <code>data-fancybox</code> attribute to your element. This will automatically bind click event that will start fancybox. Use href or <code>data-src</code> attribute to specify source of your content.</p>
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="../assets/images/gallery/gallery-1.jpg" data-fancybox class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/gallery-1.jpg" alt="..." class="img-fluid">
+                                        </a>
+                                        <p class="text-center pt-1">Image lightbox</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="https://www.youtube.com/watch?v=jsnUVV9rtjM" data-fancybox class="d-block position-relative lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/gallery-1.jpg" alt="..." class="img-fluid">
+                                            <i class="icon centered position-absolute d-block fill-light">
+                                                <img src="../assets/images/icons/essential-set-fill/svg/play-button.svg" class="inject-me d-block" alt="">
+                                            </i>
+                                        </a>
+                                        <p class="text-center pt-1">Video lightbox</p>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="text-center">
+                                            <button href="#demo-modal-popup" data-fancybox class="btn btn-primary">Open popup</button>
+                                        </div>
+                                        <p class="text-center pt-1">Modal popup</p>
+
+                                        <div class="popup popup--lg" id="demo-modal-popup">
+                                            <div class="popup__header">
+                                                <p class="h4">Modal title</p>
+                                            </div>
+                                            <div class="popup__body">
+                                                <p>Modal body text goes here.</p>
+                                            </div>
+                                            <div class="popup__footer">
+                                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+<pre><code class="p-3 html mb-5">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-4&quot;&gt;
+        &lt;a href=&quot;...&quot; data-fancybox class=&quot;d-block lightbox-hover-scale&quot;&gt;
+            &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-fluid&quot;&gt;
+        &lt;/a&gt;
+        &lt;p class=&quot;text-center pt-1&quot;&gt;Image lightbox&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;
+        &lt;a href=&quot;...&quot; data-fancybox class=&quot;d-block position-relative lightbox-hover-scale&quot;&gt;
+            &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-fluid&quot;&gt;
+            &lt;i class=&quot;icon centered position-absolute d-block fill-light&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/essential-set-fill/svg/play-button.svg&quot; class=&quot;inject-me d-block&quot; alt=&quot;&quot;&gt;
+            &lt;/i&gt;
+        &lt;/a&gt;
+        &lt;p class=&quot;text-center pt-1&quot;&gt;Video lightbox&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-4&quot;&gt;
+        &lt;div class=&quot;text-center&quot;&gt;
+            &lt;button href=&quot;#demo-modal-popup&quot; class=&quot;btn btn-primary fancybox&quot;&gt;Open popup&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;p class=&quot;text-center pt-1&quot;&gt;Modal popup&lt;/p&gt;
+
+        &lt;div class=&quot;popup popup--lg&quot; id=&quot;demo-modal-popup&quot;&gt;
+            &lt;div class=&quot;popup__header&quot;&gt;
+                &lt;p class=&quot;h4&quot;&gt;Modal title&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;popup__body&quot;&gt;
+                &lt;p&gt;Modal body text goes here.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;popup__footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+                        <h2 class="mb-1">Fancybox gallery</h2>
+
+                        <p class="font-size-lg mb-4">If you have a group of items, you can use the same attribute <code>data-fancybox</code> value for each of them to create a gallery. Each group should have a unique value.</p>
+
+                        <div class="card">
+                            <div class="card-body">
+                                
+                                <div class="row">
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <a href="../assets/images/gallery/gallery-1.jpg" data-fancybox="gallery-1" class="d-block my-2 lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/gallery-1.jpg" alt="..." class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <a href="../assets/images/gallery/gallery-10.jpg" data-fancybox="gallery-1" class="d-block my-2 lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/gallery-10.jpg" alt="..." class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <a href="../assets/images/gallery/gallery-2.jpg" data-fancybox="gallery-1" class="d-block my-2 lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/gallery-2.jpg" alt="..." class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3">
+                                        <a href="../assets/images/gallery/gallery-3.jpg" data-fancybox="gallery-1" class="d-block my-2 lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/gallery-3.jpg" alt="..." class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+<pre><code class="p-3 html mb-5">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-6 col-md-4 col-lg-3&quot;&gt;
+        &lt;a href=&quot;...&quot; data-fancybox=&quot;gallery-1&quot; class=&quot;d-block my-2 lightbox-hover-scale&quot;&gt;
+            &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-fluid&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-6 col-md-4 col-lg-3&quot;&gt;
+        &lt;a href=&quot;...&quot; data-fancybox=&quot;gallery-1&quot; class=&quot;d-block my-2 lightbox-hover-scale&quot;&gt;
+            &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-fluid&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-6 col-md-4 col-lg-3&quot;&gt;
+        &lt;a href=&quot;...&quot; data-fancybox=&quot;gallery-1&quot; class=&quot;d-block my-2 lightbox-hover-scale&quot;&gt;
+            &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-fluid&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-6 col-md-4 col-lg-3&quot;&gt;
+        &lt;a href=&quot;...&quot; data-fancybox=&quot;gallery-1&quot; class=&quot;d-block my-2 lightbox-hover-scale&quot;&gt;
+            &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-fluid&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                        <div class="mb-6"></div>
+
+                        <h2 class="mb-1">Fancybox gallery with Slick carousel</h2>
+
+                        <p class="font-size-lg mb-4">If you want to use fancybox elements inside slick slider, use <code>data-slick-fancybox</code> to group images instead of <code>data-fancybox</code>. Also, add <code>data-fancybox-index</code> attribute to every item to avoid duplications, when slick carousel is in an infinity mode.</p>
+         
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="slick-slider slick-slider--has-gutters instagram-feed" data-slick='{"arrows": false, "dots": false, "slidesToShow": 6, "autoplay": true, "responsive": [{"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 480, "settings": {"slidesToShow": 3}}]}'>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-1.jpg" data-slick-fancybox="instagram" data-fancybox-index="0" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-1.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-2.jpg" data-slick-fancybox="instagram" data-fancybox-index="1" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-2.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-3.jpg" data-slick-fancybox="instagram" data-fancybox-index="2" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-3.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-4.jpg" data-slick-fancybox="instagram" data-fancybox-index="3" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-4.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-5.jpg" data-slick-fancybox="instagram" data-fancybox-index="4" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-5.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-6.jpg" data-slick-fancybox="instagram" data-fancybox-index="5" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-6.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-1.jpg" data-slick-fancybox="instagram" data-fancybox-index="6" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-1.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-1.jpg" data-slick-fancybox="instagram" data-fancybox-index="7" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-1.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-2.jpg" data-slick-fancybox="instagram" data-fancybox-index="8" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-2.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-3.jpg" data-slick-fancybox="instagram" data-fancybox-index="9" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-3.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                    <li class="slick__slide">
+                                        <a href="../assets/images/gallery/instagram-4.jpg" data-slick-fancybox="instagram" data-fancybox-index="10" class="d-block lightbox-hover-scale">
+                                            <img src="../assets/images/gallery/instagram-4.jpg" alt="Instagram Image">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+<pre><code class="p-3 html">&lt;ul class=&quot;slick-slider slick-slider--has-gutters instagram-feed&quot; 
+    data-slick='{
+        &quot;arrows&quot;: false, 
+        &quot;dots&quot;: false, 
+        &quot;slidesToShow&quot;: 6, 
+        &quot;autoplay&quot;: true, 
+        &quot;responsive&quot;: [
+            {
+                &quot;breakpoint&quot;: 992, 
+                &quot;settings&quot;: {
+                    &quot;slidesToShow&quot;: 4
+                }
+            }, 
+            {
+                &quot;breakpoint&quot;: 480, 
+                &quot;settings&quot;: {
+                    &quot;slidesToShow&quot;: 3
+                }
+            }
+        ]
+    }'&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-1.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;0&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-1.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-2.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;1&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-2.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-3.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;2&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-3.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-4.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;3&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-4.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-5.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;4&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-5.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-6.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;5&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-6.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-1.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;6&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-1.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-1.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;7&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-1.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-2.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;8&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-2.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-3.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;9&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-3.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;slick__slide&quot;&gt;
+        &lt;a href=&quot;../assets/images/gallery/instagram-4.jpg&quot; data-slick-fancybox=&quot;instagram&quot; data-fancybox-index=&quot;10&quot;&gt;
+            &lt;img src=&quot;../assets/images/gallery/instagram-4.jpg&quot; alt=&quot;Instagram Image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+    <script src="../assets/vendors/slick/slick.min.js"></script>
+    <script src="../assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

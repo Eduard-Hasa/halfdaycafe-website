@@ -1,0 +1,118 @@
+// dropdown menu
+.navbar
+        
+    .dropdown-menu
+        border: none
+        margin: 0
+        border-radius: 0
+        background: $white
+
+        .dropdown-item
+            font-size: 1rem
+            line-height: 1.2
+            white-space: normal
+
+            position: relative
+            padding-left: 1rem
+            @include media-breakpoint-up(lg)
+                font-size: .85rem
+            @include media-breakpoint-up(xl)
+                font-size: 1rem
+
+            &.active,
+            &:hover
+                background: transparent 
+                color: $primary
+
+        @include media-breakpoint-up(lg) // after collapse
+            position: absolute
+            left: 50%
+            top: 100%
+
+            display: block
+            min-width: 240px
+            padding: .6rem 0
+
+            box-shadow: $box-shadow-lg
+            border-radius: $border-radius
+
+            visibility: hidden
+            opacity: 0
+            transform: translate3d(-50%, 10px, 0)
+            transition: all .2s ease-in-out
+            transform-origin: top center
+
+            .dropdown-item
+                padding: 1rem  2.5rem 1rem 2.5rem
+                border-bottom: 1px solid $gray-300
+                position: relative
+
+                display: flex
+                justify-content: center
+                align-items: center
+                &:last-child
+                    border: none
+
+                &:after
+                    position: static
+                    right: 2rem
+                    top: 0
+                    bottom: 0
+                    content: ''
+                    display: inline-block
+                    margin-left: .6rem
+                    width: .7rem
+                    height: .7rem
+                    transition: all .1s ease
+                    background-size: 100% 100%
+                    background-image: str_replace(url("data:image/svg+xml,%3Csvg class='d-block mx-auto mb-3' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 129 129' style='enable-background:new 0 0 129 129;' %3E%3Cpath fill='#{$primary}' d='M40.4 121.3c-.8.8-1.8 1.2-2.9 1.2s-2.1-.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8 0l53.9 53.9c1.6 1.6 1.6 4.2 0 5.8l-53.9 53.9z'/%3E%3C/svg%3E"), '#', '%23')
+
+                &:hover
+                    &:after
+                        right: 1.5rem
+                        
+        @include media-breakpoint-up(xl)
+            min-width: 280px
+
+        // simple styling
+        &-plain 
+            display: block
+            border: none
+            padding: 0
+            font-family: inherit
+            box-shadow: none
+            .dropdown-item
+                padding: .4rem 1rem
+                border: none
+                &:after
+                    display: none
+
+        // expands on click, not hover (we use it in navbar sidebar navigation)
+        &-click
+            position: relative
+            max-height: 0
+            opacity: 0
+            overflow: hidden
+            transition: all .6s ease
+            @include media-breakpoint-up(lg)
+                transform: translate3d(-50%,0,0)
+            &.show
+                max-height: 400px
+                opacity: 1
+                visibility: visible
+                @include media-breakpoint-up(lg)
+                    transform: translate3d(-50%,0,0)
+
+
+    .dropdown-toggle
+        &:after
+            display: none
+
+    .dropdown
+        @include media-breakpoint-up(lg)
+            &:hover
+                .dropdown-menu:not(.dropdown-menu-click)
+                    z-index: 10000
+                    opacity: 1
+                    transform: translate3d(-50%,0,0)
+                    visibility: visible

@@ -1,0 +1,1529 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Homepage - Fika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/vendors/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div class="container">
+            <div class="mb-6 text-center loading-screen-logo">
+                <img src="assets/images/BreadYolkLogo.svg" alt="">
+            </div>
+            <div class="loading-screen-progress progress w-75 mx-auto bg-gray-200" style="height: 3px;">
+                <div class="progress-bar bg-secondary" role="progressbar" style="width: 35%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading screen styles -->
+    <style>
+        .loading-screen {
+            position: fixed;
+            background-color: #F6D13A;
+            z-index: 100000;
+            height: 100%;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-transition: all 0.8s ease-out;
+            -o-transition: all 0.8s ease-out;
+            transition: all 0.8s ease-out;
+        }
+        .loading-screen-logo, .loading-screen-progress {
+            -webkit-transition: all 0.4s ease-in;
+            -o-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+        }
+        .loading-screen .progress .progress-bar {
+            -webkit-animation: animateBar 0.6s ease-in 0 1;
+            animation: animateBar 0.6s ease-in 0 1;
+            -webkit-transition: width 1s ease;
+            -o-transition: width 1s ease;
+            transition: width 1s ease;
+        }
+        .loading-screen.loaded {
+            -webkit-transition-delay: 0.6s;
+                    -o-transition-delay: 0.6s;
+                    transition-delay: 0.6s;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .loading-screen.loaded .loading-screen-logo {
+            opacity: 0;
+        }
+        .loading-screen.loaded .loading-screen-progress {
+            width: 0 !important;
+        }
+
+        @-webkit-keyframes animateBar {
+            0% {
+                -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+        }
+
+        @keyframes animateBar {
+            0% {
+                -webkit-transform: translateX(-100%);
+                        transform: translateX(-100%);
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                        transform: translateX(0);
+            }
+        }
+    </style>
+
+    <!--=================================================================================================-->
+    
+    <!--=================================================================================================-->
+    <!-- Intro Section -->
+    <section class="intro-section position-relative mb-4 mb-sm-5 mb-xl-6 pt-6 pt-lg-7 pb-xxl-0 pb-7 text-light jarallax" style="background-image: url('assets/images/sections-bg/home-intro-bg-42.jpg');">
+        <div class="container py-4 py-sm-5 py-xl-6" data-aos="fade-down" data-aos-duration="1000">
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-12 text-center">
+
+                    <!-- Title -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 mb-0">
+                          
+                                                <!-- logo img svg-->
+                    
+                        <img style="max-height: 300px;" src="assets\images\logos\logo.png">
+                        
+                   
+                        
+                        </div>
+                        <div class="col-12 mb-0">
+                            <h1 class="display-3"><br class="d-none d-sm-block"> <span data-typed data-strings='["Have a wonderful cup of coffee", "Meet Friends"]'></span></h1>
+                        </div>
+                    </div>
+
+                    <!-- Subtitle -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <div class="mt-1">
+                                <p class="font-size-xl ">Come in for a great experience!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="d-inline-block  mt-2">
+                        <div class="btn-group" role="group">
+                            <a href="#menuButtonTarget" class="btn btn-primary btn-arrow btn-lg">See Menu</a>
+                            <a href="tel:+1-248-977-3354" class="btn btn-primary btn-arrow btn-lg">Call Us</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+
+        <!-- Resrvation form -->
+        <div class="position-absolute bottom-0 left-0 w-100 text-dark" data-aos="fade-up" data-aos-delay="700">
+            <div class="container">
+                <div class="row no-gutters border-bottom bg-white text-center text-lg-left slick-slider short-contacts-slider" data-slick='{"arrows": false, "dots": false, "slidesToShow": 4, "autoplay": true,  "responsive": [{"breakpoint": 991, "settings": {"slidesToShow": 2, "slidesToScroll": 2, "arrows": true, "autoplay": true}}, {"breakpoint": 767, "settings": {"slidesToShow": 1, "slidesToScroll": 1, "autoplay": true}}]}'>
+
+                    <div class="col-lg-3 py-3 py-xl-4 px-4 pl-xl-5 pr-lg-3 text-uppercase border-right">
+                        <p class="text-muted mb-0">Hours</p>
+                            <p class="font-weight-semibold mb-0">Everyday 7am-3pm <i class="icon icon--xxs icon--primary ml-xl-2 ml-1"><img class="inject-me" src="assets/images/icons/custom/right-arrow-long.svg" alt=""></i></p> 
+                    </div>
+
+
+
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- div -->
+    </section><!-- .section -->
+
+   <!--=================================================================================================-->
+    <!-- Section Menu Slider -->
+    <section class="py-4 py-sm-5 py-xl-6">
+
+
+        <div class="container-wide">
+                <div class="row justify-content-center">
+                        <p class="label-heading-text text-primary mb-1">Few Favorites!</p>
+                    </div>
+           
+            <!-- Menu Slider-->
+            <div class="slick-slider slick-slider--has-gutters slick-slider--has-shadows slick-slider--has-gradients slick-slider--arrows-outside menu-slider mb-4 mb-md-0" data-slick='{"slidesToShow": 4, "arrows": true, "dots": false, "responsive": [{"breakpoint": 1200, "settings": {"slidesToShow": 3}}, {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1, "centerMode": true, "dots": true, "centerPadding": "30px"}}]}'>
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/Avocado Toast.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Eggcellent Choices</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Avocado Toast</span> <span class="menu-row__dots"></span><span class="menu-row__price">$8</span></p>
+                            <p class="card-text">7 Grain Toast Topped with Goat Cheese, Avocado, Bacon, Tomatoes, and 2 Eggs Over Easy on Top</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/Raspberry Crepes.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Crepes</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Raspberry Crepes</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">Fresh Raspberries and Raspberry Sauce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/benedict.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Benedicts</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Florentine Benedict</span> <span class="menu-row__dots"></span><span class="menu-row__price">$9</span></p>
+                            <p class="card-text">Tomatoes, Spinach, Bacon, Swiss, Poached Eggs, Hollandaise Sauce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/Burger.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Burgers</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">All American</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">American, Lettuce, Tomato, and Mayo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide-->
+                <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/Salad.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Salads</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Chicken Strip Salad</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide-->
+                 <div class="slider__slide d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="assets/images/dish-preview/Cinnamon French Toast.jpg" class="card-img-top" alt="...">
+                        <div class="card-body px-2 py-3 p-xxl-4">
+                            <p class="label-text mb-2">Pancakes</p>
+                            <p class="menu-row mb-2"><span class="menu-row__name">Cinnamon Roll Pancakes</span> <span class="menu-row__dots"></span><span class="menu-row__price">$9</span></p>
+                            <p class="card-text">Filled with Cinnamon Sugar Glaze and Topped with a Cream Cheese Frosting</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .slick-slider -->
+
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+    <!--=================================================================================================-->
+    <!-- Section Text / Image -->
+    <section class="position-relative py-4 py-sm-5 py-xl-6">
+
+        <!-- Overlay / BG img -->
+        <div class="position-absolute left-0 top-0 h-100 w-100 d-none d-sm-block" data-jarallax-element="-40">
+            <div class="bg-img bg-img--horizontal-100 bg-img--center w-100 h-100" style="background-image: url('assets/images/sections-bg/coffee-leaves.png');"></div>
+        </div>
+
+        <div class="container-wide">
+
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <p class="label-heading-text text-primary mb-1">Our Story</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+
+                
+                <!-- Text -->
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-left">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9 col-12 py-1">
+
+                            <!-- Title -->
+                            <p class="h4">Trendy Breakfast Spot in Lake Orion</p>
+
+                            <!-- Text -->
+                            <div class="row">
+                                <div class="col-xl-11">
+                                    <p class="font-size-lg line-height-lg">The Bread & Yolk was founded on a promise to bring a wide selection of premium breakfast & lunch dishes that always excell in taste, freshness, and quality. Shortly after opening our doors in Spring 2018, we got great support from our amazing local community and customers from the surrounding areas. We are forever dedicated to continue offering an amazing experience at The Bread & Yolk!</p>
+                                    <img src="assets/images/signature.svg" alt="" class="mt-1">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+
+
+    <!--=================================================================================================-->
+ 
+    <!--=================================================================================================-->
+    
+    <!--=================================================================================================-->
+    <!-- Section Menu -->
+    <section class="position-relative pb-4 pb-sm-5 pb-xl-6">
+
+        <!-- Overlay / BG img -->
+        <div class="overlay" data-jarallax-element="40">
+            <div class="bg-img bg-img--bottom bg-img--horizontal-100 w-100 h-100" style="background-image: url('assets/images/sections-bg/strawberry-cemex-2.png');"></div>
+        </div>
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-4 font-size-lg text-center">
+                <!-- Title -->
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-8">
+                        <h2 class="h1">Our Menu</h2>
+                    </div>
+                </div>
+                <!-- Subtitle -->
+                <div class="row justify-content-center mt-1">
+                    <div class="col-12 col-md-7">
+                        <p>Select Category</p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- .container -->
+
+        <!-- Tabs Nav -->
+        <div class="container-fluid d-none d-md-block">
+            <ul class="nav nav-tabs mb-4 mb-xxl-6" id="myTab" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" id="OMELETTES-tab" data-toggle="tab" href="#OMELETTES" role="tab" aria-controls="OMELETTES" aria-selected="true">Omelettes</a></li>
+                    <li class="nav-item"><a class="nav-link" id="BENEDICTS-tab" data-toggle="tab" href="#BENEDICTS" role="tab" aria-controls="BENEDICTS" aria-selected="false">Benedicts</a></li>
+                    <li class="nav-item"><a class="nav-link" id="OATMEAL-tab" data-toggle="tab" href="#OATMEAL" role="tab" aria-controls="OATMEAL" aria-selected="false">Oatmeal</a></li>
+                    <li class="nav-item"><a class="nav-link" id="SCRAMBLERS-tab" data-toggle="tab" href="#SCRAMBLERS" role="tab" aria-controls="SCRAMBLERS" aria-selected="false">Scramblers</a></li>
+                    <li class="nav-item"><a class="nav-link" id="CREPESWAFFLES-tab" data-toggle="tab" href="#CREPESWAFFLES" role="tab" aria-controls="CREPESWAFFLES" aria-selected="false">Crepes & Waffles</a></li>
+                    <li class="nav-item"><a class="nav-link" id="FRENCHTOAST-tab" data-toggle="tab" href="#FRENCHTOAST" role="tab" aria-controls="FRENCHTOAST" aria-selected="false">French Toast</a></li>
+                    <li class="nav-item"><a class="nav-link" id="PANCAKES-tab" data-toggle="tab" href="#PANCAKES" role="tab" aria-controls="PANCAKES" aria-selected="false">Pancakes</a></li>
+                    <li class="nav-item"><a class="nav-link" id="GLUTEN-FREE-tab" data-toggle="tab" href="#GLUTEN-FREE" role="tab" aria-controls="GLUTEN-FREE" aria-selected="false">Gluten-free</a></li>
+                    <li class="nav-item"><a class="nav-link" id="EGGCELLENTCHOICES-tab" data-toggle="tab" href="#EGGCELLENTCHOICES" role="tab" aria-controls="EGGCELLENTCHOICES" aria-selected="false">Eggcellent Choices</a></li>
+                    <li class="nav-item"><a class="nav-link" id="SKILLETS-tab" data-toggle="tab" href="#SKILLETS" role="tab" aria-controls="SKILLETS" aria-selected="false">Skillets</a></li>
+                    <li class="nav-item"><a class="nav-link" id="BREAKFASTSANDWICHES-tab" data-toggle="tab" href="#BREAKFASTSANDWICHES" role="tab" aria-controls="BREAKFASTSANDWICHES" aria-selected="false">Breakfast Sandwiches</a></li>
+                    <li class="nav-item"><a class="nav-link" id="SALADS-tab" data-toggle="tab" href="#SALADS" role="tab" aria-controls="SALADS" aria-selected="false">Salads</a></li>
+                    <li class="nav-item"><a class="nav-link" id="BURGERS-tab" data-toggle="tab" href="#BURGERS" role="tab" aria-controls="BURGERS" aria-selected="false">Burgers</a></li>
+                    <li class="nav-item"><a class="nav-link" id="VEGETARIAN-tab" data-toggle="tab" href="#VEGETARIAN" role="tab" aria-controls="VEGETARIAN" aria-selected="false">Vegetarian</a></li>
+                    <li class="nav-item"><a class="nav-link" id="SANDWICHES-tab" data-toggle="tab" href="#SANDWICHES" role="tab" aria-controls="SANDWICHES" aria-selected="false">Sandwiches</a></li>
+             
+
+            </ul>
+        </div><!-- .container -->
+
+        <div class="container d-block d-md-none">
+
+            <!-- Mobile menu navigation-->
+            <select class="custom-select menu-select mb-4">
+                <option selected value="#OMELETTES">Omelettes</option>
+                <option value="#BENEDICTS">Benedicts</option>
+                <option value="#OATMEAL">Oatmeal</option>                
+                <option value="#SCRAMBLERS">Scramblers</option>
+                <option value="#CREPESWAFFLES">Crepes & Waffles</option>
+                <option value="#FRENCHTOAST">French Toast</option>
+                <option value="#PANCAKES">Pancakes</option>
+                <option value="#GLUTEN-FREE">Gluten Free</option>
+                <option value="#EGGCELLENTCHOICES">Eggcellent Choices</option>
+                <option value="#SKILLETS">Skillets</option>
+                <option value="#BREAKFASTSANDWICHES">Breakfast Sandwiches</option>
+                <option value="#SALADS">Salads</option>
+                <option value="#BURGERS">Burgers</option>
+                <option value="#VEGETARIAN">Vegetarian</option>
+                <option value="#SANDWICHES">Sandwiches</option>            
+            </select>
+
+        </div><!-- .container -->
+
+
+
+        <!-- Tabs -->
+        <div id="menuButtonTarget" class="container">
+            <div class="tab-content" id="myTabContent">
+
+<!-- INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE -->
+
+<!-- OMELETTES Tab -->
+<div class="tab-pane fade show active" id="OMELETTES" role="tabpanel" aria-labelledby="OMELETTES-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Meatlovers -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Meatlovers</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">Ham, Bacon & Sausage with American Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Country -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Country</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Sausage, Onion, Green Pepper and Cheddar Cheese all Topped with Sausage Gravy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Roasted Veggie -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Roasted Veggie</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">Roasted Vegetables, Spinach, and Feta Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - BMTA -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">BMTA</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Broccoli, Mushroom, Tomatoes, Avocado and Feta Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - SFBA -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">SFBA</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Spinach, Feta Cheese, Bacon, and Avocado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Thai Chicken -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Thai Chicken</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Grilled Chicken, Red Peppers, Broccoli, Onions, Carrots, Provolone Cheese and Peanut Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Spinach & Feta -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Spinach & Feta</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Western -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Western</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">Ham, Green Pepper, Onion, and American Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Meat & Cheese choice -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Meat & Cheese choice</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">Choose from Ham, Sausage, or Bacon with American Cheese</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- BENEDICTS Tab -->
+    <div class="tab-pane fade show" id="BENEDICTS" role="tabpanel" aria-labelledby="BENEDICTS-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Traditional -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Traditional</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">English Muffin, Canadian Bacon, Poached Egg and Hollandaise Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Florentine Benedict -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Florentine Benedict</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Tomatoes, Spinach, Bacon, Swiss Cheese, Poached Eggs and Hollandaise Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Smoked Salmon -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Smoked Salmon</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Smoked Salmon, Spinach, Poached Eggs, Hollandaise Sauce, and Capers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Cowboy -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Cowboy</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Biscuits, Cheddar Cheese, Sausage Patty, Poached Eggs, and Sausage Gravy </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chorizo Benedict -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chorizo Benedict</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Chorizo Sausage, Cheddar, Avocado, Grilled Tomato, Poached Eggs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- OATMEAL Tab -->
+    <div class="tab-pane fade show" id="OATMEAL" role="tabpanel" aria-labelledby="OATMEAL-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Plain Oatmeal -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Plain Oatmeal</span><span class="menu-row__dots"></span><span class="menu-row__price">5</span></p>
+                        <p class="card-text">Brown Sugar, Milk </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Oatmeal #1	 -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Oatmeal #1	</span><span class="menu-row__dots"></span><span class="menu-row__price">6.5</span></p>
+                        <p class="card-text">Strawberries, Vanilla Yogurt, Granola and Toasted Almonds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Oatmeal #2 -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Oatmeal #2</span><span class="menu-row__dots"></span><span class="menu-row__price">6.5</span></p>
+                        <p class="card-text">Apples, Raisins, Almonds, Coconut, and Blueberries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- SCRAMBLERS Tab -->
+    <div class="tab-pane fade show" id="SCRAMBLERS" role="tabpanel" aria-labelledby="SCRAMBLERS-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - AGT -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">AGT</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">3 Eggs Scrambled with Avocado, Goat Cheese and Tomatoes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - SBF -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">SBF</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">3 Eggs Scrambled with Spinach, Bacon and Feta Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Athens -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Athens</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">3 Eggs Scrambled with Spinach, Tomatoes, Olives and Feta Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Kielbasa Scrambler -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Kielbasa Scrambler</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">3 Eggs Scrambled with Smoked Sausage, Tomatoes , Feta Cheese, Avocado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - All in Scrambler -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">All in Scrambler</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">3 Eggs Scrambled with Turkey Sausage, Onion, Potatoes, Cheddar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- CREPESWAFFLES Tab -->
+    <div class="tab-pane fade show" id="CREPESWAFFLES" role="tabpanel" aria-labelledby="CREPESWAFFLES-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Strawberry Crepes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Strawberry Crepes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Fresh Strawberries and Strawberry Sauce Add Banana $1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Raspberry Crepes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Raspberry Crepes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Fresh Raspberries and Raspberry Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Banana Hazel Nut Crepes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Banana Hazel Nut Crepes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Fresh Sliced Banana and Nutella Hazelnut Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Cheese Blintz -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Cheese Blintz</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Cream Cheese Blintz Filling, Strawberries and Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Savory Crepes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Savory Crepes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">2 Eggs, Spinach, Tomatoes, Mushrooms and Swiss Cheese Topped with Hollandaise Sauce </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken & Waffles -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken & Waffles</span><span class="menu-row__dots"></span><span class="menu-row__price">10</span></p>
+                        <p class="card-text">Belgium Waffle and Boneless Buttermilk Chicken Breast</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Al’s Waffle Ala Mode -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Al’s Waffle Ala Mode</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Topped with Fresh Strawberry Sauce and Vanilla Ice Cream</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Belgian Waffle -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Belgian Waffle</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Triple Berry Crepes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Triple Berry Crepes</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Fresh Raspberries, Blueberries, and Strawberries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item -  -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name"></span><span class="menu-row__dots"></span><span class="menu-row__price"></span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- FRENCH TOAST Tab -->
+    <div class="tab-pane fade show" id="FRENCHTOAST" role="tabpanel" aria-labelledby="FRENCHTOAST-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Banana Nut -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Banana Nut</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Banana Bread French Toast, Fresh Sliced Banana</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Stuffed French Toast -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Stuffed French Toast</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Vanilla Cream Cheese Filling, Strawberries, Bananas, Strawberry Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Crunchy -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Crunchy</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Cinnamon Bread, Frosted Flakes, and Strawberries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Cinnamon Swirl -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Cinnamon Swirl</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text">Add Strawberries or Bananas $1 Each</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Incredible Delight -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Incredible Delight</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Two Slices of French Toast Stuffed with a Two Egg Omelette made with Bacon, Sausage, and Cheddar Cheese. All Topped with Powdered Sugar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Blueberry French Toast -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Blueberry French Toast</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Blueberry Bread Topped with Fresh BlueBerries and Blueberry Sauce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- PANCAKES Tab -->
+    <div class="tab-pane fade show" id="PANCAKES" role="tabpanel" aria-labelledby="PANCAKES-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Buttermilk Pancakes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Buttermilk Pancakes</span><span class="menu-row__dots"></span><span class="menu-row__price">6</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Red Velvet -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Red Velvet</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Filled with Chocolate Chips and Topped with Cream Cheese Frosting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Banana Pecan -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Banana Pecan</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Blueberry Pancakes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Blueberry Pancakes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Almond Joy Pancakes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Almond Joy Pancakes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Toasted Almonds, Chocolate Chips, and Coconut</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chocolate Chip Pancakes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chocolate Chip Pancakes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Cinnamon Roll Pancakes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Cinnamon Roll Pancakes</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Filled with Cinnamon Sugar Glaze and Topped with a Cream Cheese Frosting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- GLUTEN-FREE Tab -->
+    <div class="tab-pane fade show" id="GLUTEN-FREE" role="tabpanel" aria-labelledby="GLUTEN-FREE-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Stuffed French Toast -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Stuffed French Toast</span><span class="menu-row__dots"></span><span class="menu-row__price">10</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - French Toast -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">French Toast</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Pancakes -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Pancakes</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Add Fruit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- EGGCELLENTCHOICES Tab -->
+    <div class="tab-pane fade show" id="EGGCELLENTCHOICES" role="tabpanel" aria-labelledby="EGGCELLENTCHOICES-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - The Usual -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">The Usual</span><span class="menu-row__dots"></span><span class="menu-row__price">6</span></p>
+                        <p class="card-text">2 Eggs, Choice of Meat, Red Skin Potatoes and Toast</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - The Big Breakfast -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">The Big Breakfast</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">3 Eggs, Bacon, Ham, Sausage, Red Skin Potatoes and Toast</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Day Break -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Day Break</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">2 Eggs, 2 Pancakes and a Choice of Meat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Rise & Shine -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Rise & Shine</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">2 Eggs, 2 French Toast, and a Choice of Meat </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Early Bird -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Early Bird</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">2 Eggs, 2 Fruit Crepes and a Choice of Meat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Crack of Dawn -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Crack of Dawn</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">2 Eggs, 2 Biscuits & Gravy and a Choice of Meat </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Avocado Toast -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Avocado Toast</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">7 Grain Toast Topped with Goat Cheese, Avocado, Bacon, Tomatoes and 2 Eggs Over Easy on Top</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- SKILLETS Tab -->
+    <div class="tab-pane fade show" id="SKILLETS" role="tabpanel" aria-labelledby="SKILLETS-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Corned Beef Hash -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Corned Beef Hash</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Onion, Green Pepper, Corned Beef, Red Skin Potatoes, and 2 Eggs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Meatlovers Skillet -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Meatlovers Skillet</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Ham, Bacon, Sausage, Cheddar Cheese, Red Skin Potatoes and 2 Eggs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Sweet Potato Skillet -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Sweet Potato Skillet</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Red Pepper, Onion, Sausage, Spinach, Sweet Potato and 2 Eggs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - West Skillet -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">West Skillet</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Ham, Green Pepper, Onion, Cheddar Cheese, Red Skin Potatoes, and 2 Eggs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Vegetable Skillet -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Vegetable Skillet</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">Fire Roasted Vegetables, Spinach, Red Skin Potatoes, Feta Cheese, and 2 Eggs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Roadhouse Skillet -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Roadhouse Skillet</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">Green Pepper, Onion, Sausage, Biscuit, Cheddar Cheese, Red Skin Potatoes, Sausage Gravy and 2 Eggs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chorizo Skillet -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chorizo Skillet</span><span class="menu-row__dots"></span><span class="menu-row__price">8.5</span></p>
+                        <p class="card-text">Green Pepper, Onion, Jalapeno, Cheddar, Avocado, Red Skin Potatoes and 2 Eggs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- BREAKFAST SANDWICHES Tab -->
+    <div class="tab-pane fade show" id="BREAKFASTSANDWICHES" role="tabpanel" aria-labelledby="BREAKFASTSANDWICHES-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Breakfast Burrito -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Breakfast Burrito</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text">2 Scrambled Eggs, Choice of Meat, Red Skin Potatoes, Cheddar Cheese, Honey Wheat Tortilla, Sour Cream and Salsa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Breakfast Sandwich -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Breakfast Sandwich</span><span class="menu-row__dots"></span><span class="menu-row__price">6</span></p>
+                        <p class="card-text">2 Scrambled Eggs, Choice of Meat, American Cheese, and Bread </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - BELT -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">BELT</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text">Bacon, Egg, Lettuce, Tomato on Grilled Italian Bread with American Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Monte Cristo -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Monte Cristo</span><span class="menu-row__dots"></span><span class="menu-row__price">7.5</span></p>
+                        <p class="card-text">French Toast, Ham, Turkey, American Cheese, Swiss Cheese, and Raspberry Sauce </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Waffle Breakfast Sandwich -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Waffle Breakfast Sandwich</span><span class="menu-row__dots"></span><span class="menu-row__price">7.5</span></p>
+                        <p class="card-text">Choice of Meat, American Cheese, Scrambled Eggs, Maple Syrup </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- SALADS Tab -->
+    <div class="tab-pane fade show" id="SALADS" role="tabpanel" aria-labelledby="SALADS-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken House Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken House Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Romaine & Gourmet Greens, Strawberries, Mandarin Oranges, Toasted Almonds, Feta Cheese, Dried Cherries, Ripe Avocado. Poppy Seed Dressing Recommended</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken Greek Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken Greek Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Romaine Gourmet Greens and Chicken, Topped with Feta Cheese, Ripe Tomatoes, Cucumbers, Sliced Beets, Kalamata Olives, Pepperoncino Peppers and Red Onions. Greek Dressing Recommended.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Cobb Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Cobb Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Romaine and Gourmet Greens, Topped with Chopped Chicken Breast, Blue Cheese, Bacon Crumbles, Tomatoes, Eggs and Avocado. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chef Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chef Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">A Blend of Romaine and Gourmet Greens with Turkey Breast, Smoked Ham, Swiss and Cheddar Cheese, Chopped Egg, Bacon, Tomatoes and Avocado. Ranch Dressing Recommended. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Arugula & Chicken Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Arugula & Chicken Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Gourmet Greens, Arugula, Caramelized Pecans, Tomato, Crumbled Goat Cheese, Sliced Strawberries, Dried Cherries and Red Onions. Balsamic Vinaigrette Dressing Recommended</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken Caesar Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken Caesar Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Our House Made Caesar Dressing, Chicken, Homemade Croutons, and Shaved Parmesan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken & Fruit Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken & Fruit Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Mixed Fruit, Feta Cheese, Melon, Strawberries, Pineapple and Blueberries. Raspberry Vinaigrette Dressing Recommended.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken Strip Salad -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken Strip Salad</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">A Blend of Romaine and Gourmet Greens with Breaded Chicken Strips, Cheddar Cheese, Chopped Egg, Tomato, Avocado, and a Purple Onion Ring.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- BURGERS Tab -->
+    <div class="tab-pane fade show" id="BURGERS" role="tabpanel" aria-labelledby="BURGERS-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Breakfast Burger -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Breakfast Burger</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">American, Bacon, and an Egg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - All American -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">All American</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">American, Lettuce, Tomato, and Mayo </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Frisco Melt -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Frisco Melt</span><span class="menu-row__dots"></span><span class="menu-row__price">9</span></p>
+                        <p class="card-text">Grilled Rye, Swiss, American, Russian Dressing, Bacon, and Onion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- VEGETARIAN Tab -->
+    <div class="tab-pane fade show" id="VEGETARIAN" role="tabpanel" aria-labelledby="VEGETARIAN-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - House Vegetable Wrap -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">House Vegetable Wrap</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text">Roasted Vegetables, Avocado, Lettuce and Tomato, Crumbled Feta, and Salsa Ranch Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Harvest Melt -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Harvest Melt</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text">Grilled Roasted Vegetables, Avocado, Provolone, and Pesto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Vegetarian Reuben -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Vegetarian Reuben</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text">Sauerkraut, Swiss Cheese, Avocado, Sliced Tomato, Cole Slaw, Grilled on Dill Rye, with Russian Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Grilled Vegetable Pita -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Grilled Vegetable Pita</span><span class="menu-row__dots"></span><span class="menu-row__price">7</span></p>
+                        <p class="card-text">Peppers, Onions, Lettuce, Tomato, Summer Sq0uash, Asparagus, Broccoli, Carrots and Feta. Grilled on our Pita Bread and Served with Greek Dressing on Side</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+    <!-- SANDWICHES Tab -->
+    <div class="tab-pane fade show" id="SANDWICHES" role="tabpanel" aria-labelledby="SANDWICHES-tab">
+        <div class="row align-items-start">
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Breakfast Club -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Breakfast Club</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Ham, Turkey, Bacon, Lettuce, Tomato and Mayo on Grilled Bread with Fried Egg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Reuben -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Reuben</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Classic with Corned Beef, Swiss, Sauerkraut, and Russian Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Turkey Reuben -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Turkey Reuben</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Cole Slaw, Swiss Cheese, Russian Dressing and Turkey Breast</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Highlander -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Highlander</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Pastrami, Swiss Cheese, Cole Slaw and Russian Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Spicy Chicken Wrap -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Spicy Chicken Wrap</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Crispy Chicken, Lettuce, Tomato, Cheddar Cheese, Blue Cheese Crumbles, Spicy Buffalo Sauce and Ranch Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Philly Steak -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Philly Steak</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Onion, Green Pepper, Mushroom, and American Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken Strip Pita -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken Strip Pita</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Crispy Chicken, Lettuce, Tomato, Mayo, American and Swiss Cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Chicken Greek Wrap -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Chicken Greek Wrap</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Grilled Chicken Breast, Lettuce, Tomato, Feta Cheese, Onions, Beets, Pepperon cini, Olives and Greek Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Slim Jim -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Slim Jim</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">On Sub Bun with Grilled Ham, Swiss Cheese, Lettuce, Tomato, and Mayo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Harvest Chicken -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Harvest Chicken</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Grilled Chicken Breast, Roasted Vegetables, Avocado, Provolone, and Pesto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Crispy Chicken -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Crispy Chicken</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">On Bun with Buttermilk Fried Chicken, Lettuce, Tomato and Mayo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Hawthorne -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Hawthorne</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Turkey Breast, Swiss, Cole Slaw, Lettuce, Tomato and Russian Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Caesar Wrap -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Caesar Wrap</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Grilled Chicken Breast, Romaine Lettuce, Tomatoes, Shredded Parmesan and House Made Caesar Dressing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Cuban -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Cuban</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Ham, Pastrami, Cheddar and Swiss Cheese, Sliced Pickles and Mustard</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Grilled Cheese -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Grilled Cheese</span><span class="menu-row__dots"></span><span class="menu-row__price">7.5</span></p>
+                        <p class="card-text">On Italian Bread with American, Swiss, and Provolone</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Hawaiian Chicken -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Hawaiian Chicken</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Grilled Chicken Breast, Bacon, Swiss Cheese, Grilled Pineapple, Lettuce, Tomato, and a Side of BBQ Sauce</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Menu Item - Cali Thai -->
+                <div class="media media-menu align-items-center mb-3">
+                    <div class="media-body">
+                        <p class="menu-row menu-row--sm text-uppercase mb-1"><span class="menu-row__name">Cali Thai</span><span class="menu-row__dots"></span><span class="menu-row__price">8</span></p>
+                        <p class="card-text">Carrots, Grilled Onions, Grilled Chicken, Provolone, Thai Sauce</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- .row -->
+    </div>
+    <!-- .tab-pane -->
+
+
+
+
+
+
+
+<!-- INSERT ALL CATEGORIES ABOVE HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE  INSERT ALL CATEGORIES UNDER HERE -->
+
+
+
+
+        </div><!-- .container -->
+    </section><!-- .section -->
+
+
+    
+    <!-- Footer -->
+    <footer class="site-footer py-4 py-lg-0">
+        <div class="row align-items-center no-gutters">
+            <div class="col-12 col-lg-3 offset-lg-1 text-center text-lg-left mb-3 mb-lg-0">
+                    <img style="max-height: 30px;" src="assets\images\logos\HASA-LOGO.png">
+            </div>
+
+            <div class="col-12 col-lg-4 text-center order-lg-2">
+                <p class="site-footer__copyright">Copyrights © HASA INC</p>
+                
+            </div>
+            <div class="col-12 col-lg-4 text-center order-lg-2">
+                    <a href="https://hasahub.com" class="site-footer__copyright">www.HasaHub.com</a>
+            </div>
+            
+
+        </div>
+    </footer>
+
+
+    <!-- Book Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content pt-2 pb-2 px-lg-2">
+
+                <!-- Header -->
+                <div class="modal-header justify-content-center border-0">
+                    <!-- Heading -->
+                    <div class="mb-0 font-size-lg text-center">
+                        <!-- Title -->
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <p class="label-heading-text text-primary mb-1">Reservation</p>
+                                <h2 class="h2">Online Booking</h2>
+                            </div>
+                        </div>
+                        <!-- Subtitle -->
+                        <div class="row justify-content-center mt-1">
+                            <div class="col-11 col-xl-7 col-mb-10">
+                                <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="close position-absolute right-0 top-0 p-4" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <form class="book-form">
+                        <div class="row no-gutters">
+
+                            <div class="col-lg-3 position-relative z-index-2">
+                                <div class="form-group">
+                                    <label for="modalBookFormInputDate">Date and Time</label>
+                                    <input type='text' class="form-control datetimepicker" id="modalBookFormInputDate" placeholder="2019/05/15 19:00"/>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputName">Your Name</label>
+                                    <input type="text" class="form-control" id="modalInputName" placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="form-group">
+                                    <label for="modalInputPhone">Phone</label>
+                                    <input type="tel" class="form-control" id="modalInputPhone" placeholder="(389)748-8736">
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3">
+                                <div class="btn btn-hero btn-primary">Book</div>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body-->
+
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog-->
+    </div><!-- .modal -->
+
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/popper/popper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjM9C5HqZRxtYPOMDtpJjj392tWWo3EkU"></script>
+
+    <script src="assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="assets/vendors/bootstrap/js/dist/modal.js"></script>
+    <script src="assets/vendors/typed/typed.min.js"></script>
+    <script src="assets/vendors/jquery-datepicker/jquery-datetimepicker.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax-elements.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

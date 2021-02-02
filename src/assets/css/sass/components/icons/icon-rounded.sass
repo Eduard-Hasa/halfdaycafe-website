@@ -1,0 +1,83 @@
+.icon-rounded
+    width: 10rem
+    height: 10rem
+    padding: 25px
+
+    border-radius: 50%
+    border: 2px solid $rounded-icon-border-color
+    transition: all .2s
+    display: block
+
+    &__circle
+        height: 100%
+        width: 100%
+
+        background-color: $rounded-icon-circle-bg-color
+        border-radius: 50%
+        box-shadow: $rounded-icon-circle-box-shadow
+
+        display: flex
+        align-items: center
+        justify-content: center
+
+        transition: all .2s ease
+
+        img,
+        svg 
+            width: 50%
+            height: 50%
+            fill: $black
+            transition: all .2s ease
+
+    &:hover,
+        background-color: rgba($light, .2)
+        .icon-rounded__circle
+            background-color: $rounded-icon-circle-active-bg-color
+            svg 
+                *
+                    fill: $rounded-icon-circle-icon-color
+
+    &--active
+        .icon-rounded__circle
+            background-color: $rounded-icon-circle-active-bg-color
+            svg 
+                *
+                    fill: $rounded-icon-circle-icon-color
+
+    // sizes
+    &--sm 
+        width: 7.5rem
+        height: 7.5rem
+        padding: 17px
+        border-width: 1px
+        img,
+        svg 
+            width: 40%
+            height: 40%
+
+    &--xs 
+        width: 4.5rem
+        height: 4.5rem
+        padding: 12px
+        border-width: 1px
+        img,
+        svg 
+            width: 35%
+            height: 35%
+
+    // colors
+    @each $color, $value in $theme-colors 
+        &--#{$color}
+            &:hover
+                .icon-rounded__circle
+                    background-color: $value
+                    svg
+                        *
+                            fill: color-yiq($value)
+
+            &.icon-rounded--active
+                .icon-rounded__circle
+                    background-color: $value
+                    svg
+                        *
+                            fill: color-yiq($value)

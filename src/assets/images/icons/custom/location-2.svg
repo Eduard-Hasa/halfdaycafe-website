@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="59px" viewBox="0 0 30 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>pin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page-3" transform="translate(-1262.000000, -8163.000000)" fill="#E50303" fill-rule="nonzero">
+            <g id="pin" transform="translate(1262.000000, 8163.000000)">
+                <path d="M30,15 C30,6.729 23.271,0 15,0 C6.729,0 0,6.729 0,15 C0,22.934 6.195,29.431 14,29.949 L14,58 C14,58.553 14.448,59 15,59 C15.552,59 16,58.553 16,58 L16,29.949 C23.805,29.431 30,22.934 30,15 Z M10,15 C7.794,15 6,13.206 6,11 C6,8.794 7.794,7 10,7 C12.206,7 14,8.794 14,11 C14,13.206 12.206,15 10,15 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

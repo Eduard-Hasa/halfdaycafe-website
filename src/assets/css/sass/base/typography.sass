@@ -1,0 +1,121 @@
+//headings
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5, 
+.h6
+	&:last-child
+		margin-bottom: 0
+
+
+
+@if $enable-responsive-font-sizes == false
+	@include media-breakpoint-down(md)
+		.h1,
+		h1
+			font-size: $h1-font-size-md
+			
+		.h2,
+		h2
+			font-size: $h2-font-size-md
+			
+		.h3,
+		h3
+			font-size: $h3-font-size-md
+			
+		.h4,
+		h4
+			font-size: $h4-font-size-md
+			
+		.h5,
+		h5
+			font-size: $h5-font-size-md
+			
+		.h6,
+		h6
+			font-size: $h6-font-size-md
+
+
+
+// titles
+.display-1, 
+.display-2, 
+.display-3, 
+.display-4
+	
+	&:last-child
+		margin-bottom: 0
+
+
+@if $enable-responsive-font-sizes == false
+	@include media-breakpoint-down(md)
+		.display-1
+			font-size: $display1-size * .8
+			
+		.display-2
+			font-size: $display2-size * .8 
+			
+		.display-3
+			font-size: $display3-size * .8
+			
+		.display-4
+			font-size: $display4-size * .8
+			
+
+
+	@include media-breakpoint-down(xs)
+		.display-1
+			font-size: $display1-size * .685
+			
+		.display-2
+			font-size: $display2-size * .685 
+			
+		.display-3
+			font-size: $display3-size * .685
+			
+		.display-4
+			font-size: $display4-size * .685
+
+
+// paragraps
+p
+	&:last-child
+		margin-bottom: 0
+
+
+.font-size-xl
+	@include font-size($font-size-xl)
+	
+	@include media-breakpoint-down(md)
+		font-size: $font-size-xl * .8
+		
+	@include media-breakpoint-down(xs)
+		font-size: $font-size-xl * .65
+	
+.font-size-lg
+	@include font-size ($font-size-lg)
+	
+	@include media-breakpoint-down(md)
+		font-size: $font-size-lg * .95
+		
+	@include media-breakpoint-down(xs)
+		font-size: $font-size-lg * .9
+	
+	
+.font-size-sm
+	@include font-size ($font-size-sm, true)
+
+
+.line-height-lg
+	line-height: $line-height-lg
+	
+
+.font-weight-medium
+	font-weight: 600 !important 

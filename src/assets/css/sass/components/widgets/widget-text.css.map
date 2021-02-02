@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACX,SAAS,EAAE,OAAO;CAAG",
+    "sources": [
+        "widget-text.sass"
+    ],
+    "names": [],
+    "file": "widget-text.css"
+}

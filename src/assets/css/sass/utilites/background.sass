@@ -1,0 +1,66 @@
+@each $color, $value in $grays
+	@include bg-variant(".bg-gray-#{$color}", $value)
+
+.bg-black
+	background-color: $black
+	
+.bg-transparent
+	background-color: transparent!important 
+	 
+
+@each $color, $value in $theme-colors
+	.fill-#{$color}
+		*
+			fill: $value
+
+
+// background images
+.bg-img
+	background-repeat: no-repeat
+	background-size: auto
+	background-position: center center
+	// position
+	&--top
+		background-position: center top
+	&--top-right
+		background-position: right top
+	&--top-left
+		background-position: left top
+
+	&--bottom
+		background-position: center bottom
+	&--bottom-right
+		background-position: right bottom
+	&--bottom-left
+		background-position: left bottom
+
+	&--center
+		background-position: center center
+	&--center-right
+		background-position: right center
+	&--center-left
+		background-position: left center
+
+	//size
+	&--cover
+		background-size: cover
+	&--100
+		background-size: 100% 100%
+	&--horizontal-100
+		background-size: 100% auto
+	&--vertical-100
+		background-size: auto 100%
+		
+.bg-cover
+	background-size: cover 
+	background-position: 50% 50%
+	background-repeat: no-repeat  
+	
+.bg-between
+	background-repeat: no-repeat
+	background-position: 0, 100%
+	background-size: auto
+	
+
+	@include media-breakpoint-down (lg)
+		background-image: none !important

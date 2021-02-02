@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,IAAI;CAIkB;;AAN3C,AAGI,mBAHe,CAGf,EAAE,CAAC;EACC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;CAAG",
+    "sources": [
+        "working-hours-list.sass"
+    ],
+    "names": [],
+    "file": "working-hours-list.css"
+}

@@ -1,0 +1,32 @@
+.breadcrumb
+    &-item 
+        a 
+            transition: all .2s
+        &.active
+            opacity: .6
+    
+    &-light 
+        background-color: $breadcrumb-light-background
+        .breadcrumb-item,
+        .breadcrumb-item + .breadcrumb-item:before 
+            color: $breadcrumb-light-color
+
+        a 
+            color: $breadcrumb-light-color
+            &:hover
+                color: $breadcrumb-dark-hover-color
+            
+
+    &-dark 
+        background-color: $breadcrumb-dark-background
+        .breadcrumb-item,
+        .breadcrumb-item + .breadcrumb-item:before 
+            color: $breadcrumb-dark-color
+        a 
+            color: $breadcrumb-dark-color
+            &:hover
+                color: $breadcrumb-dark-hover-color
+
+    &-transparent
+        background: transparent !important
+

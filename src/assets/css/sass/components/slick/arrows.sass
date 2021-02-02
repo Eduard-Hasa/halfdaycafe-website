@@ -1,0 +1,159 @@
+.slick-slider
+
+	&.slick-arrows
+		padding-left: $slick-arrow-width
+		padding-right: $slick-arrow-width 
+		
+		@include media-breakpoint-down( xs )
+			padding-left: $slick-arrow-width * 0.66
+			padding-right: $slick-arrow-width * 0.66
+
+	.slick-arrow
+		width: $slick-arrow-width
+		height: $slick-arrow-width
+		background-color: $slick-arrow-background !important
+		border-radius: $slick-arrow-border-radius
+		background-repeat: no-repeat !important
+		background-position: center center !important
+		background-size: 30% auto !important
+		margin-top: - ($slick-arrow-width / 2)
+		top: 50%
+		transform: none
+		z-index: 5
+		transition: all 0.3s ease
+		
+		@include media-breakpoint-down( xl )
+			box-shadow: 0 0.5rem 1rem rgba(33,37,41,0.08)
+			
+		@include media-breakpoint-down( xs )
+			width: $slick-arrow-width * 0.66
+			height: $slick-arrow-width * 0.66
+			margin-top: - ($slick-arrow-width * 0.66 / 2 )
+			
+		&:hover,
+		&:focus
+			background-color: darken( $slick-arrow-background, 8%) !important
+
+		&:before
+			display: none
+			
+
+		&.slick-next
+			right: 0
+			background-image: str_replace(url("data:image/svg+xml,%3Csvg class='d-block mx-auto mb-3' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 31.49 31.49' style='enable-background:new 0 0 31.49 31.49;' width='25' heoght='24'%3E%3Cpath fill='#{$slick-arrow-color}' d='M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111 C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587 c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z'/%3E%3C/svg%3E"), '#', '%23')
+			
+
+		&.slick-prev
+			left: 0
+			background-image: str_replace(url("data:image/svg+xml,%3Csvg class='d-block mx-auto mb-3' xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 31.49 31.49' style='enable-background:new 0 0 31.49 31.49;' width='25' heoght='24'%3E%3Cpath fill='#{$slick-arrow-color}' d='M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554 c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587 c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z'/%3E%3C/svg%3E"), '#', '%23')
+	
+
+	&--has-gutters			  
+		.slick-arrow
+			&.slick-prev
+				left: $grid-gutter-width/2
+				
+			&.slick-next
+				right: $grid-gutter-width/2
+				
+		@each $size in $slick-gutters
+			&-#{$size}
+				.slick-arrow
+					&.slick-prev
+						left: $size * 1px
+						
+					&.slick-next
+						right: $size * 1px
+
+
+	&--arrows-outside
+		&.slick-arrows
+			padding-left: 0
+			padding-right: 0
+		
+
+		.slick-arrow
+
+			&.slick-next
+				right: -$slick-arrow-outside-offset
+				transform: translateX(100%)
+				
+				@media (max-width: 1760px)
+					right: 0!important
+					transform: translateX(50%)
+
+			&.slick-prev
+				left: -$slick-arrow-outside-offset
+				transform: translateX(-100%)
+				
+				@media (max-width: 1760px)
+					left: 0!important
+					transform: translateX(-50%)
+					
+
+					
+		&.slick-slider--has-gutters
+			.slick-arrow
+				&.slick-next
+					right: - ( $slick-arrow-outside-offset - $grid-gutter-width / 2 )
+					
+					@media (max-width: 1760px)
+						right: $grid-gutter-width / 2!important
+
+					
+				&.slick-prev
+					left: - ( $slick-arrow-outside-offset - $grid-gutter-width / 2 )
+					
+					@media (max-width: 1760px)
+						left: $grid-gutter-width / 2!important
+
+					
+			@each $size in $slick-gutters
+				&-#{$size}
+					.slick-arrow
+						&.slick-next
+							right: - ( $slick-arrow-outside-offset - $size )
+							
+							@media (max-width: 1760px)
+								right: $size * 1px!important
+							
+						&.slick-prev
+							left: - ( $slick-arrow-outside-offset - $size )
+							
+							@media (max-width: 1760px)
+								left: $size * 1px!important
+				
+
+	&--arrows-inside	
+		&.slick-arrows
+			padding-left: 0
+			padding-right: 0
+		  	 
+		.slick-arrow
+			&.slick-prev
+				left: $slick-arrow-inside-offset
+				transform: translateX(0)
+				
+			&.slick-next
+				right: $slick-arrow-inside-offset
+				transform: translateX(0)
+				
+
+		&.slick-slider--has-gutters
+			.slick-arrow
+				&.slick-prev
+					left: $slick-arrow-inside-offset + $grid-gutter-width/2
+					
+				&.slick-next
+					right: $slick-arrow-inside-offset + $grid-gutter-width/2
+					
+			@each $size in $slick-gutters
+				&-#{$size}
+					.slick-arrow
+						&.slick-prev
+							left: $size + $slick-arrow-inside-offset
+							
+						&.slick-next
+							right: $size + $slick-arrow-inside-offset
+				
+

@@ -1,0 +1,535 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+//
+// Color system
+//
+// Custom theme grays
+$gray-100:                          #fbfbfb !default;
+$gray-200:                          #f2f2f2 !default;
+$gray-300:                          #dee2e6 !default;
+$gray-400:                          #ced4da !default;
+$gray-500:                          #adb5bd !default;
+$gray-600:                          #6c757d !default;
+$gray-700:                          #495057 !default;
+$gray-800:                          #343a40 !default;
+$gray-900:                          #212529 !default;
+
+$grays:                             () !default;
+
+$grays:                             map-merge((), $grays);
+
+$black:                             #212529 !default;
+
+// Custom colors
+$primary:                           #e50303;
+$secondary:                         #ff3d3d;
+
+$colors:                            () !default;
+
+$colors:                            map-merge((), $colors);
+
+
+
+$brand: 		                        #563d7c !default;
+
+// Custom theme colors
+$theme-colors:                      () !default;
+
+$theme-colors: map-merge((
+  'brand': $brand
+), $theme-colors);
+
+
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-print-styles:               false !default;
+$enable-responsive-font-sizes:      true !default;
+
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer:                            1.5rem !default;
+
+// Cutom spcaers
+$spacers:                           () !default;
+
+$spacers: map-merge((
+  2: (  $spacer * .625),
+  5: ( $spacer * 2 ),
+  6: ( $spacer * 3 ),
+  7: ( $spacer * 4 ),
+  8: ( $spacer * 6 )
+), $spacers);
+
+
+
+// Cusotm sizes
+$sizes:                             () !default;
+
+$sizes: map-merge((
+  30: 30%
+), $sizes);
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+
+
+
+
+// Links
+//
+// Style anchor elements.
+
+
+
+
+// Paragraphs
+//
+// Style p element.
+
+
+
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// Add custom brakepoint
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1580px
+) !default;
+
+
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// Add cusotm container width
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+) !default;
+
+
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                      12 !default;
+$grid-gutter-width:                 30px !default;
+
+
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+$box-shadow-sm:                     0 .15rem .5rem rgba($black, .08) !default;
+$box-shadow:                        0 .5rem 1rem rgba($black, .08) !default;
+$box-shadow-lg:                     0 1rem 3rem rgba($black, .1) !default;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:            "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-tags:                  "Dancing Script", "Muli", cursive !default;
+$font-family-base:                  $font-family-sans-serif !default;
+
+$font-size-base:                    1rem !default; // Assumes the browser default, typically `16px`
+$font-size-xl:                      $font-size-base * 2 !default;
+$font-size-lg:                      $font-size-base * 1.125 !default;
+
+
+$line-height-lg:                    1.8 !default;
+
+
+$font-weight-semibold:              600 !default;
+
+
+// If $enable-responsive-font-sizes set to false, uncoment this
+$h1-font-size-md:                   $font-size-base * 2 !default;
+$h2-font-size-md:                   $font-size-base * 1.6 !default;
+$h3-font-size-md:                   $font-size-base * 1.4 !default;
+$h4-font-size-md:                   $font-size-base * 1.35 !default;
+$h5-font-size-md:                   $font-size-base * 1.125 !default;
+$h6-font-size-md:                   $font-size-base !default;
+
+$headings-font-weight:              $font-weight-semibold !default;
+$headings-line-height:              1.3 !default;
+
+
+$display1-weight:                   $font-weight-semibold !default;
+$display2-weight:                   $font-weight-semibold !default;
+$display3-weight:                   $font-weight-semibold !default;
+$display4-weight:                   $font-weight-semibold !default;
+$display-line-height:               1.1 !default;
+
+
+  // Fika Avatars
+  $avatar-initials-background:      $gray-600 !default;
+  $avatar-quote-background:         $primary !default;
+  $avatar-quote-icon-color:         rgba(255,255,255,1) !default;
+
+  // DateTimePicker
+  $datepicker-current-color:        $primary !default;
+  $datepicker-hover-color:          $secondary !default;
+  $datepicker-arrows-color:         $black !default;
+  $datepicker-border-color:         $gray-300  !default;
+  $datepicker-cell-background-color: $gray-100  !default;
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-padding-y:               0.845rem !default;
+$input-btn-padding-x:               1.75rem !default;
+$input-btn-line-height:             1.4 !default;
+
+$input-btn-padding-y-lg:            0.97rem !default;
+$input-btn-padding-x-lg:            2rem !default;
+$input-btn-line-height-lg:          1.4 !default;
+
+$input-btn-padding-y-sm:            0.75rem !default;
+$input-btn-padding-x-sm:            1.5rem !default;
+$input-btn-line-height-sm:          1.4 !default;
+
+$input-font-size-base:              0.81 !default;
+$input-font-size-base-sm:           0.69 !default;
+$input-font-size-base-lg:           0.94 !default;
+
+$input-placeholder-color:           $black !default;
+
+  $label-color:                     $gray-600 !default;
+
+  // Fika Book form
+  $book-form-border-color:          $gray-300 !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-border-width:                  0 !default;
+
+$btn-font-size-base:                $input-font-size-base !default;
+$btn-font-size-base-sm:             $input-font-size-base-sm !default;
+$btn-font-size-base-lg:             $input-font-size-base-lg !default;
+
+$btn-border-radius:                 0 !default;
+$btn-border-radius-lg:              0 !default;
+$btn-border-radius-sm:              0 !default;
+
+
+// Type
+$btn-icon-font-size:              ($font-size-base * 1.25) !default;
+$btn-icon-font-size-xs:           ($font-size-base * .75) !default;
+$btn-icon-font-size-sm:           ($font-size-base * .875) !default;
+$btn-icon-font-size-lg:           ($font-size-base * 1.75) !default;
+$btn-icon-font-size-xl:           ($font-size-base * 2.5) !default;
+
+$btn-icon-width:                  ($font-size-base * 2.75) !default;
+$btn-icon-width-xs:               ($font-size-base * 1.5) !default;
+$btn-icon-width-sm:               ($font-size-base * 2.125) !default;
+$btn-icon-width-lg:               ($font-size-base * 3.125) !default;
+$btn-icon-width-xl:               ($font-size-base * 4.5) !default;
+
+$btn-icon-height:                 $btn-icon-width !default;
+$btn-icon-height-xs:              $btn-icon-width-xs !default;
+$btn-icon-height-sm:              $btn-icon-width-sm !default;
+$btn-icon-height-lg:              $btn-icon-width-lg !default;
+$btn-icon-height-xl:              $btn-icon-width-xl !default;
+
+$btn-box-shadow-value:            0 .25rem .75rem !default;
+
+
+// Forms
+$custom-control-indicator-bg:                 $gray-300 !default
+
+$custom-control-indicator-border-color:       transparent !default
+
+$custom-control-indicator-disabled-bg:        $gray-200 !default
+
+$custom-control-indicator-focus-box-shadow:   none !default
+$custom-control-indicator-focus-border-color: transparent !default
+
+$custom-control-indicator-size:               1.25rem !default
+
+  // Fika custom dark switch
+  $custom-switch-dark-bg:                     rgba( #fff, 0.2) !default
+  $custom-switch-dark-indicator-bg:           #fff !default
+
+  $custom-switch-dark-active-bg:              #fff !default
+  $custom-switch-dark-active-indicator-bg:    $primary !default
+
+  $custom-switch-dark-disabled-bg:            rgba( #fff, 0.1 )!default
+  $custom-switch-dark-disabled-indicator-bg:  rgba( #fff, 0.5 ) !default
+
+
+$input-placeholder-color:           $black !default;
+$input-color:                       $black !default;
+
+// Form validation
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+
+// Navs
+
+// Navs
+
+$nav-link-padding-y:                0.5rem !default;
+$nav-link-padding-x:                1rem !default;
+$nav-link-disabled-color:           $gray-600 !default;
+
+$nav-link-color:                    $gray-900 !default;
+$nav-link-font-size:                1.075rem !default;
+$nav-link-font-weight:              300 !default;
+
+$nav-link-hover-color:              $primary !default;
+
+$bav-link-active-color:             $gray-900 !default;
+$nav-link-active-font-weight:       600 !default;
+
+
+// Navbar
+$navbar-nav-link-padding-x:         .8rem !default;
+
+  // Fika navbar
+  // dark
+  $navbar-dark-background-color:          $black !default;
+  $navbar-dark-sidebar-background-color:  $black !default;
+  $navbar-dark-sidebar-color:             rgba(255,255,255,1) !default;
+  $navbar-dark-sidebar-active-color:      $secondary !default;
+  $navbar-dark-on-scroll-background:      $black !default;
+
+  // light
+  $navbar-light-background-color:         rgba(255,255,255,1) !default;
+  $navbar-light-sidebar-background-color: rgba(255,255,255,1) !default;
+  $navbar-light-sidebar-color:            $black !default;
+  $navbar-light-sidebar-active-color:     $secondary !default;
+  $navbar-light-on-scroll-background:     rgba(255,255,255,1) !default;
+
+  // other
+  $navbar-on-scroll-background:           rgba(0,0,0,.6) !default;
+  $navbar-mobile-collapse-background:     rgba(0,0,0,.6) !default;
+  $navbar-border-color:                   rgba(255,255,255, .5) !default;
+
+// link colors
+$navbar-dark-color:                 rgba(255,255,255,1) !default;
+$navbar-light-color:                $black !default;
+
+// active
+$navbar-active-color:               $secondary !default;
+$navbar-dark-active-color:          $secondary !default;
+$navbar-light-active-color:         $secondary !default;
+
+// Pagination
+
+
+// Jumbotron
+
+
+// Cards
+$card-spacer-x:                     2rem !default;
+
+$card-text-font-size:               $font-size-lg !default;
+$card-text-color:                   $gray-600 !default;
+$card-text-line-height:             1.4 !default;
+
+// Fika image box with text
+$card-img-box-overlay-gradient:     linear-gradient(to bottom, rgba(#000, 0) 0%, rgba(#000, 1) 75%) !default;
+
+// Tooltips
+
+
+// Popovers
+
+
+// Badges
+$badge-font-size:                      75% !default;
+$badge-font-weight:                    400 !default;
+$badge-padding-y:                     .32rem !default;
+$badge-padding-x:                     .8rem !default;
+
+$badge-font-size-sm:                   70% !default;
+$badge-font-weight-sm:                 300 !default;
+$badge-padding-y-sm:                   .25em !default;
+$badge-padding-x-sm:                   .35em !default;
+
+$badge-font-size-lg:                   90% !default;
+$badge-font-weight-lg:                 300 !default;
+$badge-padding-y-lg:                   .6em !default;
+$badge-padding-x-lg:                   1.2em !default;
+
+$badge-box-shadow-value:              0 .15rem .5rem !default;
+
+$badge-pill-padding-x:              .8rem !default;
+
+$badge-smooth-background-opacity:   .1 !default;
+
+
+// Modals
+$modal-title-line-height:           1.375rem !default;
+
+$modal-footer-padding-y:            .75rem !default;
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+
+
+// Progress bars
+
+
+
+// Toasts
+$toast-padding-y:                   .5rem !default;
+
+$toast-header-color:                #869ab8 !default;
+
+
+// List group
+
+
+// Image thumbnails
+
+
+  // Fika Icons
+  $rounded-icon-border-color:             $gray-200 !default;
+  $rounded-icon-circle-bg-color:          $gray-100 !default;
+  $rounded-icon-circle-active-bg-color:   $secondary !default;
+  $rounded-icon-circle-icon-color:        rgba(255,255,255,1) !default;
+  $rounded-icon-circle-box-shadow:        0 .1rem .7rem rgba($black, .15) !default;
+
+
+// Figures
+
+
+// Breadcrumbs
+
+  // Fika bredcrumb themes
+  $breadcrumb-light-background:     rgba(255,255,255, 1) !default;
+  $breadcrumb-light-color:          $black !default;
+  $breadcrumb-light-hover-color:    $secondary !default;
+
+  $breadcrumb-dark-background:      $black !default;
+  $breadcrumb-dark-color:           rgba(255,255,255, 1) !default;
+  $breadcrumb-dark-hover-color:     $secondary !default;
+
+
+// Carousel
+$slick-arrow-width:                 3rem !default;
+$slick-arrow-border-radius:         0 !default;
+$slick-arrow-inside-offset:         15px !default;
+$slick-arrow-outside-offset:        40px !default;
+
+$slick-arrow-color:                 $secondary !default;
+$slick-arrow-background:            $gray-200 !default;
+
+$slick-dotted-bottom-offset:        30px !default;
+
+$slick-gutters:                     (5, 10) !default;
+
+
+//Map
+$map-height:                        260px !default;
+$map-height-sm:                     210px !default;
+$map-height-lg:                     320px !default;
+
+
+// Close
+
+
+// Spinners
+$spinner-width-lg:                  3rem !default;
+$spinner-height-lg:                 $spinner-width-lg !default;
+$spinner-border-width-lg:           .4em !default;
+
+
+// Code
+
+
+// Printing
+
+
+  // Fika Socials
+  // light (default)
+  $socials-light-border-color:        rgba(255,255,255, 1) !default;
+  $socials-light-hover-bg-color:      rgba(255,255,255, 1) !default;
+  $socials-light-hover-border-color:  rgba(255,255,255, 1) !default;
+  $socials-light-icon-color:          rgba(255,255,255, 1) !default;
+  $socials-light-hover-icon-color:    $primary !default;
+
+  // dark 
+  $socials-dark-border-color:       $black !default;
+  $socials-dark-hover-bg-color:     $black !default;
+  $socials-dark-hover-border-color: $black !default;
+  $socials-dark-icon-color:         $black !default;
+  $socials-dark-hover-icon-color:   rgba(255,255,255, 1) !default;
+
+  // gray
+  $socials-gray-border-color:       $gray-300 !default;
+  $socials-gray-hover-bg-color:     $gray-800 !default;
+  $socials-gray-hover-border-color: $gray-800 !default;
+  $socials-gray-icon-color:         $gray-800 !default;
+  $socials-gray-hover-icon-color:   rgba(255,255,255, 1) !default;
+
+  // primary
+  $socials-primary-border-color:        $gray-300 !default;
+  $socials-primary-hover-bg-color:      $primary !default;
+  $socials-primary-hover-border-color:  $primary !default;
+  $socials-primary-icon-color:          $primary !default;
+  $socials-primary-hover-icon-color:    rgba(255,255,255, 1) !default;
+
+// Single post
+$single-post-line-height:           2em !default;
+
+$single-post-paragraph-margin:      2rem !default;
+$single-post-heading-margin:        1rem !default;

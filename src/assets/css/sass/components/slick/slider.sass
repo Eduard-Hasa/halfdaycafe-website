@@ -1,0 +1,131 @@
+.slick-slider
+
+	$slider: &
+	
+	.slick-list,
+	.slick-track
+		min-width: 100%
+		overflow: hidden
+
+	.slick-track
+		display: flex
+		
+	.slick-slide
+		height: auto
+		
+
+	&.slick-dotted
+		margin-bottom: 30px 
+		position: relative
+
+		.slick-dots
+			bottom: -40px
+			left: 0
+			right: 0
+			
+
+	&--has-gradients.slick-center-mode
+		.slick-list
+			&:before,
+			&:after 
+				content: ''
+				width: 80px
+				height: 100%
+				position: absolute
+				top: 0
+				bottom: 0
+				z-index: 2
+				
+				@include media-breakpoint-up( lg )
+					display: none
+					
+				@include media-breakpoint-down( lg )
+					width: 60px
+				
+
+			&:before	
+				background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				left: 0
+				
+			&:after
+				background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+				right: 0
+		
+
+	// modifiers
+	
+	&--has-gutters
+		margin-left: -$grid-gutter-width/2
+		margin-right: -$grid-gutter-width/2
+		
+		.slick-slide
+			padding-left: $grid-gutter-width/2
+			padding-right: $grid-gutter-width/2
+			
+		@each $size in $slick-gutters
+			
+			&-#{$size}
+				margin-left: -$size * 1px
+				margin-right: -$size * 1px
+				
+				.slick-slide
+					padding-left: $size * 1px
+					padding-right: $size * 1px
+					
+	&--equal-height
+		.slick-track
+			display: flex
+			align-items: stretch
+			
+		.slick__slide
+			height: auto
+			display: flex
+			align-items: stretch
+				
+
+	&--has-shadows
+		.slick-slide
+			padding-top: $grid-gutter-width / 2
+			padding-bottom: $grid-gutter-width / 2
+			
+			> *
+				box-shadow: 0 0 $grid-gutter-width / 2 rgba(33,37,41,0.1)
+				
+		&.slick-dotted
+			margin-bottom: $slick-dotted-bottom-offset - $grid-gutter-width / 2
+			
+			.slick-dots
+				bottom: - ( $slick-dotted-bottom-offset - $grid-gutter-width / 2 )
+				
+
+		@each $size in $slick-gutters
+			&.slick-slider--has-gutters-#{$size}
+				.slick-slide
+					padding-top: $size * 1px
+					padding-bottom: $size * 1px
+					
+					> *
+						box-shadow: 0 0 $size * 1px rgba(33,37,41,0.1)
+						
+				&.slick-dotted
+					margin-bottom: $slick-dotted-bottom-offset - $size
+					
+					.slick-dots
+						bottom: -($slick-dotted-bottom-offset - $size)
+
+			
+			
+
+
+@import 'slide'
+@import 'pagination'
+@import 'arrows'
+@import 'hero-slider'
+@import 'testemonials-slider'
+@import 'instagram-feed'
+@import 'centered-slider'
+@import 'gallery-slider'
+@import 'advantages-slider'
+@import 'menu-slider'
+@import 'short-contacts-slider'
+@import 'entrance-animations'

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;sCAEsC",
+    "sources": [
+        "user-styles.scss"
+    ],
+    "names": [],
+    "file": "user-styles.css"
+}

@@ -1,0 +1,62 @@
+.book-form
+    width: 1210px
+    margin: auto
+    max-width: 100%
+    color: $black
+    z-index: 3
+    box-shadow: $box-shadow-lg
+            
+    .btn-hero
+        height: 60px
+        padding: 1.25rem 3.15rem
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        @include media-breakpoint-up(lg)
+            height: 120px
+
+    .form-group
+        background-color: #fff
+        height: 80px
+        margin: 0
+        padding: 0 1rem 
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        justify-content: center
+        @include media-breakpoint-up(md)
+            padding: 0 1rem 0 1.3rem
+            height: 100px
+        @include media-breakpoint-up(lg)
+            padding: 0 1rem 0 2rem
+            height: 120px
+            border-right: 1px solid $book-form-border-color
+        @include media-breakpoint-up(xl)
+            padding: 0 3rem
+        
+
+    .form-control
+        border: none
+        height: 35px
+        padding: 0
+        color: $black
+        font-weight: 700
+        &:focus,
+        &:active
+            outline: none
+            box-shadow: none
+        @include media-breakpoint-down(lg)
+            height: 30px
+            font-size: .9rem
+
+    label 
+        margin-bottom: 0
+        @include media-breakpoint-down(lg)
+            font-size: .9rem
+
+    ::placeholder
+        opacity: 1
+        color: $input-placeholder-color

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lift - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Lift</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h1 class="mb-1">Lift</h1>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+                        
+                        <!-- Text -->
+                        <p class="font-size-lg mb-4">Visually lifts an element on hover and focus.</p>
+
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card card-post card-overlay my-2 w-100 lift-lg" data-aos="zoom-in">
+                                            <img src="../assets/images/blog/blog-1.jpg" class="card-img" alt="...">
+                                            <a href="#" class="card-img-overlay text-white d-flex flex-column p-2 p-md-3">
+                                                <h4 class="card-title h3 mt-auto mt-auto">High-quality beans</h4>
+                                                <time class="posted-on font-weight-300">15 Dec 2019</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card card-post card-overlay my-2 w-100 lift-lg" data-aos="zoom-in">
+                                            <img src="../assets/images/blog/blog-2.jpg" class="card-img" alt="...">
+                                            <a href="#" class="card-img-overlay text-white d-flex flex-column p-2 p-md-3">
+                                                <h4 class="card-title h3 mt-auto mt-auto">High-quality beans</h4>
+                                                <time class="posted-on font-weight-300">15 Dec 2019</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex">
+                                        <div class="card card-post card-overlay my-2 w-100 lift-lg" data-aos="zoom-in">
+                                            <img src="../assets/images/blog/blog-3.jpg" class="card-img" alt="...">
+                                            <a href="#" class="card-img-overlay text-white d-flex flex-column p-2 p-md-3">
+                                                <h4 class="card-title h3 mt-auto mt-auto">High-quality beans</h4>
+                                                <time class="posted-on font-weight-300">15 Dec 2019</time>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary btn-block lift">Lift Button</button>
+                            </div>
+                        </div>
+
+<pre><code class="p-3 html mb-5">&lt;div class=&quot;card lift lift-lg&quot;&gt;
+  ...
+&lt;/div&gt;
+
+&lt;a href=&quot;#!&quot; class=&quot;btn btn-block btn-primary lift&quot;&gt;
+  Lift Button
+&lt;/a&gt;
+</code></pre>
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+    <script src="../assets/vendors/aos/aos.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

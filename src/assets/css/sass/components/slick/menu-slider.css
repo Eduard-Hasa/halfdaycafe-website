@@ -1,0 +1,23 @@
+.menu-slider {
+  height: 500px;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.menu-slider.slick-initialized {
+  opacity: 1;
+  height: auto;
+}
+
+.menu-slider .slick-arrow {
+  z-index: 5;
+}
+
+@media (max-width: 767px) {
+  .menu-slider .slick-arrow {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+  }
+}
+/*# sourceMappingURL=menu-slider.css.map */

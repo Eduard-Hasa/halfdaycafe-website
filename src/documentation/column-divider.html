@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Columns Dividers</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h1 class="mb-1">Column Dividers</h1>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+                        
+                        <!-- Text -->
+                        <p class="font-size-lg mb-2">You can add nice dividers between columns by adding <code>.divided-columns</code> class to a row. It also affects <code>&lt;hr&gt;</code> tag inside that row, which allows you to beautifully divide content inside a column.</p>
+
+                        <p class="font-size-lg mb-2">You can use color modifiers, point after which breakpoint dividers should be removed, use a standard width or make them thicker.</p>
+                        <ul class="font-size-lg mb-2">
+                            <li><code>.divided-columns</code> - adds right border to each column except the last one</li>
+                            <li><code>.divided-columns--sm</code> -  tells to show dividers when a screen width is bigger than <code>sm</code> breakpoint</li>  
+                            <li><code>.divided-columns--dark</code> -  changes divider's color to a dark one</li> 
+                            <li><code>.divided-columns--thick</code> - makes dividers thicker</li>  
+                        </ul>       
+
+                        <div class="card">
+                            <div class="card-body">
+                        
+                                <div class="row divided-columns divided-columns--sm mb-6">
+                                    <div class="col-sm-4">
+                                        <p class="px-sm-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <hr>
+                                        <p class="px-sm-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="px-sm-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <hr>
+                                        <p class="px-sm-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p class="px-sm-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <hr>
+                                        <p class="px-sm-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="row divided-columns divided-columns--md divided-columns--dark mb-6">
+                                    <div class="col-md-4">
+                                        <p class="px-md-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <p class="px-md-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="px-md-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <p class="px-md-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="px-md-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <p class="px-md-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row divided-columns divided-columns--lg divided-columns--secondary divided-columns--thick mb-6">
+                                    <div class="col-lg-4">
+                                        <p class="px-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <hr>
+                                        <p class="px-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="px-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <hr>
+                                        <p class="px-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="px-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                        <hr>
+                                        <p class="px-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-black p-0">
+<pre class="m-0"><code class="p-3 html p-0">&lt;div class=&quot;row divided-columns divided-columns--sm mb-6&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;p class=&quot;px-sm-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;hr&gt;
+        &lt;p class=&quot;px-sm-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;p class=&quot;px-sm-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;hr&gt;
+        &lt;p class=&quot;px-sm-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;p class=&quot;px-sm-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;hr&gt;
+        &lt;p class=&quot;px-sm-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row divided-columns divided-columns--md divided-columns--dark mb-6&quot;&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;p class=&quot;px-md-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;p class=&quot;px-md-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;p class=&quot;px-md-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;p class=&quot;px-md-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4&quot;&gt;
+        &lt;p class=&quot;px-md-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;p class=&quot;px-md-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row divided-columns divided-columns--lg divided-columns--secondary divided-columns--thick mb-6&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;p class=&quot;px-lg-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;hr&gt;
+        &lt;p class=&quot;px-lg-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;p class=&quot;px-lg-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;hr&gt;
+        &lt;p class=&quot;px-lg-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;p class=&quot;px-lg-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+        &lt;hr&gt;
+        &lt;p class=&quot;px-lg-2&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni soluta expedita placeat consequatur eligendi deserunt assumenda corrupti cupiditat.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+</code></pre>                       
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

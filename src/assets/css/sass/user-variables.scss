@@ -1,0 +1,21 @@
+// user-variables.scss
+// Use this to overwrite Bootstrap and Theme variables
+//
+
+
+// Example of a variable override to change Front's primary color and font size
+// Remove the "//" to comment it in and see it in action!
+// $primary: #FF00AE;
+// $font-size-base: .875rem;
+
+// Theme's primary color has lighter as well as darker color versions,
+// and they also need to be changed upon changing the primary color to a different hex code - otherwise the color of some blocks might look not professional.
+// Here is a list of colors that associate these changes:
+// $primary-darker:                                              $red;
+// $primary-lighter:                                             $red-lighter;
+// $info:                                                        $red-lighter;
+
+
+$theme-colors: (
+  'fika': #000
+);

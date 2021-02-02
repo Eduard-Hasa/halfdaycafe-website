@@ -1,0 +1,15 @@
+.fluid-image-box
+    position: relative
+    width: 100%
+    overflow: hidden
+
+    img 
+        display: block
+        min-width: 100%
+        max-width: 150%
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+
+        @include media-breakpoint-down(md)
+            max-width: 100%

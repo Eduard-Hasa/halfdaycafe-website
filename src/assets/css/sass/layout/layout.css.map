@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACP,KAAK,EAAE,IAAI;EAEX,gBAAgB,EAAE,IAAI;EACtB,SAAS,EAAE,SAAS;CAAG;;ACJxB,AAAA,YAAY,CAAC;EACZ,gBAAgB,EAAE,IAAI;EACtB,UAAU,EAAE,CAAC,CAAC,CAAC,CAAC,IAAI,CAAC,mBAAmB;CAGhB;;AADvB,AAAD,uBAAY,CAAC;EACZ,SAAS,EAAE,OAAO;CAAG",
+    "sources": [
+        "layout.sass",
+        "header.sass",
+        "footer.sass"
+    ],
+    "names": [],
+    "file": "layout.css"
+}

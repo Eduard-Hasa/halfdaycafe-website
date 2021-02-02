@@ -1,0 +1,28 @@
+.form-control
+	font-size: 1rem
+	border-color: $gray-300
+	&-sm
+		font-size: $font-size-base * $input-font-size-base-sm
+		
+	&-lg
+		font-size: $font-size-base * $input-font-size-base-lg
+		
+
+textarea.form-control
+	height: 105px
+	
+.form-group
+	margin-bottom: 1.125rem 
+
+.input-group
+	> .input-group-append,
+	> .input-group-prepend
+		> .btn
+			padding-left: $input-btn-padding-y
+			padding-right: $input-btn-padding-y  
+	
+
+
+@import 'switches'
+@import 'label'
+@import 'book-form'

@@ -1,0 +1,33 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters .col,
+.no-gutters [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.gutter-5 {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.gutter-5 .col,
+.gutter-5 [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.gutter-10 {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.gutter-10 .col,
+.gutter-10 [class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/*# sourceMappingURL=grid.css.map */

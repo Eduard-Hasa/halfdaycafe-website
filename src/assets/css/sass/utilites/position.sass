@@ -1,0 +1,53 @@
+@each $index in (0, 1, 2, 3, 4, 5)
+	.z-index-#{$index}
+		z-index: $index !important 
+
+@each $index in (1, 2, 3, 4, 5)
+	.z-index-n#{$index}
+		z-index: -$index !important 
+
+// position
+@each $breakpoint in map-keys($grid-breakpoints)
+	@each $position in $positions 
+		@include media-breakpoint-up($breakpoint)
+			.position-#{$breakpoint}-#{$position} 
+					position: $position !important
+
+
+@each $index in (0, 25, 50, 75, 100)
+	.top-#{$index} 
+		top: $index * 1%
+		
+	.right-#{$index} 
+		right: $index * 1%
+		
+	.bottom-#{$index} 
+		bottom: $index * 1%
+		
+	.left-#{$index} 
+		left: $index * 1%
+
+
+.translate
+	&-x 
+		@for $i from 1 through 10
+			&-#{$i}0
+				transform: translateX($i * 10%) 
+		@for $i from 1 through 10
+			&-n#{$i}0
+				transform: translateX(-$i * 10%) 
+
+	&-y 
+		@for $i from 1 through 10
+			&-#{$i}0
+				transform: translateY($i * 10%) 
+		@for $i from 1 through 10
+			&-n#{$i}0
+				transform: translateY(-$i * 10%) 
+
+
+.centered,
+.position-center
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)

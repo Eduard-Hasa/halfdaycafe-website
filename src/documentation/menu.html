@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h1 class="mb-1">Menu</h1>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+
+
+                        <div class="mb-6"></div>
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h2 class="h3 mb-1">Single menu position component</h2>
+                        </div>
+    
+                        <!-- Text -->
+                        <p class="font-size-lg mb-4">This responsive single menu position component is an essential part of any menu.</p>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="menu-row menu-row--sm text-uppercase">
+                                    <span class="menu-row__name">Creme Brulee</span> 
+                                    <span class="menu-row__dots"></span>
+                                    <span class="menu-row__price">$1.5</span>
+                                </div>
+                            </div>
+                            <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">&lt;div class=&quot;menu-row menu-row--sm text-uppercase&quot;&gt;
+    &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+    &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>     
+                            </div>
+                        </div>
+
+                        <div class="mb-6"></div>
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h2 class="h3 mb-1">Classic style</h2>
+                        </div>
+    
+                        <!-- Text -->
+                        <p class="font-size-lg mb-4">Compact and easy to read menu. Group menu items, use dividers to separate them. </p>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Menu Card -->
+                                <div class="card">
+                                    <div class="card-body py-4 py-sm-6 px-md-5 border bg-light">
+
+                                        <!-- Heading -->
+                                        <div class="mb-4 font-size-lg text-center">
+                                            <!-- Title -->
+                                            <div class="row justify-content-center">
+                                                <div class="col-11 col-md-8">
+                                                    <h2 class="h1">Menu</h2>
+                                                </div>
+                                            </div>
+                                            <!-- Subtitle -->
+                                            <div class="row justify-content-center mt-1">
+                                                <div class="col-12 col-md-8">
+                                                    <p>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row divided-columns divided-columns--xl divided-columns--dark divided-columns--thick">
+                                            <div class="col-xl-6">
+
+                                                <div class="px-sm-5 px-0">
+                                                    <!-- Menu Group Title -->
+                                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Breakfast</p>
+                                                    
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Creme Brulee</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                </div>
+
+                                                <div class="px-sm-5 px-0">
+                                                    <!-- Menu Group Title -->
+                                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Soups & Salads</p>
+                                                    
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Creme Brulee</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                </div>
+                                            </div><!-- .col -->
+
+                                            <div class="col-xl-6">
+                                                <div class="px-sm-5 px-0">
+                                                    <!-- Menu Group Title -->
+                                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Breakfast</p>
+                                                    
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Creme Brulee</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                </div>
+
+                                                <!-- Divider -->
+                                                <hr class="mt-5 mb-4">
+
+                                                <div class="px-sm-5 px-0">
+                                                    <!-- Menu Group Title -->
+                                                    <p class="label-heading-text label-heading-text--plain text-secondary text-center mb-4">Soups & Salads</p>
+                                                    
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Creme Brulee</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+
+                                                    <!-- Menu Item -->
+                                                    <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                        <span class="menu-row__name">Hazelnut Chesecake</span> 
+                                                        <span class="menu-row__dots"></span>
+                                                        <span class="menu-row__price">$1.5</span>
+                                                    </p>
+                                                    <p class="card-text mb-3">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                </div>
+
+                                            </div><!-- .col -->
+                                        </div><!-- .row -->
+
+                                        <!-- Button -->
+                                        <div class="text-center mt-6 mb-n3">
+                                            <a href="#" class="btn btn-primary btn-arrow btn-lg">Full Menu</a>
+                                        </div>
+
+                                    </div><!-- .card-body -->
+                                </div><!-- .card -->
+                            </div>
+                            <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">&lt;!-- Menu Card --&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-body py-4 py-sm-6 px-md-5 border bg-light&quot;&gt;
+
+        &lt;!-- Heading --&gt;
+        &lt;div class=&quot;mb-4 font-size-lg text-center&quot;&gt;
+            &lt;!-- Title --&gt;
+            &lt;div class=&quot;row justify-content-center&quot;&gt;
+                &lt;div class=&quot;col-11 col-md-8&quot;&gt;
+                    &lt;h2 class=&quot;h1&quot;&gt;Menu&lt;/h2&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Subtitle --&gt;
+            &lt;div class=&quot;row justify-content-center mt-1&quot;&gt;
+                &lt;div class=&quot;col-12 col-md-8&quot;&gt;
+                    &lt;p&gt;Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;row divided-columns divided-columns--md divided-columns--black divided-columns--thick&quot;&gt;
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+
+                &lt;div class=&quot;px-sm-5 px-0&quot;&gt;
+                    &lt;!-- Menu Group Title --&gt;
+                    &lt;p class=&quot;label-heading-text label-heading-text--plain text-secondary text-center mb-4&quot;&gt;Breakfast&lt;/p&gt;
+                    
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Chesecake&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;px-sm-5 px-0&quot;&gt;
+                    &lt;!-- Menu Group Title --&gt;
+                    &lt;p class=&quot;label-heading-text label-heading-text--plain text-secondary text-center mb-4&quot;&gt;Soups &amp; Salads&lt;/p&gt;
+                    
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Chesecake&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- .col --&gt;
+
+            &lt;div class=&quot;col-lg-6&quot;&gt;
+                &lt;div class=&quot;px-sm-5 px-0&quot;&gt;
+                    &lt;!-- Menu Group Title --&gt;
+                    &lt;p class=&quot;label-heading-text label-heading-text--plain text-secondary text-center mb-4&quot;&gt;Breakfast&lt;/p&gt;
+                    
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Chesecake&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Divider --&gt;
+                &lt;hr class=&quot;mt-5 mb-4&quot;&gt;
+
+                &lt;div class=&quot;px-sm-5 px-0&quot;&gt;
+                    &lt;!-- Menu Group Title --&gt;
+                    &lt;p class=&quot;label-heading-text label-heading-text--plain text-secondary text-center mb-4&quot;&gt;Soups &amp; Salads&lt;/p&gt;
+                    
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+
+                    &lt;!-- Menu Item --&gt;
+                    &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                        &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Chesecake&lt;/span&gt; 
+                        &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                        &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class=&quot;card-text mb-3&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;&lt;!-- .col --&gt;
+        &lt;/div&gt;&lt;!-- .row --&gt;
+
+        &lt;!-- Button --&gt;
+        &lt;div class=&quot;text-center mt-6 mb-n3&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-arrow btn-lg&quot;&gt;Full Menu&lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- .card-body --&gt;
+&lt;/div&gt;&lt;!-- .card --&gt;
+</code></pre>     
+                        </div>
+                    </div>
+
+                    <div class="mb-6"></div>
+
+                    <!-- Heading -->
+                    <div class="d-flex align-items-center">
+                        <h2 class="h3 mb-1">Card style</h2>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="font-size-lg mb-4">Use this type of menu if you want to make emphasize on look of your amazing dish ;).</p>
+
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-6 col-sm-6 pb-3 mb-1">
+                                    <!-- Menu Item -->
+                                    <div class="card h-100">
+                                        <img src="../assets/images/dish-preview/dish-preview-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body px-2 py-3 p-xxl-4">
+                                            <p class="label-text mb-2">Desserts</p>
+                                            <p class="menu-row mb-2"><span class="menu-row__name">Chocolate Muffin</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-sm-6 pb-3 mb-1">
+                                    <!-- Menu Item -->
+                                    <div class="card h-100">
+                                        <img src="../assets/images/dish-preview/dish-preview-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body px-2 py-3 p-xxl-4">
+                                            <p class="label-text mb-2">Desserts</p>
+                                            <p class="menu-row mb-2"><span class="menu-row__name">Chocolate Muffin</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-sm-6 pb-3 mb-1">
+                                    <!-- Menu Item -->
+                                    <div class="card h-100">
+                                        <img src="../assets/images/dish-preview/dish-preview-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body px-2 py-3 p-xxl-4">
+                                            <p class="label-text mb-2">Desserts</p>
+                                            <p class="menu-row mb-2"><span class="menu-row__name">Chocolate Muffin</span> <span class="menu-row__dots"></span><span class="menu-row__price">$1.5</span></p>
+                                            <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+
+                        </div>
+                        <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-4 col-lg-6 col-sm-6 pb-3 mb-1&quot;&gt;
+        &lt;!-- Menu Item --&gt;
+        &lt;div class=&quot;card h-100&quot;&gt;
+            &lt;img src=&quot;../assets/images/dish-preview/dish-preview-1.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+            &lt;div class=&quot;card-body px-2 py-3 p-xxl-4&quot;&gt;
+                &lt;p class=&quot;label-text mb-2&quot;&gt;Desserts&lt;/p&gt;
+                &lt;p class=&quot;menu-row mb-2&quot;&gt;&lt;span class=&quot;menu-row__name&quot;&gt;Chocolate Muffin&lt;/span&gt; &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;&lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xl-4 col-lg-6 col-sm-6 pb-3 mb-1&quot;&gt;
+        &lt;!-- Menu Item --&gt;
+        &lt;div class=&quot;card h-100&quot;&gt;
+            &lt;img src=&quot;../assets/images/dish-preview/dish-preview-2.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+            &lt;div class=&quot;card-body px-2 py-3 p-xxl-4&quot;&gt;
+                &lt;p class=&quot;label-text mb-2&quot;&gt;Desserts&lt;/p&gt;
+                &lt;p class=&quot;menu-row mb-2&quot;&gt;&lt;span class=&quot;menu-row__name&quot;&gt;Chocolate Muffin&lt;/span&gt; &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;&lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xl-4 col-lg-6 col-sm-6 pb-3 mb-1&quot;&gt;
+        &lt;!-- Menu Item --&gt;
+        &lt;div class=&quot;card h-100&quot;&gt;
+            &lt;img src=&quot;../assets/images/dish-preview/dish-preview-3.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+            &lt;div class=&quot;card-body px-2 py-3 p-xxl-4&quot;&gt;
+                &lt;p class=&quot;label-text mb-2&quot;&gt;Desserts&lt;/p&gt;
+                &lt;p class=&quot;menu-row mb-2&quot;&gt;&lt;span class=&quot;menu-row__name&quot;&gt;Chocolate Muffin&lt;/span&gt; &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;&lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;
+</code></pre>     
+                        </div>
+                    </div>
+
+                    <div class="mb-6"></div>
+
+                    <!-- Heading -->
+                    <div class="d-flex align-items-center">
+                        <h2 class="h3 mb-1">Tab style with media objects</h2>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="font-size-lg mb-4">The most compact type of menu which also allows placing dish preview photos.</p>
+
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <!-- Tabs Nav -->
+                            <div class="container-fluid">
+                                <ul class="nav nav-tabs mb-4 mb-xxl-6" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="Coffee-tab" data-toggle="tab" href="#Coffee" role="tab" aria-controls="Coffee" aria-selected="true">
+                                            Coffee
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="Main-tab" data-toggle="tab" href="#Main" role="tab" aria-controls="Main" aria-selected="false">
+                                            Main
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- .container -->
+                    
+                            <!-- Tabs -->
+                            <div class="container">
+                    
+                                <div class="tab-content" id="myTabContent">
+                    
+                                    <!-- Tab -->
+                                    <div class="tab-pane fade show active" id="Coffee" role="tabpanel" aria-labelledby="Coffee-tab">
+                                        <div class="row align-items-start">
+                                            
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-1.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Creme Brulee</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-2.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Hazelnut Cheeesecake</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-3.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Pudding Chia</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-4.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Puncakes with Fruits</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div><!-- .row -->
+                                    </div><!-- .tab-pane -->
+                    
+                                    <!-- Tab -->
+                                    <div class="tab-pane fade" id="Main" role="tabpanel" aria-labelledby="Main-tab">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-1.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Creme Brulee</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-2.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Hazelnut Cheeesecake</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-3.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Pudding Chia</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-md-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-4.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Puncakes with Fruits</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div><!-- .row -->
+                                    </div><!-- .tab-pane -->
+
+                                </div><!-- .tab-content-->
+                            </div><!-- .container -->
+
+                        </div>
+                        <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">&lt;!-- Tabs Nav --&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs mb-4 mb-xxl-6&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link active&quot; id=&quot;Coffee-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#Coffee&quot; role=&quot;tab&quot; aria-controls=&quot;Coffee&quot; aria-selected=&quot;true&quot;&gt;
+                Coffee
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; id=&quot;Main-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#Main&quot; role=&quot;tab&quot; aria-controls=&quot;Main&quot; aria-selected=&quot;false&quot;&gt;
+                Main
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- .container --&gt;
+
+&lt;!-- Tabs --&gt;
+&lt;div class=&quot;container&quot;&gt;
+
+    &lt;div class=&quot;tab-content&quot; id=&quot;myTabContent&quot;&gt;
+
+        &lt;!-- Tab --&gt;
+        &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;Coffee&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;Coffee-tab&quot;&gt;
+            &lt;div class=&quot;row align-items-start&quot;&gt;
+                
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-1.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-2.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Cheeesecake&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-3.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Pudding Chia&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-4.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Puncakes with Fruits&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;&lt;!-- .row --&gt;
+        &lt;/div&gt;&lt;!-- .tab-pane --&gt;
+
+        &lt;!-- Tab --&gt;
+        &lt;div class=&quot;tab-pane fade&quot; id=&quot;Main&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;Main-tab&quot;&gt;
+            &lt;div class=&quot;row flex-row-reverse align-items-center&quot;&gt;
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-1.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-2.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Cheeesecake&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-3.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Pudding Chia&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+                    &lt;!-- Menu Item --&gt;
+                    &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                        &lt;img src=&quot;../assets/images/dish-preview/dish-preview-4.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;div class=&quot;media-body&quot;&gt;
+                            &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                &lt;span class=&quot;menu-row__name&quot;&gt;Puncakes with Fruits&lt;/span&gt; 
+                                &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                            &lt;/p&gt;
+                            &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;&lt;!-- .row --&gt;
+        &lt;/div&gt;&lt;!-- .tab-pane --&gt;
+
+    &lt;/div&gt;&lt;!-- .tab-content--&gt;
+&lt;/div&gt;&lt;!-- .container --&gt;
+</code></pre>     
+                        </div>
+                    </div>
+
+                    <div class="mb-6"></div>
+
+                    <div class="d-flex align-items-center" id="mobile-select">
+                        <h2 class="h3 mb-1">Mobile menu navigation</h2>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="font-size-lg mb-4">If you have a lot of categories you may consider improving mobile usability by placing select navigation instead of standard tab navigation. Important note: <code>value</code> attribute of the select options should be the same as <code>href</code> attribute of the corresponding tab links.</p>
+
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <!-- Tabs Nav -->
+                            <div class="container-fluid">
+
+                                <ul class="nav nav-tabs mb-4 mb-xxl-6" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="Coffee-tab" data-toggle="tab" href="#Coffee" role="tab" aria-controls="Coffee" aria-selected="true">
+                                            Coffee
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="Main-tab" data-toggle="tab" href="#Main" role="tab" aria-controls="Main" aria-selected="false">
+                                            Main
+                                        </a>
+                                    </li>
+                                </ul>
+                    
+                            </div><!-- .container -->
+    
+                    
+                            <div class="container">
+                    
+                                <!-- Mobile menu navigation-->
+                                <select class="custom-select menu-select d-block d-md-none mb-4">
+                                    <option selected value="#Coffee">Coffee</option>
+                                    <option value="#Main">Main</option>
+                                </select>
+                    
+                            </div><!-- .container -->
+    
+    
+                            <!-- Tabs -->
+                            <div class="container">
+                    
+                                <div class="tab-content" id="myTabContent">
+                    
+                                    <!-- Tab -->
+                                    <div class="tab-pane fade show active" id="Coffee" role="tabpanel" aria-labelledby="Coffee-tab">
+                                        <div class="row align-items-start">
+                                            
+                                            <div class="col-12 col-lg-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-1.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Creme Brulee</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-lg-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-2.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Hazelnut Cheeesecake</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div><!-- .row -->
+                                    </div><!-- .tab-pane -->
+                    
+                                    <!-- Tab -->
+                                    <div class="tab-pane fade" id="Main" role="tabpanel" aria-labelledby="Main-tab">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-1.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Creme Brulee</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-12 col-lg-6">
+                                                <!-- Menu Item -->
+                                                <div class="media media-menu align-items-center mb-3">
+                                                    <img src="../assets/images/dish-preview/dish-preview-2.jpg" alt="">
+                                                    <div class="media-body">
+                                                        <p class="menu-row menu-row--sm text-uppercase mb-1">
+                                                            <span class="menu-row__name">Hazelnut Cheeesecake</span> 
+                                                            <span class="menu-row__dots"></span>
+                                                            <span class="menu-row__price">$1.5</span>
+                                                        </p>
+                                                        <p class="card-text">Traditional creme brulee served with vanilla bean ice cream and biscotti</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div><!-- .row -->
+                                    </div><!-- .tab-pane -->
+                    
+                                </div><!-- .tab-content-->
+                            </div><!-- .container -->
+
+                        </div>
+                        <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">
+    &lt;!-- Tabs Nav --&gt;
+    &lt;div class=&quot;container-fluid&quot;&gt;
+
+        &lt;ul class=&quot;nav nav-tabs mb-4 mb-xxl-6&quot; id=&quot;myTab&quot; role=&quot;tablist&quot;&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link active&quot; id=&quot;Coffee-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#Coffee&quot; role=&quot;tab&quot; aria-controls=&quot;Coffee&quot; aria-selected=&quot;true&quot;&gt;
+                    Coffee
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; id=&quot;Main-tab&quot; data-toggle=&quot;tab&quot; href=&quot;#Main&quot; role=&quot;tab&quot; aria-controls=&quot;Main&quot; aria-selected=&quot;false&quot;&gt;
+                    Main
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/div&gt;&lt;!-- .container --&gt;
+
+
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;!-- Mobile menu navigation--&gt;
+        &lt;select class=&quot;custom-select menu-select d-block d-md-none mb-4&quot;&gt;
+            &lt;option selected value=&quot;#Coffee&quot;&gt;Coffee&lt;/option&gt;
+            &lt;option value=&quot;#Main&quot;&gt;Main&lt;/option&gt;
+        &lt;/select&gt;
+
+    &lt;/div&gt;&lt;!-- .container --&gt;
+
+
+    &lt;!-- Tabs --&gt;
+    &lt;div class=&quot;container&quot;&gt;
+
+        &lt;div class=&quot;tab-content&quot; id=&quot;myTabContent&quot;&gt;
+
+            &lt;!-- Tab --&gt;
+            &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;Coffee&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;Coffee-tab&quot;&gt;
+                &lt;div class=&quot;row align-items-start&quot;&gt;
+                    
+                    &lt;div class=&quot;col-12 col-lg-6&quot;&gt;
+                        &lt;!-- Menu Item --&gt;
+                        &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                            &lt;img src=&quot;../assets/images/dish-preview/dish-preview-1.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;div class=&quot;media-body&quot;&gt;
+                                &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                    &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                                    &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                                &lt;/p&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-12 col-lg-6&quot;&gt;
+                        &lt;!-- Menu Item --&gt;
+                        &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                            &lt;img src=&quot;../assets/images/dish-preview/dish-preview-2.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;div class=&quot;media-body&quot;&gt;
+                                &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                    &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Cheeesecake&lt;/span&gt; 
+                                    &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                                &lt;/p&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;&lt;!-- .row --&gt;
+            &lt;/div&gt;&lt;!-- .tab-pane --&gt;
+
+            &lt;!-- Tab --&gt;
+            &lt;div class=&quot;tab-pane fade&quot; id=&quot;Main&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;Main-tab&quot;&gt;
+                &lt;div class=&quot;row flex-row-reverse align-items-center&quot;&gt;
+                    &lt;div class=&quot;col-12 col-lg-6&quot;&gt;
+                        &lt;!-- Menu Item --&gt;
+                        &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                            &lt;img src=&quot;../assets/images/dish-preview/dish-preview-1.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;div class=&quot;media-body&quot;&gt;
+                                &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                    &lt;span class=&quot;menu-row__name&quot;&gt;Creme Brulee&lt;/span&gt; 
+                                    &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                                &lt;/p&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;col-12 col-lg-6&quot;&gt;
+                        &lt;!-- Menu Item --&gt;
+                        &lt;div class=&quot;media media-menu align-items-center mb-3&quot;&gt;
+                            &lt;img src=&quot;../assets/images/dish-preview/dish-preview-2.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;div class=&quot;media-body&quot;&gt;
+                                &lt;p class=&quot;menu-row menu-row--sm text-uppercase mb-1&quot;&gt;
+                                    &lt;span class=&quot;menu-row__name&quot;&gt;Hazelnut Cheeesecake&lt;/span&gt; 
+                                    &lt;span class=&quot;menu-row__dots&quot;&gt;&lt;/span&gt;
+                                    &lt;span class=&quot;menu-row__price&quot;&gt;$1.5&lt;/span&gt;
+                                &lt;/p&gt;
+                                &lt;p class=&quot;card-text&quot;&gt;Traditional creme brulee served with vanilla bean ice cream and biscotti&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;&lt;!-- .row --&gt;
+            &lt;/div&gt;&lt;!-- .tab-pane --&gt;
+
+        &lt;/div&gt;&lt;!-- .tab-content--&gt;
+    &lt;/div&gt;&lt;!-- .container --&gt;</code></pre>     
+                        </div>
+                    </div>
+
+
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

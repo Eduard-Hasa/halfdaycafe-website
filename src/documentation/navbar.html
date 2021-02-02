@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar - Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Navbar</li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-10 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <h1 class="mb-1">Navbar</h1>
+
+                        <!-- Text -->
+                        <p class="font-size-lg mb-1">Powerful and responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for the collapse plugin.</p>
+                        <p class="mb-4">
+                            <a class="text-decoration-none hover-point-icon d-flex align-items-center" href="https://getbootstrap.com/docs/4.3/components/navbar/" target="_blank">
+                                Bootstrap documentation
+                                <i class="icon icon--xxs icon--primary d-inline-block ml-2"><img src="../assets/images/icons/essential-set/svg/exit.svg" class="inject-me d-block"alt=""></i>
+                            </a>
+                        </p>
+
+                        <div class="card bg-gray-600">
+                            <div class="card-body">
+                                <nav class="navbar navbar-expand-lg mb-3 border-bottom" style="z-index: 1004;">
+                                    <!-- Brand -->
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="../assets/images/logo-light.svg" class="navbar-brand-img" alt="...">
+                                    </a>
+
+                                    <!-- Toggler -->
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse-1" aria-controls="navbarCollapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                        
+                                    <!-- Collapse -->
+                                    <div class="collapse navbar-collapse" id="navbarCollapse-1">
+                        
+                                        <!-- Navigation -->
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarLandingsExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Landings
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarLandingsExampleOne">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div> <!-- dropdown menu -->
+                                            </li>
+                        
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link" href="#">
+                                                    About Us
+                                                </a>
+                                            </li>
+                        
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentationExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Documentation
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDocumentationExampleOne">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div><!-- end dropdown menu -->
+                                            </li>
+                                        </ul>
+                        
+                                        <!-- Button -->
+                                        <a class="navbar-btn btn btn-arrow  btn-primary lift ml-auto" href="#!">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </nav><!-- end navbar  -->
+                        
+                                <nav class="navbar navbar-light navbar-expand-lg mb-3 " style="z-index: 1003;">
+                                    <!-- Brand -->
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="../assets/images/logo-dark.svg" class="navbar-brand-img" alt="...">
+                                    </a>
+                        
+                                    <!-- Toggler -->
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse-2" aria-controls="navbarCollapse-2" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                        
+                                    <!-- Collapse -->
+                                    <div class="collapse navbar-collapse" id="navbarCollapse-2">
+                        
+                                        <!-- Navigation -->
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarLandingsExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Landings
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarLandingsExampleOne">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div> <!-- dropdown menu -->
+                                            </li>
+                        
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link" href="#">
+                                                    About Us
+                                                </a>
+                                            </li>
+                        
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentationExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Documentation
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDocumentationExampleOne">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div><!-- end dropdown menu -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav><!-- end navbar  -->
+                        
+                                <nav class="navbar navbar-dark navbar-expand-lg mb-3" style="z-index: 1002;">
+                                    <!-- Brand -->
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="../assets/images/logo-light.svg" class="navbar-brand-img" alt="...">
+                                    </a>
+                        
+                                    <!-- Toggler -->
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse-3" aria-controls="navbarCollapse-3" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                        
+                                    <!-- Collapse -->
+                                    <div class="collapse navbar-collapse" id="navbarCollapse-3">
+                        
+                                        <!-- Navigation -->
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarLandingsExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Landings
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarLandingsExampleOne">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div> <!-- dropdown menu -->
+                                            </li>
+                        
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link" href="#">
+                                                    About Us
+                                                </a>
+                                            </li>
+                        
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDocumentationExampleOne" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Documentation
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDocumentationExampleOne">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div><!-- end dropdown menu -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav><!-- end navbar  -->
+                            </div>
+                        </div>
+
+                        <div class="mb-6"></div>
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h2 class="h3 mb-1">Fika navbar with sidebar menu</h2>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+
+                        <!-- Text -->
+                        <p class="font-size-lg mb-4">Fika offers alternative navbar design with an expanding sidebar.</p>
+
+                        <div class="card">
+                            <div class="card-body bg-gray-600">
+                                
+                                <!--=================================================================================================-->
+                                <!-- Navbar -->
+                                <nav class="navbar navbar-border align-items-center no-gutters p-0 mb-4 position-relative" style="z-index: 999">
+
+                                    <!-- Left Column -->
+                                    <div class="col-4 col-lg-5 d-flex justify-content-start z-index-5">
+                            
+                                        <!-- Toggler -->
+                                        <div class="btn btn-light btn-hero text-left">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container" aria-controls="navbar-nav-container" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                                <span class="d-none d-md-inline-block">Menu</span>
+                                            </button>
+                                        </div>
+                            
+                                    </div>
+                            
+                                    <!-- Center Column -->
+                                    <div class="col-4 col-lg-2 d-flex justify-content-center">
+                            
+                                        <!-- Brand -->
+                                        <a class="navbar-brand" href="#"><img src="../assets/images/logo-light.svg" alt=""></a>
+                            
+                                    </div>
+                            
+                                    <!-- Right Column -->
+                                    <div class="col-4 col-lg-5 d-flex justify-content-end align-items-center">
+                            
+                                        <!-- Socials -->
+                                        <div class="socials mr-2 mr-xl-4 d-none d-lg-flex">
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                                            </a>
+                                        </div>
+                            
+                                        <!-- Button -->
+                                        <button class="btn btn-hero btn-primary" data-toggle="modal" data-target="#bookModal">
+                                            <span class="d-none d-md-inline-block">Reservation</span>
+                                            <img class="d-inline-block d-md-none inject-me" src="../assets/images/icons/essential-set/svg/alarm-1.svg" alt="">
+                                        </button>
+                            
+                                    </div>
+                            
+                                    <!-- Collapse / Side Nav -->
+                                    <div class="collapse navbar-fika-side-nav" id="navbar-nav-container">
+                                        
+                                        <!-- Top Content-->
+                                        <div></div>
+                            
+                                        <!-- Nav -->
+                                        <ul class="navbar-nav navbar-nav--border-bottom my-4">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                                            
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="landingsMenu">
+                                                    <a class="dropdown-item" href="../homepage-1.html">Home Page 1</a>
+                                                    <a class="dropdown-item" href="../homepage-2.html">Home Page 2</a>
+                                                    <a class="dropdown-item" href="../homepage-3.html">Home Page 3</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="aboutMenu">
+                                                    <a class="dropdown-item" href="../about-us-1.html">About Us 1</a>
+                                                    <a class="dropdown-item" href="../about-us-2.html">About Us 2</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="menuMenu">
+                                                    <a class="dropdown-item" href="../menu-classic.html">Classic Menu</a>
+                                                    <a class="dropdown-item" href="../menu-card.html">Card Menu</a>
+                                                    <a class="dropdown-item" href="../menu-tab.html">Tab Menu</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="galleryMenu">
+                                                    <a class="dropdown-item" href="../gallery-masonry.html">Masonry Gallery</a>
+                                                    <a class="dropdown-item" href="../gallery-grid.html">Grid Gallery</a>
+                                                    <a class="dropdown-item" href="../gallery-slider.html">Slider Gallery</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="blogMenu">
+                                                    <a class="dropdown-item" href="../blog-grid.html">Grid Blog</a>
+                                                    <a class="dropdown-item" href="../blog-magazine.html">Magazine Blog</a>
+                                                    <a class="dropdown-item" href="../blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                                                    <a class="dropdown-item" href="../blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                                                    <a class="dropdown-item" href="../article.html">Article</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../reservation.html">Reservation</a>
+                                            </li>
+                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../contacts.html">Contact Us</a>
+                                            </li>
+                                        </ul>
+                            
+                                        <!-- Socials -->
+                                        <div class="socials socials--lg socials--primary">
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                                            </a>
+                                        </div>
+                            
+                                    </div><!-- .collapse -->
+                                </nav><!-- .navbar -->
+
+                                <!--=================================================================================================-->
+                                <!-- Navbar -->
+                                <nav class="navbar navbar-light navbar-border align-items-center no-gutters p-0 position-relative mb-4" style="z-index: 999">
+
+                                    <!-- Left Column -->
+                                    <div class="col-4 col-lg-5 d-flex justify-content-start z-index-5">
+                            
+                                        <!-- Toggler -->
+                                        <div class="btn btn-light btn-hero text-left">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container-2" aria-controls="navbar-nav-container-2" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                                <span class="d-none d-md-inline-block">Menu</span>
+                                            </button>
+                                        </div>
+                            
+                                    </div>
+                            
+                                    <!-- Center Column -->
+                                    <div class="col-4 col-lg-2 d-flex justify-content-center">
+                            
+                                        <!-- Brand -->
+                                        <a class="navbar-brand" href="#"><img src="../assets/images/logo-dark.svg" alt=""></a>
+                            
+                                    </div>
+                            
+                                    <!-- Right Column -->
+                                    <div class="col-4 col-lg-5 d-flex justify-content-end align-items-center">
+                            
+                                        <!-- Socials -->
+                                        <div class="socials socials--dark mr-2 mr-xl-4 d-none d-lg-flex">
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                                            </a>
+                                        </div>
+                            
+                                        <!-- Button -->
+                                        <button class="btn btn-hero btn-primary" data-toggle="modal" data-target="#bookModal">
+                                            <span class="d-none d-md-inline-block">Reservation</span>
+                                            <img class="d-inline-block d-md-none inject-me" src="../assets/images/icons/essential-set/svg/alarm-1.svg" alt="">
+                                        </button>
+                            
+                                    </div>
+                            
+                                    <!-- Collapse / Side Nav -->
+                                    <div class="collapse navbar-fika-side-nav" id="navbar-nav-container-2">
+                                        
+                                        <!-- Top Content-->
+                                        <div></div>
+                            
+                                        <!-- Nav -->
+                                        <ul class="navbar-nav navbar-nav--border-bottom my-4">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                                            
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="landingsMenu">
+                                                    <a class="dropdown-item" href="../homepage-1.html">Home Page 1</a>
+                                                    <a class="dropdown-item" href="../homepage-2.html">Home Page 2</a>
+                                                    <a class="dropdown-item" href="../homepage-3.html">Home Page 3</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="aboutMenu">
+                                                    <a class="dropdown-item" href="../about-us-1.html">About Us 1</a>
+                                                    <a class="dropdown-item" href="../about-us-2.html">About Us 2</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="menuMenu">
+                                                    <a class="dropdown-item" href="../menu-classic.html">Classic Menu</a>
+                                                    <a class="dropdown-item" href="../menu-card.html">Card Menu</a>
+                                                    <a class="dropdown-item" href="../menu-tab.html">Tab Menu</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="galleryMenu">
+                                                    <a class="dropdown-item" href="../gallery-masonry.html">Masonry Gallery</a>
+                                                    <a class="dropdown-item" href="../gallery-grid.html">Grid Gallery</a>
+                                                    <a class="dropdown-item" href="../gallery-slider.html">Slider Gallery</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="blogMenu">
+                                                    <a class="dropdown-item" href="../blog-grid.html">Grid Blog</a>
+                                                    <a class="dropdown-item" href="../blog-magazine.html">Magazine Blog</a>
+                                                    <a class="dropdown-item" href="../blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                                                    <a class="dropdown-item" href="../blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                                                    <a class="dropdown-item" href="../article.html">Article</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../reservation.html">Reservation</a>
+                                            </li>
+                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../contacts.html">Contact Us</a>
+                                            </li>
+                                        </ul>
+                            
+                                        <!-- Socials -->
+                                        <div class="socials socials--lg socials--primary">
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                                            </a>
+                                        </div>
+                            
+                                    </div><!-- .collapse -->
+                                </nav><!-- .navbar -->
+
+                                <!--=================================================================================================-->
+                                <!-- Navbar -->
+                                <nav class="navbar navbar-dark align-items-center no-gutters p-0 position-relative" style="z-index: 999">
+
+                                    <!-- Left Column -->
+                                    <div class="col-4 col-lg-5 d-flex justify-content-start z-index-5">
+                            
+                                        <!-- Toggler -->
+                                        <div class="btn btn-light btn-hero text-left">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container-3" aria-controls="navbar-nav-container-3" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                                <span class="d-none d-md-inline-block">Menu</span>
+                                            </button>
+                                        </div>
+                            
+                                    </div>
+                            
+                                    <!-- Center Column -->
+                                    <div class="col-4 col-lg-2 d-flex justify-content-center">
+                            
+                                        <!-- Brand -->
+                                        <a class="navbar-brand" href="#"><img src="../assets/images/logo-light.svg" alt=""></a>
+                            
+                                    </div>
+                            
+                                    <!-- Right Column -->
+                                    <div class="col-4 col-lg-5 d-flex justify-content-end align-items-center">
+                            
+                                        <!-- Socials -->
+                                        <div class="socials mr-2 mr-xl-4 d-none d-lg-flex">
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                                            </a>
+                                        </div>
+                            
+                                        <!-- Button -->
+                                        <button class="btn btn-hero btn-light" data-toggle="modal" data-target="#bookModal">
+                                            <span class="d-none d-md-inline-block">Reservation</span>
+                                            <img class="d-inline-block d-md-none inject-me" src="../assets/images/icons/essential-set/svg/alarm-1.svg" alt="">
+                                        </button>
+                            
+                                    </div>
+                            
+                                    <!-- Collapse / Side Nav -->
+                                    <div class="collapse navbar-fika-side-nav" id="navbar-nav-container-3">
+                                        
+                                        <!-- Top Content-->
+                                        <div></div>
+                            
+                                        <!-- Nav -->
+                                        <ul class="navbar-nav navbar-nav--border-bottom my-4">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                                            
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="landingsMenu">
+                                                    <a class="dropdown-item" href="../homepage-1.html">Home Page 1</a>
+                                                    <a class="dropdown-item" href="../homepage-2.html">Home Page 2</a>
+                                                    <a class="dropdown-item" href="../homepage-3.html">Home Page 3</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="aboutMenu">
+                                                    <a class="dropdown-item" href="../about-us-1.html">About Us 1</a>
+                                                    <a class="dropdown-item" href="../about-us-2.html">About Us 2</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="menuMenu">
+                                                    <a class="dropdown-item" href="../menu-classic.html">Classic Menu</a>
+                                                    <a class="dropdown-item" href="../menu-card.html">Card Menu</a>
+                                                    <a class="dropdown-item" href="../menu-tab.html">Tab Menu</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="galleryMenu">
+                                                    <a class="dropdown-item" href="../gallery-masonry.html">Masonry Gallery</a>
+                                                    <a class="dropdown-item" href="../gallery-grid.html">Grid Gallery</a>
+                                                    <a class="dropdown-item" href="../gallery-slider.html">Slider Gallery</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="blogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                        
+                                                <!-- Dropdown Menu -->
+                                                <div class="dropdown-menu dropdown-menu-click dropdown-menu-plain text-center" aria-labelledby="blogMenu">
+                                                    <a class="dropdown-item" href="../blog-grid.html">Grid Blog</a>
+                                                    <a class="dropdown-item" href="../blog-magazine.html">Magazine Blog</a>
+                                                    <a class="dropdown-item" href="../blog-masonry-2-columns.html">Masonry 2 Columns</a>
+                                                    <a class="dropdown-item" href="../blog-masonry-3-columns.html">Masonry 3 Columns</a>
+                                                    <a class="dropdown-item" href="../article.html">Article</a>
+                                                </div>
+                                            </li>
+                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../reservation.html">Reservation</a>
+                                            </li>
+                            
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="../contacts.html">Contact Us</a>
+                                            </li>
+                                        </ul>
+                            
+                                        <!-- Socials -->
+                                        <div class="socials socials--lg">
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/facebook-logo.svg" class="inject-me" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/twitter-social-logotype.svg" class="inject-me" alt="">                           
+                                            </a>
+                                            <a href="#">
+                                                <img src="../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg" class="inject-me" alt="">
+                                            </a>
+                                        </div>
+                            
+                                    </div><!-- .collapse -->
+                                </nav><!-- .navbar -->
+
+                            </div><!-- end card body -->
+
+                            <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">&lt;!--=================================================================================================--&gt;
+&lt;!-- Navbar Default--&gt;
+&lt;nav class=&quot;navbar navbar-border align-items-center no-gutters p-0&quot;&gt;
+
+    &lt;!-- Left Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-5 d-flex justify-content-start z-index-5&quot;&gt;
+
+        &lt;!-- Toggler --&gt;
+        &lt;div class=&quot;btn btn-light btn-hero text-left&quot;&gt;
+            &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar-nav-container&quot; aria-controls=&quot;navbar-nav-container&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;d-none d-md-inline-block&quot;&gt;Menu&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Center Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-2 d-flex justify-content-center&quot;&gt;
+
+        &lt;!-- Brand --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/logo-light.svg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Right Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-5 d-flex justify-content-end align-items-center&quot;&gt;
+
+        &lt;!-- Socials --&gt;
+        &lt;div class=&quot;socials mr-2 mr-xl-4 d-none d-lg-flex&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/facebook-logo.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/twitter-social-logotype.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;                           
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Button --&gt;
+        &lt;button class=&quot;btn btn-hero btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#bookModal&quot;&gt;
+            &lt;span class=&quot;d-none d-md-inline-block&quot;&gt;Reservation&lt;/span&gt;
+            &lt;img class=&quot;d-inline-block d-md-none inject-me&quot; src=&quot;../assets/images/icons/essential-set/svg/alarm-1.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/button&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Collapse / Side Nav --&gt;
+    &lt;div class=&quot;collapse navbar-fika-side-nav&quot; id=&quot;navbar-nav-container&quot;&gt;
+        
+        &lt;!-- Top Content--&gt;
+        &lt;div&gt;&lt;/div&gt;
+
+        &lt;!-- Nav --&gt;
+        &lt;ul class=&quot;navbar-nav navbar-nav--border-bottom my-4&quot;&gt;
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;landingsMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Home Pages&lt;/a&gt;
+            
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;landingsMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-1.html&quot;&gt;Home Page 1&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-2.html&quot;&gt;Home Page 2&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-3.html&quot;&gt;Home Page 3&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;aboutMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;About Us&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;aboutMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-1.html&quot;&gt;About Us 1&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-2.html&quot;&gt;About Us 2&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;menuMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Menu&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;menuMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-classic.html&quot;&gt;Classic Menu&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-card.html&quot;&gt;Card Menu&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-tab.html&quot;&gt;Tab Menu&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;galleryMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Gallery&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;galleryMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-masonry.html&quot;&gt;Masonry Gallery&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-grid.html&quot;&gt;Grid Gallery&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-slider.html&quot;&gt;Slider Gallery&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;blogMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Blog&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;blogMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-grid.html&quot;&gt;Grid Blog&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-magazine.html&quot;&gt;Magazine Blog&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-masonry-2-columns.html&quot;&gt;Masonry 2 Columns&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-masonry-3-columns.html&quot;&gt;Masonry 3 Columns&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../article.html&quot;&gt;Article&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;../reservation.html&quot;&gt;Reservation&lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;../contacts.html&quot;&gt;Contact Us&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Socials --&gt;
+        &lt;div class=&quot;socials socials--lg socials--primary&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/facebook-logo.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/twitter-social-logotype.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;                           
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- .collapse --&gt;
+&lt;/nav&gt;&lt;!-- .navbar --&gt;
+
+&lt;!--=================================================================================================--&gt;
+&lt;!-- Navbar Light --&gt;
+&lt;nav class=&quot;navbar navbar-light navbar-border align-items-center no-gutters p-0&quot;&gt;
+
+    &lt;!-- Left Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-5 d-flex justify-content-start z-index-5&quot;&gt;
+
+        &lt;!-- Toggler --&gt;
+        &lt;div class=&quot;btn btn-light btn-hero text-left&quot;&gt;
+            &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar-nav-container-2&quot; aria-controls=&quot;navbar-nav-container&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;d-none d-md-inline-block&quot;&gt;Menu&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Center Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-2 d-flex justify-content-center&quot;&gt;
+
+        &lt;!-- Brand --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/logo-dark.svg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Right Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-5 d-flex justify-content-end align-items-center&quot;&gt;
+
+        &lt;!-- Socials --&gt;
+        &lt;div class=&quot;socials socials--dark mr-2 mr-xl-4 d-none d-lg-flex&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/facebook-logo.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/twitter-social-logotype.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;                           
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Button --&gt;
+        &lt;button class=&quot;btn btn-hero btn-primary&quot; data-toggle=&quot;modal&quot; data-target=&quot;#bookModal&quot;&gt;
+            &lt;span class=&quot;d-none d-md-inline-block&quot;&gt;Reservation&lt;/span&gt;
+            &lt;img class=&quot;d-inline-block d-md-none inject-me&quot; src=&quot;../assets/images/icons/essential-set/svg/alarm-1.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/button&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Collapse / Side Nav --&gt;
+    &lt;div class=&quot;collapse navbar-fika-side-nav&quot; id=&quot;navbar-nav-container-2&quot;&gt;
+        
+        &lt;!-- Top Content--&gt;
+        &lt;div&gt;&lt;/div&gt;
+
+        &lt;!-- Nav --&gt;
+        &lt;ul class=&quot;navbar-nav navbar-nav--border-bottom my-4&quot;&gt;
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;landingsMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Home Pages&lt;/a&gt;
+            
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;landingsMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-1.html&quot;&gt;Home Page 1&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-2.html&quot;&gt;Home Page 2&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-3.html&quot;&gt;Home Page 3&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;aboutMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;About Us&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;aboutMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-1.html&quot;&gt;About Us 1&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-2.html&quot;&gt;About Us 2&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;menuMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Menu&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;menuMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-classic.html&quot;&gt;Classic Menu&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-card.html&quot;&gt;Card Menu&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-tab.html&quot;&gt;Tab Menu&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;galleryMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Gallery&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;galleryMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-masonry.html&quot;&gt;Masonry Gallery&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-grid.html&quot;&gt;Grid Gallery&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-slider.html&quot;&gt;Slider Gallery&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;blogMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Blog&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;blogMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-grid.html&quot;&gt;Grid Blog&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-magazine.html&quot;&gt;Magazine Blog&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-masonry-2-columns.html&quot;&gt;Masonry 2 Columns&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-masonry-3-columns.html&quot;&gt;Masonry 3 Columns&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../article.html&quot;&gt;Article&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;../reservation.html&quot;&gt;Reservation&lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;../contacts.html&quot;&gt;Contact Us&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Socials --&gt;
+        &lt;div class=&quot;socials socials--lg socials--primary&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/facebook-logo.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/twitter-social-logotype.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;                           
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- .collapse --&gt;
+&lt;/nav&gt;&lt;!-- .navbar --&gt;
+
+&lt;!--=================================================================================================--&gt;
+&lt;!-- Navbar Dark --&gt;
+&lt;nav class=&quot;navbar navbar-dark align-items-center no-gutters p-0&quot; style=&quot;z-index: 999&quot;&gt;
+
+    &lt;!-- Left Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-5 d-flex justify-content-start z-index-5&quot;&gt;
+
+        &lt;!-- Toggler --&gt;
+        &lt;div class=&quot;btn btn-light btn-hero text-left&quot;&gt;
+            &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar-nav-container-2&quot; aria-controls=&quot;navbar-nav-container-3&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;d-none d-md-inline-block&quot;&gt;Menu&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Center Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-2 d-flex justify-content-center&quot;&gt;
+
+        &lt;!-- Brand --&gt;
+        &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/logo-light.svg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Right Column --&gt;
+    &lt;div class=&quot;col-4 col-lg-5 d-flex justify-content-end align-items-center&quot;&gt;
+
+        &lt;!-- Socials --&gt;
+        &lt;div class=&quot;socials mr-2 mr-xl-4 d-none d-lg-flex&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/facebook-logo.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/twitter-social-logotype.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;                           
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Button --&gt;
+        &lt;button class=&quot;btn btn-hero btn-light&quot; data-toggle=&quot;modal&quot; data-target=&quot;#bookModal&quot;&gt;
+            &lt;span class=&quot;d-none d-md-inline-block&quot;&gt;Reservation&lt;/span&gt;
+            &lt;img class=&quot;d-inline-block d-md-none inject-me&quot; src=&quot;../assets/images/icons/essential-set/svg/alarm-1.svg&quot; alt=&quot;&quot;&gt;
+        &lt;/button&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Collapse / Side Nav --&gt;
+    &lt;div class=&quot;collapse navbar-fika-side-nav&quot; id=&quot;navbar-nav-container-3&quot;&gt;
+        
+        &lt;!-- Top Content--&gt;
+        &lt;div&gt;&lt;/div&gt;
+
+        &lt;!-- Nav --&gt;
+        &lt;ul class=&quot;navbar-nav navbar-nav--border-bottom my-4&quot;&gt;
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;landingsMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Home Pages&lt;/a&gt;
+            
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;landingsMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-1.html&quot;&gt;Home Page 1&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-2.html&quot;&gt;Home Page 2&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-3.html&quot;&gt;Home Page 3&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;aboutMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;About Us&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;aboutMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-1.html&quot;&gt;About Us 1&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-2.html&quot;&gt;About Us 2&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;menuMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Menu&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;menuMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-classic.html&quot;&gt;Classic Menu&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-card.html&quot;&gt;Card Menu&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-tab.html&quot;&gt;Tab Menu&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;galleryMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Gallery&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;galleryMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-masonry.html&quot;&gt;Masonry Gallery&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-grid.html&quot;&gt;Grid Gallery&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-slider.html&quot;&gt;Slider Gallery&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;blogMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Blog&lt;/a&gt;
+        
+                &lt;!-- Dropdown Menu --&gt;
+                &lt;div class=&quot;dropdown-menu dropdown-menu-click dropdown-menu-plain text-center&quot; aria-labelledby=&quot;blogMenu&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-grid.html&quot;&gt;Grid Blog&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-magazine.html&quot;&gt;Magazine Blog&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-masonry-2-columns.html&quot;&gt;Masonry 2 Columns&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../blog-masonry-3-columns.html&quot;&gt;Masonry 3 Columns&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;../article.html&quot;&gt;Article&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;../reservation.html&quot;&gt;Reservation&lt;/a&gt;
+            &lt;/li&gt;
+
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;../contacts.html&quot;&gt;Contact Us&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Socials --&gt;
+        &lt;div class=&quot;socials socials--lg socials--primary&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/facebook-logo.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/twitter-social-logotype.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;                           
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot;&gt;
+                &lt;img src=&quot;../assets/images/icons/social-icons/svg/instagram-social-network-logo-of-photo-camera.svg&quot; class=&quot;inject-me&quot; alt=&quot;&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- .collapse --&gt;
+&lt;/nav&gt;&lt;!-- .navbar --&gt;
+</code></pre>                       
+                            </div>
+                        </div>
+
+                        <div class="mb-6"></div>
+
+                        <!-- Heading -->
+                        <div class="d-flex align-items-center">
+                            <h2 class="h3 mb-1">Horizontal navbar with a tall navigation menu</h2>
+                            <span class="badge badge-pill badge-soft-primary text-uppercase font-weight-light ml-2">Fika Only</span>
+                        </div>
+
+                        <!-- Text -->
+                        <p class="font-size-lg mb-4">This variant allows better styling of the current menu link and makes it easier to navigate through pages by expanding the height of the links.</p>
+
+                        <div class="card">
+                            <div class="">
+                                
+                                <!--=================================================================================================-->
+                                <!-- Navbar -->
+                                <nav class="navbar navbar-expand-lg navbar-light align-items-center no-gutters p-0">
+
+                                    <!-- Left Column -->
+                                    <div class="col-lg-3 col-6 d-flex justify-content-start">
+                            
+                                        <!-- Brand -->
+                                        <a class="navbar-brand ml-0 ml-lg-3" href="#"><img src="../assets/images/logo-dark.svg" alt=""></a>
+                            
+                                    </div>
+                            
+                                    <!-- Center Column -->
+                                    <div class="col-lg-6 col-12 order-1 order-lg-0">
+                            
+                                        <!-- Nav -->
+                                        <div class="collapse navbar-collapse" id="navbar-nav-container">
+                                            <ul class="navbar-nav navbar-nav--expanded">
+                            
+                                                <li class="nav-item active dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="landingsMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                                                
+                                                    <!-- Dropdown Menu -->
+                                                    <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="landingsMenu">
+                                                        <a class="dropdown-item" href="../homepage-1.html">Home Page 1</a>
+                                                        <a class="dropdown-item" href="../homepage-2.html">Home Page 2</a>
+                                                        <a class="dropdown-item" href="../homepage-3.html">Home Page 3</a>
+                                                    </div>
+                                                </li>
+                            
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                            
+                                                    <!-- Dropdown Menu -->
+                                                    <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="aboutMenu">
+                                                        <a class="dropdown-item" href="../about-us-1.html">About Us 1</a>
+                                                        <a class="dropdown-item" href="../about-us-2.html">About Us 2</a>
+                                                    </div>
+                                                </li>
+                            
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="menuMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                            
+                                                    <!-- Dropdown Menu -->
+                                                    <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="menuMenu">
+                                                        <a class="dropdown-item" href="../menu-classic.html">Classic Menu</a>
+                                                        <a class="dropdown-item" href="../menu-card.html">Card Menu</a>
+                                                        <a class="dropdown-item" href="../menu-tab.html">Tab Menu</a>
+                                                    </div>
+                                                </li>
+                            
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="galleryMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                                            
+                                                    <!-- Dropdown Menu -->
+                                                    <div class="dropdown-menu dropdown-menu-hover text-lg-center" aria-labelledby="galleryMenu">
+                                                        <a class="dropdown-item" href="../gallery-masonry.html">Masonry Gallery</a>
+                                                        <a class="dropdown-item" href="../gallery-grid.html">Grid Gallery</a>
+                                                        <a class="dropdown-item" href="../gallery-slider.html">Slider Gallery</a>
+                                                    </div>
+                                                </li>
+                            
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="contacts.html">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- .navbar-container-->
+                                    </div><!-- .col -->
+                            
+                                    <!-- Right Column-->
+                                    <div class="col-lg-3 col-6 d-flex justify-content-end">
+                            
+                                        <!-- Button -->
+                                        <button data-toggle="modal" data-target="#bookModal" class="btn btn-hero btn-primary d-none d-lg-block">Reservation</button>
+                            
+                                        <!-- Toggler -->
+                                        <div class="btn btn-light btn-hero text-right d-block d-lg-none">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-container" aria-controls="navbar-nav-container" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                                <span class="d-none d-md-inline-block">Menu</span>
+                                            </button>
+                                        </div>
+                            
+                                    </div><!-- .col -->
+                                </nav><!-- .navbar -->
+
+                            </div><!-- end card body -->
+                            <div class="card-footer p-0">
+<pre class="m-0"><code class="p-3 html">&lt;!--=================================================================================================--&gt;
+&lt;!-- Navbar --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg navbar-light align-items-center no-gutters p-0&quot;&gt;
+
+    &lt;!-- Left Column --&gt;
+    &lt;div class=&quot;col-lg-3 col-6 d-flex justify-content-start&quot;&gt;
+
+        &lt;!-- Brand --&gt;
+        &lt;a class=&quot;navbar-brand ml-0 ml-lg-3&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/images/logo-dark.svg&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+
+    &lt;/div&gt;
+
+    &lt;!-- Center Column --&gt;
+    &lt;div class=&quot;col-lg-6 col-12 order-1 order-lg-0&quot;&gt;
+
+        &lt;!-- Nav --&gt;
+        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbar-nav-container&quot;&gt;
+            &lt;ul class=&quot;navbar-nav navbar-nav--expanded&quot;&gt;
+
+                &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;landingsMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Home Pages&lt;/a&gt;
+                
+                    &lt;!-- Dropdown Menu --&gt;
+                    &lt;div class=&quot;dropdown-menu dropdown-menu-hover text-lg-center&quot; aria-labelledby=&quot;landingsMenu&quot;&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-1.html&quot;&gt;Home Page 1&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-2.html&quot;&gt;Home Page 2&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../homepage-3.html&quot;&gt;Home Page 3&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;aboutMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;About Us&lt;/a&gt;
+            
+                    &lt;!-- Dropdown Menu --&gt;
+                    &lt;div class=&quot;dropdown-menu dropdown-menu-hover text-lg-center&quot; aria-labelledby=&quot;aboutMenu&quot;&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-1.html&quot;&gt;About Us 1&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../about-us-2.html&quot;&gt;About Us 2&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;menuMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Menu&lt;/a&gt;
+            
+                    &lt;!-- Dropdown Menu --&gt;
+                    &lt;div class=&quot;dropdown-menu dropdown-menu-hover text-lg-center&quot; aria-labelledby=&quot;menuMenu&quot;&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-classic.html&quot;&gt;Classic Menu&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-card.html&quot;&gt;Card Menu&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../menu-tab.html&quot;&gt;Tab Menu&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;galleryMenu&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Gallery&lt;/a&gt;
+            
+                    &lt;!-- Dropdown Menu --&gt;
+                    &lt;div class=&quot;dropdown-menu dropdown-menu-hover text-lg-center&quot; aria-labelledby=&quot;galleryMenu&quot;&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-masonry.html&quot;&gt;Masonry Gallery&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-grid.html&quot;&gt;Grid Gallery&lt;/a&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;../gallery-slider.html&quot;&gt;Slider Gallery&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+
+                &lt;li class=&quot;nav-item&quot;&gt;
+                    &lt;a class=&quot;nav-link&quot; href=&quot;contacts.html&quot;&gt;Contact Us&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;&lt;!-- .navbar-container--&gt;
+    &lt;/div&gt;&lt;!-- .col --&gt;
+
+    &lt;!-- Right Column--&gt;
+    &lt;div class=&quot;col-lg-3 col-6 d-flex justify-content-end&quot;&gt;
+
+        &lt;!-- Button --&gt;
+        &lt;button data-toggle=&quot;modal&quot; data-target=&quot;#bookModal&quot; class=&quot;btn btn-hero btn-primary d-none d-lg-block&quot;&gt;Reservation&lt;/button&gt;
+
+        &lt;!-- Toggler --&gt;
+        &lt;div class=&quot;btn btn-light btn-hero text-right d-block d-lg-none&quot;&gt;
+            &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar-nav-container&quot; aria-controls=&quot;navbar-nav-container&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;d-none d-md-inline-block&quot;&gt;Menu&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;&lt;!-- .col --&gt;
+&lt;/nav&gt;&lt;!-- .navbar --&gt;
+</code></pre>
+                            </div>
+                        </div><!-- end card -->
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

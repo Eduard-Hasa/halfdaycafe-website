@@ -1,0 +1,71 @@
+.spinner-border-lg
+	width: $spinner-width-lg
+	height: $spinner-height-lg
+	border-width: $spinner-border-width-lg
+	
+
+.spinner-grow-lg
+	width: $spinner-width-lg
+	height: $spinner-height-lg
+
+
+
+
+.spinner-donut,
+.spinner-donut-multi
+	width: $spinner-width
+	height: $spinner-height
+	border-radius: 50%
+	animation: .75s spin-donut infinite linear
+	position: relative
+	display: inline-block
+	
+	&:before,
+	&:after
+		content: ''
+		width: 100%
+		height: 100%
+		box-sizing: border-box
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		border-radius: 50%
+
+	&:before
+		border: $spinner-border-width solid currentColor
+		opacity: 0.3
+		z-index: 0 
+
+	&:after
+		border: $spinner-border-width solid transparent
+		border-top-color: currentColor
+		z-index: 1 
+		
+	
+	&-sm
+		width: $spinner-width-sm
+		height: $spinner-height-sm
+		
+		&:before,
+		&:after
+			border-width: $spinner-border-width-sm
+		
+	&-lg
+		width: $spinner-width-lg
+		height: $spinner-height-lg
+		
+		&:before,
+		&:after
+			border-width: $spinner-border-width-lg
+			
+			
+.spinner-donut-multi
+	&:after
+		border-bottom-color: currentColor
+	
+
+@keyframes spin-donut
+	to
+		transform: rotate(360deg)

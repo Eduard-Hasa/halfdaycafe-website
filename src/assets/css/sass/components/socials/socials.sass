@@ -1,0 +1,89 @@
+.socials
+    display: flex
+    justify-content: center
+    align-items: center
+    a 
+        display: flex 
+        align-items: center
+        justify-content: center
+        margin: 0 .4rem
+        width: 1.8rem
+        height: 1.8rem
+        border-radius: 50%
+        border: 1px solid $socials-light-border-color
+        transition: all .2s ease
+
+        @include media-breakpoint-up(sm)
+            width: 2.2rem
+            height: 2.2rem
+
+        svg 
+            display: block
+            width: 40%
+            *
+                fill: $socials-light-icon-color
+                transition: all .2s ease
+        &:hover
+            border-color: $socials-light-hover-border-color
+            background-color: $socials-light-hover-bg-color
+            svg 
+                *
+                    fill: $socials-light-hover-icon-color
+
+    // modificators
+    &--vertical
+        flex-direction: column
+        a 
+            margin: .4rem auto
+
+    &--dark
+        a 
+            border-color: $socials-dark-border-color
+            svg 
+                * 
+                    fill: $socials-dark-icon-color
+            &:hover
+                background-color: $socials-dark-hover-bg-color
+                border-color: $socials-dark-hover-border-color
+                svg 
+                    *
+                        fill: $socials-dark-hover-icon-color
+                        
+    &--gray
+        a 
+            border-color: $socials-gray-border-color
+            svg 
+                * 
+                    fill: $socials-gray-icon-color
+            &:hover
+                background-color: $socials-gray-hover-bg-color
+                border-color: $socials-gray-hover-border-color
+                svg 
+                    *
+                        fill: $socials-gray-hover-icon-color
+            
+
+    &--primary 
+        a 
+            border-color: $socials-primary-border-color
+            svg 
+                * 
+                    fill: $socials-primary-icon-color
+            &:hover
+                background-color: $socials-primary-hover-bg-color
+                border-color: $socials-primary-hover-border-color
+                svg 
+                    *
+                        fill: $socials-primary-hover-icon-color
+
+    &--lg 
+        a 
+            width: 2.2rem
+            height: 2.2rem
+            margin: 0 .6rem
+            @include media-breakpoint-up(sm)
+                width: 2.8rem
+                height: 2.8rem
+        &.socials--vertical
+            a 
+                margin: .6rem auto

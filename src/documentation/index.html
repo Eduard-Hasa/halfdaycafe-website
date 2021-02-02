@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentation Fika</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/vendors/highlight/vsc.min.css">
+    <link rel="stylesheet" href="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <nav class="navbar d-lg-none bg-dark">
+        <div class="col-auto">
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-transparent breadcrumb-dark m-0 p-0">
+                    <li class="breadcrumb-item active"><a href="#">Docs</a></li>
+                </ol>
+            </nav>
+
+        </div>
+        <div class="col-auto d-flex justify-content-end">
+
+            <!-- Toggler -->
+            <div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav><!-- nav -->
+
+    <section class="section">
+        <div class="section-content py-0">
+            <div class="container-fluid">
+
+                <div class="row justify-content-start">
+                    <div class="col-12 col-lg-3 col-xl-2 px-lg-0 bg-dark text-white position-lg-fixed left-0 top-0 h-100">
+                        @@include('shared/menu.html')
+                    </div>
+                    <!--end sidebar -->
+                    
+                    <div class="col-12 col-lg-9 col-xl-10 col-xxl-8 p-2 p-sm-4 p-xxl-6 offset-lg-3 offset-xl-2">
+
+                        <!-- Heading -->
+                        <h1 class="mb-1">Introduction</h1>
+
+                        <!-- Text -->
+                        <p class="font-size-lg mb-5">How to get started with Fika!</p>
+
+                        <!-- Text -->
+                        <p class="font-size-lg">This guide will help you get started with Fika! All the important stuff is documented here, but should you have any questions, always feel free to reach out to <a href="mailto:contact@waveless.co">contact@waveless.co</a>.</p>
+
+                        <!-- Divider -->
+                        <hr class="my-4">
+
+                        <!-- Heading -->
+                        <h3> New &amp; extended components</h3>
+
+                        <!-- Text -->
+                        <p class="font-size-lg">Fika extends Bootstrap by not only building on top of its existing components, but also introducing entirely new components and plugins.</p>
+
+                        <!-- Divider -->
+                        <hr class="my-4">
+
+                        <!-- Heading -->
+                        <h3 class="mb-4">File structure</h3>
+
+                        <!-- List-plain -->
+                        <ul>
+                            <li>
+                                <strong>📁 src</strong>
+                                <ul>
+                                    <li>
+                                        <strong>📁 assets</strong>
+                                        <ul>
+                                            <li>
+                                                <strong>📁 css</strong>
+                                                <ul>
+                                                    <li>
+                                                        <strong>📁 sass</strong> - well structered SASS source files
+                                                        <ul>
+                                                            <li>
+                                                                <strong>📁 abstracts</strong>
+                                                            </li>
+                                                            <li>
+                                                                <strong>📁 base</strong>
+                                                            </li>
+                                                            <li>
+                                                                <strong>📁 components</strong>
+                                                            </li>
+                                                            <li>
+                                                                <strong>📁 layout</strong>
+                                                            </li>
+                                                            <li>
+                                                                <strong>📁 sections</strong>
+                                                            </li>
+                                                            <li>
+                                                                <strong>📁 utilities</strong>
+                                                            </li>
+                                                            <li>
+                                                                <strong>📄 user-styles.scss</strong> - your custom styles
+                                                            </li>
+                                                            <li>
+                                                                <strong>📄 user-variables.scss</strong> - your custom variables
+                                                            </li>
+                                                            <li>
+                                                                <strong>📄 main.sass</strong> - gathers SASS source files
+                                                            </li>
+                                                        </ul>
+                                                        </li>
+                                                    <li>
+                                                        <strong>📄 main.css</strong> - compiled style file
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>📁 images</strong> - Image assets
+                                            </li>
+                                            <li>
+                                                <strong>📁 js</strong> - JavaScript source
+                                            </li>
+                                            <li>
+                                                <strong>📁 vendors</strong> - Third party plugins
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>📁 documentation</strong> - Documentation
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>📄 .gitignore</strong> - Hide all unnecessary files from Git
+                            </li>
+                            <li>
+                                <strong>📄 package.json</strong> - List of dependencies and npm information
+                            </li>
+                            <li>
+                                <strong>📄 gulpfile.js</strong> - All the build commands
+                            </li>
+                        </ul>
+
+                        <!-- Divider -->
+                        <hr class="my-5">
+
+                        <!-- Heading -->
+                        <h3 class="mb-4">Customizing SASS</h3>
+
+                        <!-- Text -->
+                        <p class="font-size-lg">There are 2 basic ways to customize your template...</p>
+
+                        <!-- List -->
+                        <ol class="font-size-lg">
+                            <li>
+                                <strong>Customizing SASS.</strong> This is more versatile and sustainable way to customize Fika, but requires the <code>sass</code> compilation step. The 2 major benefits of this strategy
+                                are
+                                using variable overrides to easily customize template styles, plus you never have to touch Bootstrap or Fika's source, meaning future updates will be much, much, simpler. There are 2 provided files that make
+                                this
+                                strategy simple to implement:
+                                <ul>
+                                    <li>
+                                        <code>src/assets/css/sass/user-variables.scss</code>: This file can be used to override Bootstrap core and Fika variables for customizing elements that have been tied to variables.
+                                    </li>
+                                    <li>
+                                        <code>src/assets/css/sass/user-styles.scss</code>: This file can be used for writing custom SCSS (or regular CSS) that will be compiled alongside Bootstrap and Fika's core files.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Compiled CSS.</strong> If you plan on using Fika"as is", or only need limited customization, feel free to simply attach the compiled <code>main.css</code> file in
+                                the
+                                <code>dist/assets/css</code> directory.
+                            </li>
+                        </ol>
+
+                        <!-- Divider -->
+                        <hr class="my-5">
+
+                        <!-- Heading -->
+                        <h3 class="mb-4">Dev Setup</h3>
+
+                        <ol class="font-size-lg">
+                            <li><strong>Make sure you have Node installed</strong> since Fika uses npm to manage dependencies. If you don't, installing is quite easy, just visit the <a href="https://nodejs.org/en/download/">Node Downloads page</a> and install it.  </li>
+                            <li><strong>Unzip your template and open your command line</strong>, making sure your command line prompt is at the root of the unzipped template directory. </li>
+                            <li><strong class="badge badge-danger-soft"><code>npm install gulp-cli -g</code></strong>: If you don't have the Gulp command line interface, you need to install it.</li>
+                            <li><strong class="badge badge-danger-soft"><code>npm install</code></strong>: Open your command line to the root directory of your unzipped template and run to install all of Fika's dependencies.</li>
+                        </ol>
+
+                        <p class="font-size-lg">It's that simple! Now you can benefit from using Gulp while working on this template. If you're not used to using terminal, don't worry, this is as advanced as it gets. If you want to kill the server and stop Gulp, just hit Control + C.</p>
+
+                        <!-- Divider -->
+                        <hr class="my-5">
+
+                        <!-- Heading -->
+                        <h3 class="mb-4">Compiling</h3>
+
+                        <p class="font-size-lg">Gulp is used to manage Fika development. Open your command line to the root directory of the template to use the following commands:</p>
+
+                        <ul>
+                            <li class="mb-2" id="dev">
+                                <code>npm run gulp-default</code> or <code>gulp default</code> or <code>gulp</code><br>This is the main command for development purposes. It will:
+                                <ol>
+                                    <li>Compile Sass from src/assets/css/sass/main.sass file into dist/assets/css/main.css.</li>
+                                    <li>Translate src/assets/js/app.js file by Babel into JavaScrip that all modern web browsers understand (in a case you use some advanced syntax), move the translated file into dist folder.</li>
+                                    <li>Copy all HTML pages, images, fonts, vendors from src folder into the dist folder</li>
+                                    <li>Watch for changes inside sass, js, fonts, images folders and HTML pages to run relevant commands and init Live Reload to update browsers instantly after one of the files was changed;</li>
+                                    <li>Start the local server with live reload. The root folder for the server is the dist folder.</li>
+                                </ol>
+                            </li>
+                            <p class="mb-4">Now, you can easily start to work on source files and see all the changes in your browser.</p>
+                            <li class="mb-2" id="build">
+                                <code>npm run gulp-build</code> or <code>gulp build</code>
+                                <br>This command will:
+                                <ol>
+                                    <li>Compile, add vendor prefixes and minify Sass from src/assets/css/sass/main.sass file into dist/assets/css/main.min.css.</li>
+                                    <li>Translate src/assets/js/app.js file by Babel, minify it and move into dist folder.</li>
+                                    <li>Automatically change pathes inside HTML pages to link minified files.</li> 
+                                    <li>Optimize images.</li> 
+                                    <li>Copy all HTML pages, images, fonts, vendors from src folder into the dist folder.</li>
+                                </ol>
+                            </li>
+                            <p>After the command finishes all the tasks, you will have a fully functional and ready-to-deploy website in the dist folder.</p>
+                        </ul>
+
+                    </div>
+                    <!--end main content -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- section content -->
+    </section><!-- section -->
+
+    <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+
+    <script src="../assets/vendors/bootstrap/js/dist/index.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/util.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/collapse.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../assets/vendors/bootstrap/js/dist/tab.js"></script>
+    <script src="../assets/vendors/svginjector/svginjector.min.js"></script>
+    <script src="../assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendors/highlight/highlight.min.js"></script>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

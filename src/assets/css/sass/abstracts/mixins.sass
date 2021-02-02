@@ -1,0 +1,128 @@
+@mixin button-soft($color, $background, $hover-background, $active-background, $box-shadow)
+	color: ($color)
+	background: rgba($background, .1)
+	border-color: transparent
+
+	&[href],
+	&[type]
+		&:hover,
+		&:focus,
+		&:active,
+		&.active
+			color: color-yiq($hover-background)
+			background: ($hover-background)
+			box-shadow: $btn-box-shadow-value rgba($background, 0.35)
+
+
+		&.disabled,
+		&:disabled
+			color: $background
+			background-color: rgba($background, .1)
+			box-shadow: none
+
+		&:not(:disabled):not(.disabled):active,
+		&:not(:disabled):not(.disabled).active,
+		.show > &.dropdown-toggle 
+			color: color-yiq($active-background)
+			background-color: $active-background
+
+@mixin badge-outline( $color, $background, $border)
+	color: $color
+	background: transparent
+	border: 1px solid $color
+	
+	&[href]
+		color: $color
+		background: transparent
+		border-color: $color
+		
+		&:hover,
+		&:focus,
+		&:active,
+		&.active
+			background-color: $color
+			color: color-yiq($color)
+			border-color: darken( $color, 10% )
+			box-shadow: $badge-box-shadow-value rgba($background, 0.35)
+			
+		&.disabled,
+		&:disabled
+			color: $background
+			background-color: rgba($background, .1)
+			box-shadow: none
+			
+
+@mixin badge-outline-soft-border( $color, $background, $border)
+	color: $color
+	background: transparent
+	border: 1px solid rgba($color, .2) !important
+	
+	&[href]
+		color: $color
+		background: transparent
+		border-color: $color
+		
+		&:hover,
+		&:focus,
+		&:active,
+		&.active
+			background-color: $color
+			color: color-yiq($color)
+			border-color: darken( $color, 10% )
+			box-shadow: $badge-box-shadow-value rgba($background, 0.35)
+			
+		&.disabled,
+		&:disabled
+			color: $background
+			background-color: rgba($background, .1)
+			box-shadow: none
+
+
+@mixin badge-soft( $color, $background, $border )
+	color: ($color)
+	background: rgba($background, .1)
+	border-color: transparent
+	
+	&[href],
+	&[type]
+		color: $color
+		background: rgba($background, .1)
+		
+		&:hover,
+		&:focus,
+		&:active,
+		&.active
+			color: color-yiq($background)
+			background: ($background)
+			box-shadow: $badge-box-shadow-value rgba($background, 0.35)
+
+
+		&.disabled,
+		&:disabled
+			color: $background
+			background-color: rgba($background, .1)
+			box-shadow: none
+
+
+	
+// =============================================================================
+// Font Face
+// =============================================================================
+
+=font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg)
+	$src: null
+
+	$extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_") )
+
+	$formats: ( otf: "opentype", ttf: "truetype" )
+
+	@each $ext in $exts
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext)
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext)
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma)
+
+	@font-face
+		font-family: quote($name)
+		font-style: $style
+		font-weight: $weight
+		src: $src
