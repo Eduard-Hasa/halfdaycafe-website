@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,CAAC;CAKgB;;AAP9B,AAII,WAJO,CAIP,CAAC,CAAC;EACE,UAAU,EAAE,OAAO;CAEC;;AAP5B,AAMQ,WANG,CAIP,CAAC,AAEI,MAAM,CAAC;EACJ,OAAO,EAAE,EAAE;CAAG",
-    "sources": [
-        "list-plain.sass"
-    ],
-    "names": [],
-    "file": "list-plain.css"
-}

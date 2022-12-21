@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,WAAW,EAAE,KAAK;EAClB,YAAY,EAAE,KAAK;EAEnB,WAAW,EAAE,MAAM;CAGO;;AAP9B,AAMI,UANM,CAMN,IAAI,CAAC;EACD,MAAM,EAAE,SAAS;CAAG",
-    "sources": [
-        "btn-group.sass"
-    ],
-    "names": [],
-    "file": "btn-group.css"
-}

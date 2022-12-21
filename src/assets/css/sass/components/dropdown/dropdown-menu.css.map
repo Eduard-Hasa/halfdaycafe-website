@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,QAAQ,EAAE,MAAM;CAAG",
-    "sources": [
-        "dropdown-menu.sass"
-    ],
-    "names": [],
-    "file": "dropdown-menu.css"
-}

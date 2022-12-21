@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAEE,MAFI,CACL,KAAK,CACJ,EAAE,CAAC;EACF,gBAAgB,EAAE,CAAC;EACnB,mBAAmB,EAAE,GAAG;CAAG",
-    "sources": [
-        "tables.sass"
-    ],
-    "names": [],
-    "file": "tables.css"
-}
